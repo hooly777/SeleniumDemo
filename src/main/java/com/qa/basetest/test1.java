@@ -1,11 +1,20 @@
 package com.qa.basetest;
 
-import java.io.IOException;
-import java.util.Properties;
 
-import org.testng.annotations.Test;
+
+
+import com.qa.util.*;
+
+
 
 public class test1 {
+	
+	/*Creating an object to read the data from property file*/
+	PropertyLoader propertyloader=new PropertyLoader();
+	
+	/*Reading the base url*/
+	String baseurl=propertyloader.getBaseURL();
+	
 	
 		
 		
