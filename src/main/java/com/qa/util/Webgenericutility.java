@@ -1,11 +1,14 @@
 package com.qa.util;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
 /**
  * @author Silampur Girish 
  * @date   06-01-2020
  * @version 1.o
  */
-public class genericutility {
+public class Webgenericutility {
 	/**
 	 * @author Silampur Girish
 	 * Method to select dropdown by text
@@ -15,10 +18,7 @@ public class genericutility {
 	public static void selectDropdownByText(WebElement element, String text)
 	{
 		Select select = new Select(element);
-		select.selectByVisibleText(text);
-		
-		
-		int i=20;
+		select.selectByVisibleText(text);		
 	}
 
 	/**
