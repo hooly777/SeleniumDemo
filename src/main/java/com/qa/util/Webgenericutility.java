@@ -43,7 +43,29 @@ public class Webgenericutility {
 		Select select = new Select(element);
 		select.selectByIndex(num);
 	}
+	/**
+	 * @author Silampur Girish
+	 * Method to get attribute value of the element
+	 * @param element
+	 * @param attribute
+	 * @return String
+	 */
+	public static String getAttributeValue(WebElement element, String attribute)
+	{
+		return element.getAttribute(attribute);
+	}
 
-
+	/**
+	 * @author Silampur Girish
+	 * Method to get SelectedText value of the dropdwon
+	 * @param element	 
+	 * @return String
+	 */
+	public static String getSelectedText(WebElement element)
+	{
+		Select select = new Select(element);
+		return select.getFirstSelectedOption().getText();
+	}
+	
 
 }
