@@ -4,10 +4,10 @@ import java.io.FileReader;
 import java.util.Properties;
 
 /**
- * @author GOV
- * @version
- * @date
- * method des
+ * @author Govardhan & Team
+ * @version 1.0
+ * @date 06-01-2020
+ * 
  *
  */
 public class PropertyLoader {
@@ -31,24 +31,44 @@ public class PropertyLoader {
 		}
 	}
 	
+	
+	/**
+	 * @author Govardhan & Team
+	 * Method to get Base URL property from properties file
+	 */
 	/**Reading base url from property file and returning to base class**/
 	public static String getBaseURL()
 	{
 		return p.getProperty("base_url");
 		
 	}
+	
+	/**
+	 * @author Govardhan & Team
+	 * Method to get  Userename property from properties file
+	 */
 	/**Reading user name from property file and returning to base class**/
 	public static String getUsername()
 	{
 		return p.getProperty("username");
 		
 	}
+	
+	/**
+	 * @author Govardhan & Team
+	 * Method to get Password property from properties file
+	 */
 	/**Reading password from property file and returning to base class**/
 	public static String getPassword()
 	{
 		return p.getProperty("password");
 		
 	}
+	
+	/**
+	 * @author Govardhan & Team
+	 * Method to get Browser Type property from properties file
+	 */
 	/**Reading Browser type from property file and returning to base class**/
 	public static String getBrowsertype()
 	{
