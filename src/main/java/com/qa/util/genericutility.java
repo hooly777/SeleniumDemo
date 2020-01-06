@@ -16,6 +16,9 @@ public class genericutility {
 	{
 		Select select = new Select(element);
 		select.selectByVisibleText(text);
+		
+		
+		int i=20;
 	}
 
 	/**
