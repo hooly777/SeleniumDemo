@@ -3,11 +3,18 @@ package com.qa.util;
 import java.io.FileReader;
 import java.util.Properties;
 
+/**
+ * @author GOV
+ * @version
+ * @date
+ * method des
+ *
+ */
 public class PropertyLoader {
 	
 	/** Reading the commonVariables.properties file using File Reader **/
-	FileReader src;
-	Properties p;
+	public static FileReader src;
+	public static Properties p;
 	/**Creating a constructor to initialize the properties**/
 	public PropertyLoader()
 	{
@@ -25,25 +32,25 @@ public class PropertyLoader {
 	}
 	
 	/**Reading base url from property file and returning to base class**/
-	public String getBaseURL()
+	public static String getBaseURL()
 	{
 		return p.getProperty("base_url");
 		
 	}
 	/**Reading user name from property file and returning to base class**/
-	public String getUsername()
+	public static String getUsername()
 	{
 		return p.getProperty("username");
 		
 	}
 	/**Reading password from property file and returning to base class**/
-	public String getPassword()
+	public static String getPassword()
 	{
 		return p.getProperty("password");
 		
 	}
 	/**Reading Browser type from property file and returning to base class**/
-	public String getBrowsertype()
+	public static String getBrowsertype()
 	{
 		return p.getProperty("browsertype");
 		
