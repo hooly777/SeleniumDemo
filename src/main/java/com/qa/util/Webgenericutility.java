@@ -1,8 +1,11 @@
 package com.qa.util;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -362,6 +365,42 @@ public class Webgenericutility {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("scroll(0, 750);");
 	}
+	/**
+	 * @author Sharoonroja G 
+	 * Scroll to a particular element
+	 * @param 
+	 * @return
+	 */
+	public static void scrolltoElement(WebElement element) throws Exception {
 
+		int x = element.getLocation().getX();
+		int y = element.getLocation().getY();
 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(" + x + "," + y + ")");
+		Thread.sleep(2000);
+	}
+	/**
+	 * @author Sharoonroja G 
+	 * Scroll to a particular element
+	 * @param 
+	 * @return
+	 */
+	public static void listOfElements(String xpath) {
+		List<WebElement> list = driver.findElements(By.xpath(xpath));
+
+		List<String> arrayOptions = new ArrayList<String>();
+
+		for (WebElement option : list) {
+			arrayOptions.add(option.getText());
+		}
+		int listsize = arrayOptions.size();
+		System.out.println("count of sections:-" + listsize);
+		for (int i = 0; i < listsize; i++) {
+
+			String text = arrayOptions.get(i);
+			System.out.println(text);
+		}
+
+	}
 }
