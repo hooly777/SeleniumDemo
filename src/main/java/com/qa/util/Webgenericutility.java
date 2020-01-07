@@ -1,9 +1,12 @@
 package com.qa.util;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -314,7 +317,51 @@ public class Webgenericutility {
 		return iframeElement;
 	}
 
-
+	/**
+	 * @author Silampur Girish 
+	 * Method to wait for load
+	 * @param driver
+	 */
+	public static void waitForLoad(long seconds) 
+	{
+		ExpectedCondition<Boolean> pageLoadCondition = new
+	               ExpectedCondition<Boolean>() {
+	                   public Boolean apply(WebDriver driver) {
+	                       return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+	                   }
+	               };
+	               WebDriverWait wait = new WebDriverWait(driver, seconds);
+	               wait.until(pageLoadCondition);
+	    }
+	
+	/**
+	 * @author Silampur Girish 
+	 * Method is Element Exists
+	 * @param element
+	 */
+	public static boolean isElementExists( WebElement element)
+	{
+		boolean present;
+		try {
+		   element.clear();			
+		   present = true;
+		} catch (NoSuchElementException e) {
+		   present = false;
+		   //log.info("",e);
+		}
+		return present;
+	}
+	/**
+	 * @author Silampur Girish 
+	 * Scroll method
+	 * @param 
+	 * @return
+	 */
+	public static void scrollpage()
+	{
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("scroll(0, 750);");
+	}
 
 
 }
