@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="18113" started-at="2020-01-07T09:28:30Z" finished-at="2020-01-07T09:28:49Z">
     <groups>
     </groups>
@@ -24,13 +25,41 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=test_Home_Page_Appear_Correct status=SUCCESS method=SampleTest.test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@3e9b1010] output={null}]]]>
+=======
+  <suite name="Default suite" duration-ms="24105" started-at="2020-01-07T09:46:40Z" finished-at="2020-01-07T09:47:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24105" started-at="2020-01-07T09:46:40Z" finished-at="2020-01-07T09:47:05Z">
+      <class name="com.qa.pages.SampleTest">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="startReport" is-config="true" duration-ms="328" started-at="2020-01-07T09:46:40Z" finished-at="2020-01-07T09:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="BrowserIntialisation" is-config="true" duration-ms="16684" started-at="2020-01-07T09:46:41Z" finished-at="2020-01-07T09:46:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntialisation -->
+        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="test_Home_Page_Appear_Correct" duration-ms="4540" started-at="2020-01-07T09:46:58Z" finished-at="2020-01-07T09:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Home_Page_Appear_Correct -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="tearDown" is-config="true" duration-ms="4" started-at="2020-01-07T09:47:02Z" finished-at="2020-01-07T09:47:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_Home_Page_Appear_Correct status=SUCCESS method=SampleTest.test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b] output={null}]]]>
+>>>>>>> f63e309f9486b32a9a185297206a89e53438edd4
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@3e9b1010]" name="tearDown" is-config="true" duration-ms="2123" started-at="2020-01-07T14:58:46Z" finished-at="2020-01-07T14:58:49Z">
+=======
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="tearDown" is-config="true" duration-ms="2525" started-at="2020-01-07T09:47:02Z" finished-at="2020-01-07T09:47:05Z">
+>>>>>>> f63e309f9486b32a9a185297206a89e53438edd4
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
