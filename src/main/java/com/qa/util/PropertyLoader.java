@@ -27,7 +27,7 @@ public class PropertyLoader {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Error message is "+ e.getMessage());;
+			System.out.println("Error message is "+ e.getMessage());
 		}
 	}
 	
