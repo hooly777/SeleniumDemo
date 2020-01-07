@@ -1,5 +1,6 @@
 package com.qa.util;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -9,6 +10,8 @@ import org.openqa.selenium.support.ui.Select;
  * @version 1.o
  */
 public class Webgenericutility {
+	static WebDriver driver;
+
 	/**
 	 * @author Silampur Girish
 	 * Method to select dropdown by text
@@ -66,6 +69,94 @@ public class Webgenericutility {
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();
 	}
-	
+	/**
+	 * @author Uma Maheswari
+	 * Method to Navigate url 
+	 * @param url
+	 */
+	public static void NavigateToUrl(String url)
+	{
+		driver.navigate().to(url);
+	}
+
+	/**
+	 * @author Lakshmi
+	 * Method to take you back by one page on the browser’s history.
+	 */ 
+	public static void Navigateback()
+	{
+		driver.navigate().back();
+	}
+	/**
+	 * @author Uma Maheswari
+	 * Method to take you forward by one page on the browser’s history.
+	 */ 
+
+	public static void NavigateForward()
+	{
+		driver.navigate().forward();
+	}
+
+	/**
+	 * @author Uma Maheswari
+	 * Method to refresh the page
+	 */ 
+
+	public static void NavigateRefresh()
+	{
+		driver.navigate().refresh();
+	}
+
+
+
+
+
+
+	/**
+	 * @author Uma Maheswari
+	 * Method to get title of the application/page
+	 * return String
+	 */ 
+
+	public static String getTitle()
+	{
+		return driver.getTitle();
+	}
+
+	/**
+	 * @author Uma Maheswari
+	 * Method to click an Element
+	 * @param element
+	 */
+
+	// Method to Click Element
+	public static  void ClickElement(WebElement element)
+	{
+		element.click();
+	}
+
+	/**
+	 * @author Lakshmi
+	 * Method to get text of the element
+	 * @param element
+	 */
+
+	public static String getText(WebElement element)
+	{
+		return element.getText();
+	}
+
+		/**
+	 * @author Uma Maheswari
+	 * Method to send text
+	 * @param element
+	 * @param Text
+	 */
+	public static void sendText(WebElement element, String Text)
+	{
+		element.sendKeys(Text);
+	}
+
+
 
 }
