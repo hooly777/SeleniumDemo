@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="17649" started-at="2020-01-07T06:59:47Z" finished-at="2020-01-07T07:00:05Z">
     <groups>
     </groups>
@@ -35,6 +36,18 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.pages.SampleTest -->
+=======
+  <suite name="Default suite" duration-ms="87" started-at="2020-01-06T10:12:12Z" finished-at="2020-01-06T10:12:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="87" started-at="2020-01-06T10:12:12Z" finished-at="2020-01-06T10:12:12Z">
+      <class name="com.qa.basetest.test1">
+        <test-method status="PASS" signature="loadtest()[pri:0, instance:com.qa.basetest.test1@26be92ad]" name="loadtest" duration-ms="34" started-at="2020-01-06T10:12:12Z" finished-at="2020-01-06T10:12:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadtest -->
+      </class> <!-- com.qa.basetest.test1 -->
+>>>>>>> c6991e2261ad99ca4af7905db26a51ef333e8440
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
