@@ -7,7 +7,7 @@
  					Tear Down
  
  Creation Date : 07/01/2020
- @Version 1.0
+ @Version 2.0
  @author Sumana and Team
 */
 
@@ -25,6 +25,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -92,7 +93,7 @@ public class BaseTest {
 	}
 
 
-	@AfterTest
+	@AfterClass
 	// This method is used to close the browsers
 	public void tearDown() {
 
@@ -103,7 +104,7 @@ public class BaseTest {
 
 	// It will execute after every test execution 
 	@AfterMethod
-	public void tearDown(ITestResult result) throws IOException{
+	public void takeScreenShot(ITestResult result) throws IOException{
 
 		// Here will compare if test is failing then only it will enter into if condition and takes the screenshot
 		if(ITestResult.FAILURE==result.getStatus()){
@@ -136,8 +137,9 @@ public class BaseTest {
 	// This method will generate extent report
 	@BeforeTest()
 	public void startReport() {
-		report = new ExtentReports(System.getProperty("user.dir")+"/test-output/testReport"+"_"+System.currentTimeMillis() +".html");
+		report = new ExtentReports(System.getProperty("user.dir")+"/test-output/testReport"+".html");
 		test = report.startTest("Extent Report");
+		report.addSystemInfo("OS", "Windows10");
 	}
 
 
