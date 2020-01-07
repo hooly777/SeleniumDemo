@@ -3,11 +3,19 @@ package com.qa.util;
 import java.io.FileReader;
 import java.util.Properties;
 
+/**
+ * @author Govardhan & Team
+ * @version 1.0
+ * @date 06-01-2020
+ * 
+ *
+ */
 public class PropertyLoader {
 	
-
-	FileReader src;
-	Properties p;
+	/** Reading the commonVariables.properties file using File Reader **/
+	public static FileReader src;
+	public static Properties p;
+	/**Creating a constructor to initialize the properties**/
 	public PropertyLoader()
 	{
 		
@@ -19,28 +27,50 @@ public class PropertyLoader {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Error message is "+ e.getMessage());;
+			System.out.println("Error message is "+ e.getMessage());
 		}
 	}
 	
-	public String getBaseURL()
+	
+	/**
+	 * @author Govardhan & Team
+	 * Method to get Base URL property from properties file
+	 */
+	/**Reading base url from property file and returning to base class**/
+	public static String getBaseURL()
 	{
 		return p.getProperty("base_url");
 		
 	}
-	public String getUsername()
+	
+	/**
+	 * @author Govardhan & Team
+	 * Method to get  Userename property from properties file
+	 */
+	/**Reading user name from property file and returning to base class**/
+	public static String getUsername()
 	{
 		return p.getProperty("username");
 		
 	}
 	
-	public String getPassword()
+	/**
+	 * @author Govardhan & Team
+	 * Method to get Password property from properties file
+	 */
+	/**Reading password from property file and returning to base class**/
+	public static String getPassword()
 	{
 		return p.getProperty("password");
 		
 	}
 	
-	public String getBrowsertype()
+	/**
+	 * @author Govardhan & Team
+	 * Method to get Browser Type property from properties file
+	 */
+	/**Reading Browser type from property file and returning to base class**/
+	public static String getBrowsertype()
 	{
 		return p.getProperty("browsertype");
 		
