@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -402,5 +403,43 @@ public class Webgenericutility {
 			System.out.println(text);
 		}
 
+	}
+	/**
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
+	 * @return
+	 */
+	public String getBrowserInfo() {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		String uAgent = js.executeScript("return navigator.userAgent;").toString();
+		return uAgent;
+	}
+	/**
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
+	 * @return
+	 */
+	
+	@SuppressWarnings("unused")
+	private void changeColor(String color, WebElement element) {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].style.backgroundColor = '" + color + "'", element);
+
+		try {
+			Thread.sleep(20);
+		} catch (InterruptedException e) {
+		}
+	}
+	/**
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
+	 * @return
+	 */
+	public void dragAndDrop(WebElement from,WebElement to){
+		Actions act = new Actions(driver);
+		act.dragAndDrop(from, to).build().perform();
 	}
 }
