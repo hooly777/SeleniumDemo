@@ -2,52 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="17649" started-at="2020-01-07T06:59:47Z" finished-at="2020-01-07T07:00:05Z">
+  <suite name="Default suite" duration-ms="24105" started-at="2020-01-07T09:46:40Z" finished-at="2020-01-07T09:47:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17649" started-at="2020-01-07T06:59:47Z" finished-at="2020-01-07T07:00:05Z">
+    <test name="Default test" duration-ms="24105" started-at="2020-01-07T09:46:40Z" finished-at="2020-01-07T09:47:05Z">
       <class name="com.qa.pages.SampleTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.pages.SampleTest@3327bd23]" name="startReport" is-config="true" duration-ms="156" started-at="2020-01-07T12:29:47Z" finished-at="2020-01-07T12:29:47Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="startReport" is-config="true" duration-ms="328" started-at="2020-01-07T09:46:40Z" finished-at="2020-01-07T09:46:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.pages.SampleTest@3327bd23]" name="BrowserIntialisation" is-config="true" duration-ms="13478" started-at="2020-01-07T12:29:47Z" finished-at="2020-01-07T12:30:01Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="BrowserIntialisation" is-config="true" duration-ms="16684" started-at="2020-01-07T09:46:41Z" finished-at="2020-01-07T09:46:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@3327bd23]" name="test_Home_Page_Appear_Correct" duration-ms="2418" started-at="2020-01-07T12:30:01Z" finished-at="2020-01-07T12:30:03Z">
+        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="test_Home_Page_Appear_Correct" duration-ms="4540" started-at="2020-01-07T09:46:58Z" finished-at="2020-01-07T09:47:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page_Appear_Correct -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@3327bd23]" name="tearDown" is-config="true" duration-ms="3" started-at="2020-01-07T12:30:03Z" finished-at="2020-01-07T12:30:03Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="tearDown" is-config="true" duration-ms="4" started-at="2020-01-07T09:47:02Z" finished-at="2020-01-07T09:47:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test_Home_Page_Appear_Correct status=SUCCESS method=SampleTest.test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@3327bd23] output={null}]]]>
+                <![CDATA[[TestResult name=test_Home_Page_Appear_Correct status=SUCCESS method=SampleTest.test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@3327bd23]" name="tearDown" is-config="true" duration-ms="1587" started-at="2020-01-07T12:30:03Z" finished-at="2020-01-07T12:30:05Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@3dd4520b]" name="tearDown" is-config="true" duration-ms="2525" started-at="2020-01-07T09:47:02Z" finished-at="2020-01-07T09:47:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.pages.SampleTest -->
-=======
-  <suite name="Default suite" duration-ms="87" started-at="2020-01-06T10:12:12Z" finished-at="2020-01-06T10:12:12Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="87" started-at="2020-01-06T10:12:12Z" finished-at="2020-01-06T10:12:12Z">
-      <class name="com.qa.basetest.test1">
-        <test-method status="PASS" signature="loadtest()[pri:0, instance:com.qa.basetest.test1@26be92ad]" name="loadtest" duration-ms="34" started-at="2020-01-06T10:12:12Z" finished-at="2020-01-06T10:12:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadtest -->
-      </class> <!-- com.qa.basetest.test1 -->
->>>>>>> c6991e2261ad99ca4af7905db26a51ef333e8440
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
