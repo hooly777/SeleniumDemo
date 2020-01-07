@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.qa.basetest.BaseTest;
-import com.qa.basetest.BaseTestExtent;
 
 public class SampleTest extends BaseTest {
 

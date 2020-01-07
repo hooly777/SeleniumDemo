@@ -31,6 +31,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
+import com.qa.util.PropertyLoader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -42,7 +43,7 @@ public class BaseTest {
 	public static WebDriver driver;
 	static String absolutepath = System.getProperty("user.dir");
 	static String driverPath = absolutepath+"\\Drivers\\";
-	String appURL="http://demo.guru99.com/V4/";
+	
 	static String filePath = absolutepath+"\\Failedscreenshots";
 	ExtentReports extent;
 	//helps to generate the logs in test report.
@@ -50,15 +51,18 @@ public class BaseTest {
 	static ExtentReports report;
 	ITestResult result;
 
+	
 
 
 	@BeforeClass
 	// This method is used to launch browser
 	public void BrowserIntialisation() {
-		//String browserType=testprops.getProperty("browserType");
-		String browserType = "chrome";
+		PropertyLoader proploader = new PropertyLoader();
+		String browsertype=proploader.getBrowsertype();
+		String baseurl=proploader.getBaseURL();
+	
 		try {
-			switch (browserType) {
+			switch (browsertype) {
 			case "chrome":
 				System.out.println("Launching google chrome with new profile..");
 				System.setProperty("webdriver.chrome.driver", driverPath+ "chromedriver.exe");
@@ -75,7 +79,7 @@ public class BaseTest {
 				driver = new InternetExplorerDriver();
 				break;
 			default:
-				System.out.println("browser : " + browserType
+				System.out.println("browser : " + browsertype
 						+ " is invalid, Launching Firefox as browser of choice..");
 				System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
 				driver = new FirefoxDriver();
@@ -86,7 +90,7 @@ public class BaseTest {
 			System.out.println("Error....." + e.getStackTrace());
 		}
 		driver.manage().window().maximize();
-		driver.get(appURL);
+		driver.get(baseurl);
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

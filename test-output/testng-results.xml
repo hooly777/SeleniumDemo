@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49041" started-at="2020-01-07T11:46:55Z" finished-at="2020-01-07T11:47:44Z">
+  <suite name="Default suite" duration-ms="50524" started-at="2020-01-07T12:01:44Z" finished-at="2020-01-07T12:02:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49041" started-at="2020-01-07T11:46:55Z" finished-at="2020-01-07T11:47:44Z">
+    <test name="Default test" duration-ms="50524" started-at="2020-01-07T12:01:44Z" finished-at="2020-01-07T12:02:34Z">
       <class name="com.qa.pages.SampleTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="startReport" is-config="true" duration-ms="157" started-at="2020-01-07T17:16:55Z" finished-at="2020-01-07T17:16:55Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="startReport" is-config="true" duration-ms="161" started-at="2020-01-07T17:31:44Z" finished-at="2020-01-07T17:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="BrowserIntialisation" is-config="true" duration-ms="12489" started-at="2020-01-07T17:16:55Z" finished-at="2020-01-07T17:17:07Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="BrowserIntialisation" is-config="true" duration-ms="13301" started-at="2020-01-07T17:31:44Z" finished-at="2020-01-07T17:31:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_Correct" duration-ms="1886" started-at="2020-01-07T17:17:07Z" finished-at="2020-01-07T17:17:09Z">
+        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_Correct" duration-ms="2298" started-at="2020-01-07T17:31:57Z" finished-at="2020-01-07T17:31:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page_Appear_Correct -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="3" started-at="2020-01-07T17:17:09Z" finished-at="2020-01-07T17:17:09Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-07T17:31:59Z" finished-at="2020-01-07T17:31:59Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="Insurance()[pri:1, instance:com.qa.pages.SampleTest@2286778]" name="Insurance" duration-ms="2035" started-at="2020-01-07T17:17:09Z" finished-at="2020-01-07T17:17:11Z">
+        <test-method status="PASS" signature="Insurance()[pri:1, instance:com.qa.pages.SampleTest@2286778]" name="Insurance" duration-ms="2329" started-at="2020-01-07T17:31:59Z" finished-at="2020-01-07T17:32:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-07T17:17:11Z" finished-at="2020-01-07T17:17:11Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-07T17:32:02Z" finished-at="2020-01-07T17:32:02Z">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="FAIL" signature="test_Home_Page_Appear_wrong()[pri:2, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_wrong" duration-ms="30053" started-at="2020-01-07T17:17:11Z" finished-at="2020-01-07T17:17:41Z">
+        <test-method status="FAIL" signature="test_Home_Page_Appear_wrong()[pri:2, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_wrong" duration-ms="30050" started-at="2020-01-07T17:32:02Z" finished-at="2020-01-07T17:32:32Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='http://demo.guru99.com/insurancedex.php']"}
@@ -57,7 +57,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LP-CNU3099WJB', ip: '10.117.189.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: 2c12a433911b5847bb6b379932fd723e
+Session ID: d39c91c1a51796c1626e72574dd77c5d
 *** Element info: {Using=xpath, value=//a[@href='http://demo.guru99.com/insurancedex.php']}]]>
             </message>
             <full-stacktrace>
@@ -70,7 +70,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LP-CNU3099WJB', ip: '10.117.189.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: 2c12a433911b5847bb6b379932fd723e
+Session ID: d39c91c1a51796c1626e72574dd77c5d
 *** Element info: {Using=xpath, value=//a[@href='http://demo.guru99.com/insurancedex.php']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -91,8 +91,8 @@ Session ID: 2c12a433911b5847bb6b379932fd723e
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.qa.pages.SampleTest.clickLink2(SampleTest.java:78)
-	at com.qa.pages.SampleTest.test_Home_Page_Appear_wrong(SampleTest.java:132)
+	at com.qa.pages.SampleTest.clickLink2(SampleTest.java:77)
+	at com.qa.pages.SampleTest.test_Home_Page_Appear_wrong(SampleTest.java:131)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,7 +124,7 @@ Session ID: 2c12a433911b5847bb6b379932fd723e
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page_Appear_wrong -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="626" started-at="2020-01-07T17:17:41Z" finished-at="2020-01-07T17:17:42Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="618" started-at="2020-01-07T17:32:32Z" finished-at="2020-01-07T17:32:32Z">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ Session ID: 2c12a433911b5847bb6b379932fd723e
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="tearDown" is-config="true" duration-ms="1754" started-at="2020-01-07T17:17:42Z" finished-at="2020-01-07T17:17:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="tearDown" is-config="true" duration-ms="1726" started-at="2020-01-07T17:32:32Z" finished-at="2020-01-07T17:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
