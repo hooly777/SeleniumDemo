@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -22,6 +23,33 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class Webgenericutility {
 	static WebDriver driver;
+	
+	/**
+	 * @author Silampur Girish
+	 * Method to clickOn element 
+	 * custom clickOn method: click on element on the basis of some
+	 * ExpectedConditions to avoid StaleElementReferenceException
+	 * @param element driver timeout 
+	 */
+	public static void clickOn(WebDriver driver, WebElement element, int timeout) {
+		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));
+		element.click();
+	}
+
+	/**
+	 * @author Silampur Girish
+	 * Method to sendKey Value
+	 * custom sendKeyValue method: enter value in element on the basis of some
+	 * ExpectedConditions to avoid StaleElementReferenceException
+	 * @param element driver timeout value	 
+	 */
+	public static void sendKeyValue(WebDriver driver, WebElement element, int timeout, String value) {
+		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));
+		element.sendKeys(value);
+
+	}	
 
 	/**
 	 * @author Silampur Girish
@@ -29,8 +57,10 @@ public class Webgenericutility {
 	 * @param element
 	 * @param text
 	 */
-	public static void selectDropdownByText(WebElement element, String text)
+	public static void selectDropdownByText(WebElement element, String text,int timeout)
 	{
+		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+		.until(ExpectedConditions.elementToBeClickable(element));
 		Select select = new Select(element);
 		select.selectByVisibleText(text);		
 	}
@@ -39,10 +69,12 @@ public class Webgenericutility {
 	 * @author Silampur Girish
 	 * Method to select dropdown by Value
 	 * @param element
-	 * @param text
+	 * @param text  timeout
 	 */
-	public static void selectDropdownByValue(WebElement element, String text)
+	public static void selectDropdownByValue(WebElement element, String text,int timeout)
 	{
+		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+		.until(ExpectedConditions.elementToBeClickable(element));
 		Select select = new Select(element);
 		select.selectByValue(text);
 	}
@@ -50,10 +82,12 @@ public class Webgenericutility {
 	 * @author Silampur Girish
 	 * Method to select dropdown by index
 	 * @param element
-	 * @param num
+	 * @param num timeout
 	 */
-	public static void selectDropdownByIndex(WebElement element, int  num)
+	public static void selectDropdownByIndex(WebElement element, int  num, int timeout)
 	{
+		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+		.until(ExpectedConditions.elementToBeClickable(element));
 		Select select = new Select(element);
 		select.selectByIndex(num);
 	}
@@ -64,8 +98,10 @@ public class Webgenericutility {
 	 * @param attribute
 	 * @return String
 	 */
-	public static String getAttributeValue(WebElement element, String attribute)
+	public static String getAttributeValue(WebElement element, String attribute,int timeout)
 	{
+		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+		.until(ExpectedConditions.elementToBeClickable(element));
 		return element.getAttribute(attribute);
 	}
 
@@ -75,8 +111,10 @@ public class Webgenericutility {
 	 * @param element	 
 	 * @return String
 	 */
-	public static String getSelectedText(WebElement element)
+	public static String getSelectedText(WebElement element,int timeout)
 	{
+		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+		.until(ExpectedConditions.elementToBeClickable(element));
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();
 	}
@@ -129,18 +167,7 @@ public class Webgenericutility {
 		return driver.getTitle();
 	}
 
-	/**
-	 * @author Uma Maheswari
-	 * Method to click an Element
-	 * @param element
-	 */
-
-	// Method to Click Element
-	public static  void ClickElement(WebElement element)
-	{
-		element.click();
-	}
-
+	
 	/**
 	 * @author Lakshmi
 	 * Method to get text of the element
@@ -152,16 +179,7 @@ public class Webgenericutility {
 		return element.getText();
 	}
 
-	/**
-	 * @author Uma Maheswari
-	 * Method to send text
-	 * @param element
-	 * @param Text
-	 */
-	public static void sendText(WebElement element, String Text)
-	{
-		element.sendKeys(Text);
-	}
+	
 	//
 		/**
 	 * @author Mohini Sethumadhavan
