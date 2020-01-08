@@ -120,7 +120,7 @@ public class SampleTest extends BaseTest {
 
 
 	}
-<<<<<<< HEAD
+
 	
 	
 @DataProvider(name="getrowdata")
@@ -154,7 +154,7 @@ public  void LoginwithParticularusecase() throws IOException
 	driver.switchTo().alert().accept();
 
 }
-=======
+
 	@Test(priority=1)
 
 	public void Insurance(){
@@ -164,7 +164,7 @@ public  void LoginwithParticularusecase() throws IOException
 		objLogin2.clickLink();
 
 	}
->>>>>>> a9772d234b7afb9055a0fa50cbb8fc0baf130343
+
 
 	@Test(priority=2)
 
