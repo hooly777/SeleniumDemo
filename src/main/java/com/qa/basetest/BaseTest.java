@@ -7,7 +7,7 @@
  					Tear Down
  
  Creation Date : 07/01/2020
- @Version 2.0
+ @Version 2.1
  @author Sumana and Team
 */
 
@@ -114,7 +114,7 @@ public class BaseTest {
 		if(ITestResult.FAILURE==result.getStatus()){
 			try {
 
-				test.log(LogStatus.FAIL, test.addScreenCapture(capture(driver, result)) +"Test Failed");
+				test.log(LogStatus.FAIL, test.addScreenCapture(capture(driver, result)) +result.getName()+" - Test Failed");
 
 			}
 			catch (Exception e){	
@@ -123,7 +123,7 @@ public class BaseTest {
 		}
 		else if(result.getStatus() == ITestResult.SUCCESS) {
 
-			test.log(LogStatus.PASS, "Test Passed");
+			test.log(LogStatus.PASS, result.getName()+" - Test Passed");
 		}
 	}
 

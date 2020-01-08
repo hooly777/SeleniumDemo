@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50524" started-at="2020-01-07T12:01:44Z" finished-at="2020-01-07T12:02:34Z">
+  <suite name="Default suite" duration-ms="49752" started-at="2020-01-08T06:02:31Z" finished-at="2020-01-08T06:03:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50524" started-at="2020-01-07T12:01:44Z" finished-at="2020-01-07T12:02:34Z">
+    <test name="Default test" duration-ms="49752" started-at="2020-01-08T06:02:31Z" finished-at="2020-01-08T06:03:21Z">
       <class name="com.qa.pages.SampleTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="startReport" is-config="true" duration-ms="161" started-at="2020-01-07T17:31:44Z" finished-at="2020-01-07T17:31:44Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="startReport" is-config="true" duration-ms="153" started-at="2020-01-08T11:32:31Z" finished-at="2020-01-08T11:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="BrowserIntialisation" is-config="true" duration-ms="13301" started-at="2020-01-07T17:31:44Z" finished-at="2020-01-07T17:31:57Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="BrowserIntialisation" is-config="true" duration-ms="12760" started-at="2020-01-08T11:32:31Z" finished-at="2020-01-08T11:32:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_Correct" duration-ms="2298" started-at="2020-01-07T17:31:57Z" finished-at="2020-01-07T17:31:59Z">
+        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_Correct" duration-ms="1914" started-at="2020-01-08T11:32:44Z" finished-at="2020-01-08T11:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page_Appear_Correct -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-07T17:31:59Z" finished-at="2020-01-07T17:31:59Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-08T11:32:46Z" finished-at="2020-01-08T11:32:46Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="Insurance()[pri:1, instance:com.qa.pages.SampleTest@2286778]" name="Insurance" duration-ms="2329" started-at="2020-01-07T17:31:59Z" finished-at="2020-01-07T17:32:02Z">
+        <test-method status="PASS" signature="Insurance()[pri:1, instance:com.qa.pages.SampleTest@2286778]" name="Insurance" duration-ms="2545" started-at="2020-01-08T11:32:46Z" finished-at="2020-01-08T11:32:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-07T17:32:02Z" finished-at="2020-01-07T17:32:02Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-08T11:32:49Z" finished-at="2020-01-08T11:32:49Z">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="FAIL" signature="test_Home_Page_Appear_wrong()[pri:2, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_wrong" duration-ms="30050" started-at="2020-01-07T17:32:02Z" finished-at="2020-01-07T17:32:32Z">
+        <test-method status="FAIL" signature="test_Home_Page_Appear_wrong()[pri:2, instance:com.qa.pages.SampleTest@2286778]" name="test_Home_Page_Appear_wrong" duration-ms="30019" started-at="2020-01-08T11:32:49Z" finished-at="2020-01-08T11:33:19Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='http://demo.guru99.com/insurancedex.php']"}
@@ -57,7 +57,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LP-CNU3099WJB', ip: '10.117.189.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: d39c91c1a51796c1626e72574dd77c5d
+Session ID: f34b666c5bb159f4cb9ecabd6c681dd7
 *** Element info: {Using=xpath, value=//a[@href='http://demo.guru99.com/insurancedex.php']}]]>
             </message>
             <full-stacktrace>
@@ -70,7 +70,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LP-CNU3099WJB', ip: '10.117.189.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: d39c91c1a51796c1626e72574dd77c5d
+Session ID: f34b666c5bb159f4cb9ecabd6c681dd7
 *** Element info: {Using=xpath, value=//a[@href='http://demo.guru99.com/insurancedex.php']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -124,7 +124,7 @@ Session ID: d39c91c1a51796c1626e72574dd77c5d
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page_Appear_wrong -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="618" started-at="2020-01-07T17:32:32Z" finished-at="2020-01-07T17:32:32Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="takeScreenShot" is-config="true" duration-ms="631" started-at="2020-01-08T11:33:19Z" finished-at="2020-01-08T11:33:19Z">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ Session ID: d39c91c1a51796c1626e72574dd77c5d
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="tearDown" is-config="true" duration-ms="1726" started-at="2020-01-07T17:32:32Z" finished-at="2020-01-07T17:32:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.SampleTest@2286778]" name="tearDown" is-config="true" duration-ms="1710" started-at="2020-01-08T11:33:19Z" finished-at="2020-01-08T11:33:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
