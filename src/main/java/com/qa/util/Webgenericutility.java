@@ -31,10 +31,16 @@ public class Webgenericutility {
 	 * ExpectedConditions to avoid StaleElementReferenceException
 	 * @param element driver timeout 
 	 */
-	public static void clickOn(WebDriver driver, WebElement element, int timeout) {
-		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+	public static void clickOn(WebDriver driver, WebElement element, int timeout) {		
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(element));
-		element.click();
+			element.click();
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while cliking the webelement : " + element);
+			System.out.println(e.getMessage());
+
+		}
 	}
 
 	/**
@@ -45,10 +51,15 @@ public class Webgenericutility {
 	 * @param element driver timeout value	 
 	 */
 	public static void sendKeyValue(WebDriver driver, WebElement element, int timeout, String value) {
-		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(element));
-		element.sendKeys(value);
-
+			element.clear();
+			element.sendKeys(value);
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while sending the text to the webelement : " + element);
+			System.out.println(e.getMessage());
+		} 
 	}	
 
 	/**
