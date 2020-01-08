@@ -78,7 +78,7 @@ public class Webgenericutility extends BaseTest {
 			Select select = new Select(element);
 			select.selectByVisibleText(text);			
 		} catch (Exception e) {
-			System.out.println("some exception got occurred while selecting  the dropdown text : " + element);
+			System.out.println("some exception got occurred while selecting  the dropdown  by text : " + element);
 			System.out.println(e.getMessage());
 		}
 		
@@ -93,10 +93,17 @@ public class Webgenericutility extends BaseTest {
 	 */
 	public static void selectDropdownByValue(WebElement element, String text,int timeout)
 	{
-		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-		.until(ExpectedConditions.elementToBeClickable(element));
-		Select select = new Select(element);
-		select.selectByValue(text);
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByValue(text);			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while selecting  the dropdown by value : " + element);
+			System.out.println(e.getMessage());
+		}
+		
 	}
 	/**
 	 * @author Silampur Girish
@@ -106,10 +113,18 @@ public class Webgenericutility extends BaseTest {
 	 */
 	public static void selectDropdownByIndex(WebElement element, int  num, int timeout)
 	{
-		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-		.until(ExpectedConditions.elementToBeClickable(element));
-		Select select = new Select(element);
-		select.selectByIndex(num);
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByIndex(num);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while selecting  the dropdown by index : " + element);
+			System.out.println(e.getMessage());
+		}
+		
 	}
 	/**
 	 * @author Silampur Girish
@@ -120,9 +135,15 @@ public class Webgenericutility extends BaseTest {
 	 */
 	public static String getAttributeValue(WebElement element, String attribute,int timeout)
 	{
-		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-		.until(ExpectedConditions.elementToBeClickable(element));
-		return element.getAttribute(attribute);
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));					
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while selecting  the dropdown by index : " + element);
+			System.out.println(e.getMessage());
+		}
+		return element.getAttribute(attribute);			
 	}
 
 	/**
@@ -133,10 +154,35 @@ public class Webgenericutility extends BaseTest {
 	 */
 	public static String getSelectedText(WebElement element,int timeout)
 	{
-		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-		.until(ExpectedConditions.elementToBeClickable(element));
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element)); 			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while geting the  SelectedText : " + element);
+			System.out.println(e.getMessage());			
+		}
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();
+	}
+	
+	/**
+	 * @author Silampur Girish
+	 * Method to get text of the element
+	 * @param element
+	 */
+
+	public static String getText(WebElement element,int timeout)
+	{
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));			
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while geting the text of webelement : " + element);
+			System.out.println(e.getMessage());
+		}
+
+		return element.getText();
 	}
 	/**
 	 * @author Uma Maheswari
@@ -188,16 +234,7 @@ public class Webgenericutility extends BaseTest {
 	}
 
 	
-	/**
-	 * @author Lakshmi
-	 * Method to get text of the element
-	 * @param element
-	 */
-
-	public static String getText(WebElement element)
-	{
-		return element.getText();
-	}
+	
 
 	
 	//
