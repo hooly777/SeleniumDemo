@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.basetest.test1">
+      <class name="com.qa.pages.SampleTest">
         <methods>
-          <include name="applyProps"/>
+          <include name="test_Home_Page_Appear_wrong"/>
+          <include name="startReport"/>
+          <include name="BrowserIntialisation"/>
+          <include name="takeScreenShot"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.basetest.test1 -->
+      </class> <!-- com.qa.pages.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
