@@ -1,11 +1,15 @@
 package com.qa.util;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -362,6 +366,80 @@ public class Webgenericutility {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("scroll(0, 750);");
 	}
+	/**
+	 * @author Sharoonroja G 
+	 * Scroll to a particular element
+	 * @param 
+	 * @return
+	 */
+	public static void scrolltoElement(WebElement element) throws Exception {
 
+		int x = element.getLocation().getX();
+		int y = element.getLocation().getY();
 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(" + x + "," + y + ")");
+		Thread.sleep(2000);
+	}
+	/**
+	 * @author Sharoonroja G 
+	 * Scroll to a particular element
+	 * @param 
+	 * @return
+	 */
+	public static void listOfElements(String xpath) {
+		List<WebElement> list = driver.findElements(By.xpath(xpath));
+
+		List<String> arrayOptions = new ArrayList<String>();
+
+		for (WebElement option : list) {
+			arrayOptions.add(option.getText());
+		}
+		int listsize = arrayOptions.size();
+		System.out.println("count of sections:-" + listsize);
+		for (int i = 0; i < listsize; i++) {
+
+			String text = arrayOptions.get(i);
+			System.out.println(text);
+		}
+
+	}
+	/**
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
+	 * @return
+	 */
+	public String getBrowserInfo() {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		String uAgent = js.executeScript("return navigator.userAgent;").toString();
+		return uAgent;
+	}
+	/**
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
+	 * @return
+	 */
+	
+	@SuppressWarnings("unused")
+	private void changeColor(String color, WebElement element) {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].style.backgroundColor = '" + color + "'", element);
+
+		try {
+			Thread.sleep(20);
+		} catch (InterruptedException e) {
+		}
+	}
+	/**
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
+	 * @return
+	 */
+	public void dragAndDrop(WebElement from,WebElement to){
+		Actions act = new Actions(driver);
+		act.dragAndDrop(from, to).build().perform();
+	}
 }

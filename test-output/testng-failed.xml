@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-<<<<<<< HEAD
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.pages.test1">
+      <class name="com.qa.pages.SampleTest">
         <methods>
+          <include name="test_Home_Page_Appear_wrong"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
+          <include name="takeScreenShot"/>
           <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="test_Home_Page_Appear_Correct"/>
         </methods>
-      </class> <!-- com.qa.pages.test1 -->
-=======
-  <test thread-count="5" name="Default test(failed)">
-    <classes>
-      <class name="com.qa.basetest.test1">
-        <methods>
-          <include name="applyProps"/>
-        </methods>
-      </class> <!-- com.qa.basetest.test1 -->
->>>>>>> c6991e2261ad99ca4af7905db26a51ef333e8440
+      </class> <!-- com.qa.pages.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
