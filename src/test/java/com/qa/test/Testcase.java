@@ -1,5 +1,12 @@
 package com.qa.test;
 
-public class Testcase {
+import org.testng.annotations.Test;
 
+import com.qa.util.Webgenericutility;
+
+public class Testcase {
+@Test()
+public void saple() {
+ 
+}
 }
