@@ -30,7 +30,14 @@ public class SampleTest extends BaseTest {
 
 	WebElement login;
 
+	@FindBy(xpath="//a[@href='http://demo.guru99.com/insurance/v1/index.php']")
 
+	WebElement clicklink;
+
+	@FindBy(xpath="//a[@href='http://demo.guru99.com/insurancedex.php']")
+
+	WebElement clicklink2;
+	
 	public SampleTest(){
 
 
@@ -64,6 +71,18 @@ public class SampleTest extends BaseTest {
 
 	}  
 
+	public void clickLink(){
+
+		clicklink.click();
+
+	}
+
+	public void clickLink2(){
+
+		clicklink2.click();
+
+	}
+
 	public void loginToGuru99(String strUserName,String strPasword){
 
 		//Fill user name
@@ -79,6 +98,9 @@ public class SampleTest extends BaseTest {
 		this.clickLogin();           
 
 	}
+	
+	
+	
 
 	@Test(priority = 0,dataProvider="RowXLSX")
 
@@ -98,6 +120,7 @@ public class SampleTest extends BaseTest {
 
 
 	}
+<<<<<<< HEAD
 	
 	
 @DataProvider(name="getrowdata")
@@ -131,5 +154,26 @@ public  void LoginwithParticularusecase() throws IOException
 	driver.switchTo().alert().accept();
 
 }
+=======
+	@Test(priority=1)
 
+	public void Insurance(){
+
+		SampleTest objLogin2;
+		objLogin2 = new SampleTest();
+		objLogin2.clickLink();
+
+	}
+>>>>>>> a9772d234b7afb9055a0fa50cbb8fc0baf130343
+
+	@Test(priority=2)
+
+	public void test_Home_Page_Appear_wrong(){
+
+		SampleTest objLogin2;
+		objLogin2 = new SampleTest();
+
+		objLogin2.clickLink2();
+
+	}
 }
