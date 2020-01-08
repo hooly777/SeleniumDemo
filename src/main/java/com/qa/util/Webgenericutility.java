@@ -16,12 +16,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.basetest.BaseTest;
+
 /**
  * @author Silampur Girish 
  * @date   06-01-2020
  * @version 1.o
  */
-public class Webgenericutility {
+public class Webgenericutility extends BaseTest {
 	static WebDriver driver;
 	
 	/**
@@ -70,10 +72,17 @@ public class Webgenericutility {
 	 */
 	public static void selectDropdownByText(WebElement element, String text,int timeout)
 	{
-		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-		.until(ExpectedConditions.elementToBeClickable(element));
-		Select select = new Select(element);
-		select.selectByVisibleText(text);		
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByVisibleText(text);			
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while selecting  the dropdown text : " + element);
+			System.out.println(e.getMessage());
+		}
+		
+			
 	}
 
 	/**
