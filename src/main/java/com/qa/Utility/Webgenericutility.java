@@ -1,4 +1,4 @@
-package com.qa.util;
+package com.qa.Utility;
 
 import java.util.ArrayList;
 import java.util.List;
