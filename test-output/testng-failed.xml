@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<<<<<<< HEAD
+  <test thread-count="5" name="Default test(failed)">
+=======
   <test name="Default test(failed)">
+>>>>>>> a9772d234b7afb9055a0fa50cbb8fc0baf130343
     <classes>
       <class name="com.qa.pages.SampleTest">
         <methods>
@@ -10,6 +14,11 @@
           <include name="BrowserIntialisation"/>
           <include name="takeScreenShot"/>
           <include name="tearDown"/>
+<<<<<<< HEAD
+          <include name="tearDown"/>
+          <include name="test_Home_Page_Appear_Correct"/>
+=======
+>>>>>>> a9772d234b7afb9055a0fa50cbb8fc0baf130343
         </methods>
       </class> <!-- com.qa.pages.SampleTest -->
     </classes>

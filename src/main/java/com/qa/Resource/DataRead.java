@@ -33,6 +33,19 @@ public class DataRead {
 	return testObjArray;
 
 	}	
+	@DataProvider(name = "RowXLSX")
+    public Object[][] ReadRow() throws Exception{
+   	 
+   	 String absolutepath=System.getProperty("user.dir");
+   		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
+   		String sheetname="WriteExcelDemo";
+
+   		ReadExcel excel = new ReadExcel();
+	Object[][] testObjArray = excel.getExcelData(fileName,sheetname);
+	System.out.println(testObjArray);
+	return testObjArray;
+
+	}	
 
 
 

@@ -1,4 +1,4 @@
-package com.qa.util;
+package com.qa.Utility;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,13 +16,53 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.basetest.BaseTest;
+
 /**
  * @author Silampur Girish 
  * @date   06-01-2020
  * @version 1.o
  */
-public class Webgenericutility {
+public class Webgenericutility extends BaseTest {
 	static WebDriver driver;
+	
+	/**
+	 * @author Silampur Girish
+	 * Method to clickOn element 
+	 * custom clickOn method: click on element on the basis of some
+	 * ExpectedConditions to avoid StaleElementReferenceException
+	 * @param element driver timeout 
+	 */
+	public static void clickOn(WebDriver driver, WebElement element, int timeout) {		
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));
+			element.click();
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while cliking the webelement : " + element);
+			System.out.println(e.getMessage());
+
+		}
+	}
+
+	/**
+	 * @author Silampur Girish
+	 * Method to sendKey Value
+	 * custom sendKeyValue method: enter value in element on the basis of some
+	 * ExpectedConditions to avoid StaleElementReferenceException
+	 * @param element driver timeout value	 
+	 */
+	public static void sendKeyValue(WebDriver driver, WebElement element, int timeout, String value) {
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));
+			element.clear();
+			element.sendKeys(value);
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while sending the text to the webelement : " + element);
+			System.out.println(e.getMessage());
+		} 
+	}	
 
 	/**
 	 * @author Silampur Girish
@@ -29,33 +70,61 @@ public class Webgenericutility {
 	 * @param element
 	 * @param text
 	 */
-	public static void selectDropdownByText(WebElement element, String text)
+	public static void selectDropdownByText(WebElement element, String text,int timeout)
 	{
-		Select select = new Select(element);
-		select.selectByVisibleText(text);		
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByVisibleText(text);			
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while selecting  the dropdown  by text : " + element);
+			System.out.println(e.getMessage());
+		}
+		
+			
 	}
 
 	/**
 	 * @author Silampur Girish
 	 * Method to select dropdown by Value
 	 * @param element
-	 * @param text
+	 * @param text  timeout
 	 */
-	public static void selectDropdownByValue(WebElement element, String text)
+	public static void selectDropdownByValue(WebElement element, String text,int timeout)
 	{
-		Select select = new Select(element);
-		select.selectByValue(text);
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByValue(text);			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while selecting  the dropdown by value : " + element);
+			System.out.println(e.getMessage());
+		}
+		
 	}
 	/**
 	 * @author Silampur Girish
 	 * Method to select dropdown by index
 	 * @param element
-	 * @param num
+	 * @param num timeout
 	 */
-	public static void selectDropdownByIndex(WebElement element, int  num)
+	public static void selectDropdownByIndex(WebElement element, int  num, int timeout)
 	{
-		Select select = new Select(element);
-		select.selectByIndex(num);
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByIndex(num);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while selecting  the dropdown by index : " + element);
+			System.out.println(e.getMessage());
+		}
+		
 	}
 	/**
 	 * @author Silampur Girish
@@ -64,9 +133,17 @@ public class Webgenericutility {
 	 * @param attribute
 	 * @return String
 	 */
-	public static String getAttributeValue(WebElement element, String attribute)
+	public static String getAttributeValue(WebElement element, String attribute,int timeout)
 	{
-		return element.getAttribute(attribute);
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element));					
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while selecting  the dropdown by index : " + element);
+			System.out.println(e.getMessage());
+		}
+		return element.getAttribute(attribute);			
 	}
 
 	/**
@@ -75,10 +152,37 @@ public class Webgenericutility {
 	 * @param element	 
 	 * @return String
 	 */
-	public static String getSelectedText(WebElement element)
+	public static String getSelectedText(WebElement element,int timeout)
 	{
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+			.until(ExpectedConditions.elementToBeClickable(element)); 			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("some exception got occurred while geting the  SelectedText : " + element);
+			System.out.println(e.getMessage());			
+		}
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();
+	}
+	
+	/**
+	 * @author Silampur Girish
+	 * Method to get text of the element
+	 * @param element
+	 */
+
+	public static String getText(WebElement element,int timeout)
+	{
+		try {
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));			
+		} catch (Exception e) {
+			System.out.println("some exception got occurred while geting the text of webelement : " + element);
+			System.out.println(e.getMessage());
+		}
+
+		return element.getText();
 	}
 	/**
 	 * @author Uma Maheswari
@@ -129,39 +233,10 @@ public class Webgenericutility {
 		return driver.getTitle();
 	}
 
-	/**
-	 * @author Uma Maheswari
-	 * Method to click an Element
-	 * @param element
-	 */
+	
+	
 
-	// Method to Click Element
-	public static  void ClickElement(WebElement element)
-	{
-		element.click();
-	}
-
-	/**
-	 * @author Lakshmi
-	 * Method to get text of the element
-	 * @param element
-	 */
-
-	public static String getText(WebElement element)
-	{
-		return element.getText();
-	}
-
-	/**
-	 * @author Uma Maheswari
-	 * Method to send text
-	 * @param element
-	 * @param Text
-	 */
-	public static void sendText(WebElement element, String Text)
-	{
-		element.sendKeys(Text);
-	}
+	
 	//
 		/**
 	 * @author Mohini Sethumadhavan

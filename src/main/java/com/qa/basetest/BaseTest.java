@@ -29,8 +29,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 
-import com.qa.util.PropertyLoader;
+import com.qa.Resource.DataRead;
+import com.qa.Resource.ReadExcel;
+import com.qa.Utility.PropertyLoader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -144,6 +147,35 @@ public class BaseTest {
 		test = report.startTest("Extent Report");
 		report.addSystemInfo("OS", "Windows10");
 	}
+
+	@DataProvider(name = "LoginDataXLS")
+	public Object[][] ReadExcelXLS() throws Exception{
+		
+		String absolutepath=System.getProperty("user.dir");
+		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
+		String sheetname="WriteExcelDemo";
+
+	ReadExcel excel = new ReadExcel();
+	Object[][] testObjArray = excel.getExcelData(fileName,sheetname);
+	System.out.println(testObjArray);
+	return testObjArray;
+
+	}
+	
+	@DataProvider(name = "LoginDataXLSX")
+    public Object[][] ReadExcelXLSX() throws Exception{
+   	 
+   	 String absolutepath=System.getProperty("user.dir");
+   		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
+   		String sheetname="WriteExcelDemo";
+
+   		ReadExcel excel = new ReadExcel();
+	Object[][] testObjArray = excel.getExcelData(fileName,sheetname);
+	System.out.println(testObjArray);
+	return testObjArray;
+
+	}	
+
 
 
 }

@@ -3,7 +3,7 @@ package com.qa.basetest;
 
 
 
-import com.qa.util.*;
+import com.qa.Utility.*;
 
 
 
