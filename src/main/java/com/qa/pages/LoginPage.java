@@ -14,7 +14,7 @@ import Trash.ReadExcel;
 
 import org.apache.log4j.Logger;
 
-public class SampleTest extends BaseTest {	
+public class LoginPage extends BaseTest {	
 
 	Logger log = Logger.getLogger("devpinoyLogger");
 	
@@ -39,7 +39,7 @@ public class SampleTest extends BaseTest {
 
 	WebElement clicklink2;
 	
-	public SampleTest(){
+	public LoginPage(){
 
 		//This initElements method will create all WebElements
 

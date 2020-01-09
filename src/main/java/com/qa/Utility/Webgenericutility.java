@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -321,10 +320,6 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 8aa8720e6ee37ef8f94ffb1c79d1e48b8c5cc512
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected

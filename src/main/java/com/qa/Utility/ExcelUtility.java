@@ -317,7 +317,6 @@ public class ExcelUtility {
 
 ///////////////////////////
 	/**
-	 * @author Silampur Girish 
 	 * Date 09-01-2020
 	 * WriteExcel class file merged with ExcellUtility
 	*/

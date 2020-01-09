@@ -3,7 +3,7 @@
 <suite name="TestDemoSuite">
   <test name="Test001">
     <classes>
-      <class name="com.qa.pages.SampleTest"/>
+      <class name="com.qa.test.TestCase001"/>
     </classes>
   </test> <!-- Test001 -->
 </suite> <!-- TestDemoSuite -->

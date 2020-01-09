@@ -11,9 +11,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.Utility.ExcellUtility;
 import com.qa.Utility.Webgenericutility;
 import com.qa.basetest.BaseTest;
+
+import Trash.ExcellUtility;
 
 public class AlliantcreditunionHomePage extends BaseTest {
 	Webgenericutility webTestUtil= new Webgenericutility();

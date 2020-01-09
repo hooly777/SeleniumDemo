@@ -16,7 +16,6 @@ package com.qa.basetest;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -32,16 +31,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-
 import com.qa.Utility.ExcelUtility;
 import com.qa.Utility.PropertyLoader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-import Trash.DataRead;
-import Trash.ReadExcel;
-import junit.framework.Assert;
 
 public class BaseTest {
 
@@ -92,11 +86,8 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-<<<<<<< HEAD
-			Assert.assertFalse("Browser Not Found", true);
-=======
+			//Assert.assertFalse("Browser Not Found", true);
 			Assert.assertFalse(true, "Browser Not Found");
->>>>>>> 8aa8720e6ee37ef8f94ffb1c79d1e48b8c5cc512
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
