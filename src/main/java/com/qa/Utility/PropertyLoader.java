@@ -1,4 +1,4 @@
-package com.qa.util;
+package com.qa.Utility;
 
 import java.io.FileReader;
 import java.util.Properties;

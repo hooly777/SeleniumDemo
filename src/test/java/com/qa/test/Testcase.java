@@ -4,11 +4,10 @@ package com.qa.test;
 import java.io.IOException;
 import java.util.ArrayList;
 import org.testng.annotations.Test;
-
-import com.qa.util.Webgenericutility;
 import org.testng.annotations.Test;
 
 import com.qa.Resource.ReadExcel;
+import com.qa.Utility.Webgenericutility;
 
 public class Testcase {
 	

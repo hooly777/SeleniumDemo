@@ -1,4 +1,4 @@
-package com.qa.util;
+package com.qa.Utility;
 
 public class test1 {
 

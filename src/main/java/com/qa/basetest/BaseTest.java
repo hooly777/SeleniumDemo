@@ -34,7 +34,7 @@ import org.testng.annotations.DataProvider;
 
 import com.qa.Resource.DataRead;
 import com.qa.Resource.ReadExcel;
-import com.qa.util.PropertyLoader;
+import com.qa.Utility.PropertyLoader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
