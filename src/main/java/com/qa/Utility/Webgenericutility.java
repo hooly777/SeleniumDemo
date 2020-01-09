@@ -35,8 +35,9 @@ public class Webgenericutility extends BaseTest {
 	 */
 	public static void clickOn(WebDriver driver, WebElement element, int timeout) {		
 		try {
-			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-				.until(ExpectedConditions.elementToBeClickable(element));
+			/*new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));*/
+			waitExpectedConditions(element,timeout);
 			element.click();
 		} catch (Exception e) {
 			System.out.println("some exception got occurred while cliking the webelement : " + element);
@@ -232,10 +233,6 @@ public class Webgenericutility extends BaseTest {
 	{
 		return driver.getTitle();
 	}
-
-	
-	
-
 	
 	//
 		/**
@@ -326,7 +323,7 @@ public class Webgenericutility extends BaseTest {
 	 * @param WebElement 
 	 * @param waitExpectedException
 	 */
-	public WebElement waitExpectedConditions(WebElement waitExpectedException, int seconds)
+	public static WebElement waitExpectedConditions(WebElement waitExpectedException, int seconds)
 	{
 		WebDriverWait wait=new WebDriverWait(driver,seconds);
 
@@ -381,9 +378,9 @@ public class Webgenericutility extends BaseTest {
 	 * @param 
 	 */
 
-	public WebElement switchToParentWindow() {
+	public void switchToParentWindow() {
 		driver.switchTo().defaultContent();
-		return null;
+		
 	}
 	/**
 	 * @author Mohini Sethumadhavan
@@ -422,7 +419,7 @@ public class Webgenericutility extends BaseTest {
 	{
 		boolean present;
 		try {
-		   element.clear();			
+		   element.isDisplayed();
 		   present = true;
 		} catch (NoSuchElementException e) {
 		   present = false;

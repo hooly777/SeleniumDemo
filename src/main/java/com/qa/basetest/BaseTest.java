@@ -39,8 +39,6 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
-
 public class BaseTest {
 
 	public static WebDriver driver;
@@ -53,9 +51,6 @@ public class BaseTest {
 	ExtentTest test;
 	static ExtentReports report;
 	ITestResult result;
-
-	
-
 
 	@BeforeClass
 	// This method is used to launch browser
@@ -137,8 +132,6 @@ public class BaseTest {
 		String errflpath = Dest.getAbsolutePath();
 		FileUtils.copyFile(scrFile, Dest);
 		return errflpath;
-
-
 	}			
 
 	// This method will generate extent report
