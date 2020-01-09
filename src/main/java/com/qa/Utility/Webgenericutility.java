@@ -24,7 +24,7 @@ import com.qa.basetest.BaseTest;
  * @version 1.o
  */
 public class Webgenericutility extends BaseTest {
-	static WebDriver driver;
+	//static WebDriver driver;
 	
 	/**
 	 * @author Silampur Girish
@@ -321,6 +321,10 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8aa8720e6ee37ef8f94ffb1c79d1e48b8c5cc512
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected

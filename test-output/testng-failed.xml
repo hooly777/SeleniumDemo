@@ -3,15 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.Testcase">
+      <class name="SilapurGirish51750336.AlliantcreditunionHomePageTest">
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="Validating_Alliant_BankSections"/>
+>>>>>>> 8aa8720e6ee37ef8f94ffb1c79d1e48b8c5cc512
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
           <include name="takeScreenShot"/>
           <include name="tearDown"/>
+<<<<<<< HEAD
           <include name="LoginDemoGuru"/>
+=======
+>>>>>>> 8aa8720e6ee37ef8f94ffb1c79d1e48b8c5cc512
         </methods>
-      </class> <!-- com.qa.test.Testcase -->
+      </class> <!-- SilapurGirish51750336.AlliantcreditunionHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
