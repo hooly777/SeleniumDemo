@@ -34,7 +34,7 @@ public class AlliantcreditunionHomePage extends BaseTest {
 	
 	
 	public String getHomePageTitle() {		
-		return driver.getTitle();
+		return driver.getTitle();		
 	}
 	
 	

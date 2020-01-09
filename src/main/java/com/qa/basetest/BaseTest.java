@@ -41,7 +41,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Trash.DataRead;
 import Trash.ReadExcel;
-import junit.framework.Assert;
+
 
 public class BaseTest {
 
@@ -92,11 +92,11 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-<<<<<<< HEAD
-			Assert.assertFalse("Browser Not Found", true);
-=======
+
+			
+
 			Assert.assertFalse(true, "Browser Not Found");
->>>>>>> 8aa8720e6ee37ef8f94ffb1c79d1e48b8c5cc512
+
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
