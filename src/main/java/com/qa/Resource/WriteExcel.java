@@ -16,7 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class WriteExcel {
 	
-	public boolean writeExcel1(String excelfilePath, String WfileName, String sheetName, String[] dataToWrite)
+	public static boolean writeExcel1(String excelfilePath, String WfileName, String sheetName, String[] dataToWrite)
 			throws IOException {
 
 		boolean isWriteSucess;

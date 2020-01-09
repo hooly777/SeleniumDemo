@@ -28,7 +28,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  */
 
 public class ExcellUtility {
-
+ String Fpath = System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell";
 	/**
 	 * @author Silampur Girish 
 	 * Method to writeExcel 
@@ -38,8 +38,8 @@ public class ExcellUtility {
 	 *  example [List<String> supplierNames = Arrays.asList("Girish","Shilpa","Cherry");]
 	 */
 	public void writeExcel(String fileName,String sheetName,List<String> Writedta) throws IOException{
-		String filePath = (System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell");
-		File file =    new File(filePath+"\\"+fileName);		
+		
+		File file =    new File(Fpath+"\\"+fileName);		
 		FileInputStream inputStream = new FileInputStream(file);
 		Workbook TestdataWorkbook = null;		
 		String fileExtensionName = fileName.substring(fileName.indexOf("."));		
@@ -89,14 +89,14 @@ public class ExcellUtility {
 	
 	public void setExcelData(String fileName,String sheetName,int rowNum,int colNum,String data) throws InvalidFormatException, IOException{
 
-		 FileInputStream inp = new FileInputStream(System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell"+"\\"+fileName);
+		 FileInputStream inp = new FileInputStream(Fpath+"\\"+fileName);
 		 Workbook wb = WorkbookFactory.create(inp); 
 		 Sheet sheet = wb.getSheet(sheetName); 
 		//int lastRow = sheet.getLastRowNum();
 		 Row row = sheet.createRow(rowNum);		 
 		row.createCell(colNum).setCellValue(data);			 
 		// Now this Write the output to a file 
-		FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell"+"\\"+fileName);
+		FileOutputStream fos = new FileOutputStream(Fpath+"\\"+fileName);
 		wb.write(fos); 
 		fos.close();  
 	}

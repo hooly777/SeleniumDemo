@@ -24,7 +24,7 @@ import com.qa.basetest.BaseTest;
  * @version 1.o
  */
 public class Webgenericutility extends BaseTest {
-	static WebDriver driver;
+	//static WebDriver driver;
 	
 	/**
 	 * @author Silampur Girish
@@ -321,7 +321,7 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
+
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected
@@ -334,8 +334,8 @@ public class Webgenericutility extends BaseTest {
 
 		wait.until(ExpectedConditions.elementToBeSelected(waitExpectedException));
 		return waitExpectedException;
-=======
->>>>>>> fe50405d5b6dfd300376fa8a2fc09e87fc942083
+	}
+
 
 	/**
 	 * @author Mohini Sethumadhavan
@@ -429,7 +429,7 @@ public class Webgenericutility extends BaseTest {
 	public static void scrollpage()
 	{
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("scroll(0, 750);");
+		jse.executeScript("window.scrollBy(0, 500)");
 	}
 	/**
 	 * @author Sharoonroja G 
@@ -441,9 +441,9 @@ public class Webgenericutility extends BaseTest {
 
 		int x = element.getLocation().getX();
 		int y = element.getLocation().getY();
-
+System.out.println(x+"and"+y);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(" + x + "," + y + ")");
+		js.executeScript("window.scrollBy("+x+","+y+")");
 		Thread.sleep(2000);
 	}
 	/**
