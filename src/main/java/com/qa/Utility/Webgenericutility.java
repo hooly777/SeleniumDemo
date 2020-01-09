@@ -19,24 +19,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.qa.basetest.BaseTest;
 
 /**
- * @author Silampur Girish
- * @date 06-01-2020
+ * @author Silampur Girish 
+ * @date   06-01-2020
  * @version 1.o
  */
 public class Webgenericutility extends BaseTest {
 	static WebDriver driver;
-
+	
 	/**
-	 * @author Silampur Girish Method to clickOn element custom clickOn method:
-	 *         click on element on the basis of some ExpectedConditions to avoid
-	 *         StaleElementReferenceException
-	 * @param element
-	 *            driver timeout
+	 * @author Silampur Girish
+	 * Method to clickOn element 
+	 * custom clickOn method: click on element on the basis of some
+	 * ExpectedConditions to avoid StaleElementReferenceException
+	 * @param element driver timeout 
 	 */
-	public static void clickOn(WebDriver driver, WebElement element, int timeout) {
+	public static void clickOn(WebDriver driver, WebElement element, int timeout) {		
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+				.until(ExpectedConditions.elementToBeClickable(element));
 			element.click();
 		} catch (Exception e) {
 			System.out.println("some exception got occurred while cliking the webelement : " + element);
@@ -46,128 +46,137 @@ public class Webgenericutility extends BaseTest {
 	}
 
 	/**
-	 * @author Silampur Girish Method to sendKey Value custom sendKeyValue
-	 *         method: enter value in element on the basis of some
-	 *         ExpectedConditions to avoid StaleElementReferenceException
-	 * @param element
-	 *            driver timeout value
+	 * @author Silampur Girish
+	 * Method to sendKey Value
+	 * custom sendKeyValue method: enter value in element on the basis of some
+	 * ExpectedConditions to avoid StaleElementReferenceException
+	 * @param element driver timeout value	 
 	 */
 	public static void sendKeyValue(WebDriver driver, WebElement element, int timeout, String value) {
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+				.until(ExpectedConditions.elementToBeClickable(element));
 			element.clear();
 			element.sendKeys(value);
 		} catch (Exception e) {
 			System.out.println("some exception got occurred while sending the text to the webelement : " + element);
 			System.out.println(e.getMessage());
-		}
-	}
+		} 
+	}	
 
 	/**
-	 * @author Silampur Girish Method to select dropdown by text
+	 * @author Silampur Girish
+	 * Method to select dropdown by text
 	 * @param element
 	 * @param text
 	 */
-	public static void selectDropdownByText(WebElement element, String text, int timeout) {
+	public static void selectDropdownByText(WebElement element, String text,int timeout)
+	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+			.until(ExpectedConditions.elementToBeClickable(element));
 			Select select = new Select(element);
-			select.selectByVisibleText(text);
+			select.selectByVisibleText(text);			
 		} catch (Exception e) {
 			System.out.println("some exception got occurred while selecting  the dropdown  by text : " + element);
 			System.out.println(e.getMessage());
 		}
-
+		
+			
 	}
 
 	/**
-	 * @author Silampur Girish Method to select dropdown by Value
+	 * @author Silampur Girish
+	 * Method to select dropdown by Value
 	 * @param element
-	 * @param text
-	 *            timeout
+	 * @param text  timeout
 	 */
-	public static void selectDropdownByValue(WebElement element, String text, int timeout) {
+	public static void selectDropdownByValue(WebElement element, String text,int timeout)
+	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+			.until(ExpectedConditions.elementToBeClickable(element));
 			Select select = new Select(element);
-			select.selectByValue(text);
+			select.selectByValue(text);			
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("some exception got occurred while selecting  the dropdown by value : " + element);
 			System.out.println(e.getMessage());
 		}
-
+		
 	}
-
 	/**
-	 * @author Silampur Girish Method to select dropdown by index
+	 * @author Silampur Girish
+	 * Method to select dropdown by index
 	 * @param element
-	 * @param num
-	 *            timeout
+	 * @param num timeout
 	 */
-	public static void selectDropdownByIndex(WebElement element, int num, int timeout) {
+	public static void selectDropdownByIndex(WebElement element, int  num, int timeout)
+	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+			.until(ExpectedConditions.elementToBeClickable(element));
 			Select select = new Select(element);
 			select.selectByIndex(num);
-
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("some exception got occurred while selecting  the dropdown by index : " + element);
 			System.out.println(e.getMessage());
 		}
-
+		
 	}
-
 	/**
-	 * @author Silampur Girish Method to get attribute value of the element
+	 * @author Silampur Girish
+	 * Method to get attribute value of the element
 	 * @param element
 	 * @param attribute
 	 * @return String
 	 */
-	public static String getAttributeValue(WebElement element, String attribute, int timeout) {
+	public static String getAttributeValue(WebElement element, String attribute,int timeout)
+	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+			.until(ExpectedConditions.elementToBeClickable(element));					
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("some exception got occurred while selecting  the dropdown by index : " + element);
 			System.out.println(e.getMessage());
 		}
-		return element.getAttribute(attribute);
+		return element.getAttribute(attribute);			
 	}
 
 	/**
-	 * @author Silampur Girish Method to get SelectedText value of the dropdwon
-	 * @param element
+	 * @author Silampur Girish
+	 * Method to get SelectedText value of the dropdwon
+	 * @param element	 
 	 * @return String
 	 */
-	public static String getSelectedText(WebElement element, int timeout) {
+	public static String getSelectedText(WebElement element,int timeout)
+	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+			.until(ExpectedConditions.elementToBeClickable(element)); 			
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("some exception got occurred while geting the  SelectedText : " + element);
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage());			
 		}
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();
 	}
-
+	
 	/**
-	 * @author Silampur Girish Method to get text of the element
+	 * @author Silampur Girish
+	 * Method to get text of the element
 	 * @param element
 	 */
 
-	public static String getText(WebElement element, int timeout) {
+	public static String getText(WebElement element,int timeout)
+	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+				.until(ExpectedConditions.elementToBeClickable(element));			
 		} catch (Exception e) {
 			System.out.println("some exception got occurred while geting the text of webelement : " + element);
 			System.out.println(e.getMessage());
@@ -175,238 +184,245 @@ public class Webgenericutility extends BaseTest {
 
 		return element.getText();
 	}
-
 	/**
-	 * @author Uma Maheswari Method to Navigate url
+	 * @author Uma Maheswari
+	 * Method to Navigate url 
 	 * @param url
 	 */
-	public static void NavigateToUrl(String url) {
+	public static void NavigateToUrl(String url)
+	{
 		driver.navigate().to(url);
 	}
 
 	/**
-	 * @author Lakshmi Method to take you back by one page on the browser’s
-	 *         history.
-	 */
-	public static void Navigateback() {
+	 * @author Lakshmi
+	 * Method to take you back by one page on the browser’s history.
+	 */ 
+	public static void Navigateback()
+	{
 		driver.navigate().back();
 	}
-
 	/**
-	 * @author Uma Maheswari Method to take you forward by one page on the
-	 *         browser’s history.
-	 */
+	 * @author Uma Maheswari
+	 * Method to take you forward by one page on the browser’s history.
+	 */ 
 
-	public static void NavigateForward() {
+	public static void NavigateForward()
+	{
 		driver.navigate().forward();
 	}
 
 	/**
-	 * @author Uma Maheswari Method to refresh the page
-	 */
+	 * @author Uma Maheswari
+	 * Method to refresh the page
+	 */ 
 
-	public static void NavigateRefresh() {
+	public static void NavigateRefresh()
+	{
 		driver.navigate().refresh();
 	}
 
 	/**
-	 * @author Uma Maheswari Method to get title of the application/page return
-	 *         String
-	 */
+	 * @author Uma Maheswari
+	 * Method to get title of the application/page
+	 * return String
+	 */ 
 
-	public static String getTitle() {
+	public static String getTitle()
+	{
 		return driver.getTitle();
 	}
 
+	
+	
+
+	
 	//
-	/**
-	 * @author Mohini Sethumadhavan Method to select any element for boolean
-	 *         value
-	 * @param WebElement
-	 * @param elementSelect
+		/**
+	 * @author Mohini Sethumadhavan
+	 * Method to select any element for boolean value
+	 * @param boolean 
+	 * @param value
 	 */
-	public WebElement isElementSelected(WebElement elementSelect) {
+	public boolean isElementSelected(WebElement element)
+	{
 		boolean value;
-		value = elementSelect.isSelected();
-		if (value == true) {
-			System.out.println("Already Selected");
-
-		} else {
-			elementSelect.click();
-			System.out.println("Selected");
+		value=element.isSelected();
+		try{
+			value=true;
+			System.out.println("is Selected");
+			
 		}
-
-		return elementSelect;
+		catch (Exception e)
+		{
+			System.out.println("not Selected");
+			System.out.println(e.getMessage());
+		}
+		
+		
+		return value;
 
 	}
-
 	/**
-	 * @author Mohini Sethumadhavan Method to display any element for boolean
-	 *         value
-	 * @param WebElement
+	 * @author Mohini Sethumadhavan
+	 * Method to display any element for boolean value
+	 * @param WebElement 
 	 * @param elementDisplay
 	 */
-	public WebElement isElementDisplayed(WebElement elementDisplay) {
+	public boolean isElementDisplayed( WebElement element)
+	{
 		boolean value;
-		value = elementDisplay.isDisplayed();
-		if (value == true) {
-			System.out.println("Already Selected");
-
-		} else {
-			elementDisplay.click();
-			System.out.println("Selected");
+		value=element.isDisplayed();
+		try{
+			value=true;
+			System.out.println("is Displayed");
+			
 		}
-		return elementDisplay;
+		catch (Exception e)
+		{
+			System.out.println("not Displayed");
+			System.out.println(e.getMessage());
+		}
+		
+		
+		return value;
 
 	}
-
 	/**
-	 * @author Mohini Sethumadhavan Method to enable any element for boolean
-	 *         value
-	 * @param WebElement
-	 * @param elementEnable
+	 * @author Mohini Sethumadhavan
+	 * Method to enable any element for boolean value
+	 * @param boolean 
+	 * @param element
 	 */
-	public WebElement isElementEnabled(WebElement elementEnable) {
+	public boolean isElementEnabled(WebElement element)
+	{
 		boolean value;
-		value = elementEnable.isEnabled();
-		if (value == true) {
-			System.out.println("Already Enabled");
-
-		} else {
-			elementEnable.click();
-			System.out.println("Enabled");
+		value=element.isEnabled();
+		try{
+			value=true;
+			System.out.println("is Enabled");
+			
 		}
-		return elementEnable;
-
+		catch (Exception e)
+		{
+			System.out.println("not Enabled");
+			System.out.println(e.getMessage());
+		}
+		
+		
+		return value;
 	}
-
 	/**
-	 * @author Mohini Sethumadhavan Method to wait till page is loaded
-	 * @param i
-	 * @param
+	 * @author Mohini Sethumadhavan
+	 * Method to wait till page is loaded
+	 * @param i 
+	 * @param 
 	 */
-	public WebElement waitTillPageLoad(int i) {
+	public WebElement waitTillPageLoad(int i)
+	{
 		driver.manage().timeouts().pageLoadTimeout(i, TimeUnit.SECONDS);
 		return null;
 
 	}
 
 	/**
-	 * @author Mohini Sethumadhavan Method to check if the given element is
-	 *         selected
-	 * @param WebElement
-	 * @param waitExpectedException
-	 */
-	public WebElement waitExpectedConditions(WebElement waitExpectedException, int seconds) {
-		WebDriverWait wait = new WebDriverWait(driver, seconds);
-
-		wait.until(ExpectedConditions.elementToBeSelected(waitExpectedException));
-		return waitExpectedException;
-
-	}
-
-	/**
-	 * @author Mohini Sethumadhavan Method to check an element is visible and
-	 *         enabled to click on it.
-	 * @param WebElement
+	 * @author Mohini Sethumadhavan
+	 * Method to check an element to be invisible
+	 * @param WebElement 
 	 * @param waitExpectedException
 	 */
 
-	public WebElement waitForElement(WebElement elementWait, int seconds) {
-
-		WebDriverWait wait = new WebDriverWait(driver, seconds);
-		wait.until(ExpectedConditions.elementToBeClickable(elementWait));
-		return elementWait;
-	}
-
-	/**
-	 * @author Mohini Sethumadhavan Method to check an element to be invisible
-	 * @param WebElement
-	 * @param waitExpectedException
-	 */
-
-	public WebElement waitTillElementFound(WebElement ElementTobeFound, int seconds) {
+	public WebElement waitTillElementFound(WebElement ElementTobeFound,
+			int seconds) 
+	{
 		WebDriverWait wait = new WebDriverWait(driver, seconds);
 		wait.until(ExpectedConditions.visibilityOf(ElementTobeFound));
 		return ElementTobeFound;
 	}
-
 	/**
-	 * @author Mohini Sethumadhavan Method to check whether the given frame is
-	 *         available to switch to.
-	 * @param WebElement
+	 * @author Mohini Sethumadhavan
+	 * Method to check whether the given frame is available to switch to.
+	 * @param WebElement 
 	 * @param waitExpectedException
 	 */
-	public WebElement waitframeToBeAvailableAndSwitchToIt(WebElement frameLocator, int seconds) {
+	public WebElement waitframeToBeAvailableAndSwitchToIt(WebElement frameLocator,
+			int seconds) 
+	{
 		WebDriverWait wait = new WebDriverWait(driver, seconds);
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator));
 		return frameLocator;
 	}
-
 	/**
-	 * @author Mohini Sethumadhavan Method to switch back to original page
-	 * @param WebElement
-	 * @param
+	 * @author Mohini Sethumadhavan
+	 * Method to switch back to original page 
+	 * @param   
+	 * @param 
 	 */
 
-	public WebElement switchToParentWindow() {
+	public void switchToParentWindow() {
 		driver.switchTo().defaultContent();
-		return null;
+		
 	}
-
 	/**
-	 * @author Mohini Sethumadhavan Method to switch frame
-	 * @param WebElement
-	 * @param
-	 */
-	public WebElement switchToFrame(WebElement iframeElement) {
+	 * @author Mohini Sethumadhavan
+	 * Method to switch frame 
+	 * @param   
+	 * @param 
+	 */	
+	public void switchToFrame(WebElement iframeElement) {
 		driver.switchTo().frame(iframeElement);
-		return iframeElement;
+		
 	}
 
 	/**
-	 * @author Silampur Girish Method to wait for load
+	 * @author Silampur Girish 
+	 * Method to wait for load
 	 * @param driver
 	 */
-	public static void waitForLoad(long seconds) {
-		ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
-			public Boolean apply(WebDriver driver) {
-				return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-			}
-		};
-		WebDriverWait wait = new WebDriverWait(driver, seconds);
-		wait.until(pageLoadCondition);
-	}
-
+	public static void waitForLoad(long seconds) 
+	{
+		ExpectedCondition<Boolean> pageLoadCondition = new
+	               ExpectedCondition<Boolean>() {
+	                   public Boolean apply(WebDriver driver) {
+	                       return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+	                   }
+	               };
+	               WebDriverWait wait = new WebDriverWait(driver, seconds);
+	               wait.until(pageLoadCondition);
+	    }
+	
 	/**
-	 * @author Silampur Girish Method is Element Exists
+	 * @author Silampur Girish 
+	 * Method is Element Exists
 	 * @param element
 	 */
-	public static boolean isElementExists(WebElement element) {
+	public static boolean isElementExists( WebElement element)
+	{
 		boolean present;
 		try {
-			element.clear();
-			present = true;
+		   element.clear();			
+		   present = true;
 		} catch (NoSuchElementException e) {
-			present = false;
-			// log.info("",e);
+		   present = false;
+		   //log.info("",e);
 		}
 		return present;
 	}
-
 	/**
-	 * @author Silampur Girish Scroll method
-	 * @param
+	 * @author Silampur Girish 
+	 * Scroll method
+	 * @param 
 	 * @return
 	 */
-	public static void scrollpage() {
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
+	public static void scrollpage()
+	{
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("scroll(0, 750);");
 	}
-
 	/**
-	 * @author Sharoonroja G Scroll to a particular element
-	 * @param
+	 * @author Sharoonroja G 
+	 * Scroll to a particular element
+	 * @param 
 	 * @return
 	 */
 	public static void scrolltoElement(WebElement element) throws Exception {
@@ -418,10 +434,10 @@ public class Webgenericutility extends BaseTest {
 		js.executeScript("window.scrollBy(" + x + "," + y + ")");
 		Thread.sleep(2000);
 	}
-
 	/**
-	 * @author Sharoonroja G Scroll to a particular element
-	 * @param
+	 * @author Sharoonroja G 
+	 * Scroll to a particular element
+	 * @param 
 	 * @return
 	 */
 	public static void listOfElements(String xpath) {
@@ -441,10 +457,10 @@ public class Webgenericutility extends BaseTest {
 		}
 
 	}
-
 	/**
-	 * @author Bhavana CM method to fetch title of current web Page
-	 * @param
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
 	 * @return
 	 */
 	public String getBrowserInfo() {
@@ -452,13 +468,13 @@ public class Webgenericutility extends BaseTest {
 		String uAgent = js.executeScript("return navigator.userAgent;").toString();
 		return uAgent;
 	}
-
 	/**
-	 * @author Bhavana CM method to fetch title of current web Page
-	 * @param
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
 	 * @return
 	 */
-
+	
 	@SuppressWarnings("unused")
 	private void changeColor(String color, WebElement element) {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
@@ -469,45 +485,14 @@ public class Webgenericutility extends BaseTest {
 		} catch (InterruptedException e) {
 		}
 	}
-
 	/**
-	 * @author Bhavana CM method to fetch title of current web Page
-	 * @param
+	 * @author Bhavana CM 
+	 * method to fetch title of current web Page
+	 * @param 
 	 * @return
 	 */
-	public void dragAndDrop(WebElement from, WebElement to) {
+	public void dragAndDrop(WebElement from,WebElement to){
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
 	}
-
-	/**
-	 * @author soni method to mouseHover on Webelement
-	 * @param
-	 * @return
-	 */
-	public void mouseHoverOnElement(WebElement element) {
-		Actions action = new Actions(driver);
-		action.moveToElement(element).build().perform();
-	}
-
-	/**
-	 * @author Chetana method to rightclick on Webelement
-	 * @param
-	 * @return
-	 */
-	public void rightClickOnElement(WebElement element) {
-		Actions action = new Actions(driver);
-		action.contextClick(element).build().perform();
-	}
-
-	/**
-	 * @author Chetana method to doubleclick on Webelement
-	 * @param
-	 * @return
-	 */
-	public void doubleClickOnElement(WebElement element) {
-		Actions action = new Actions(driver);
-		action.doubleClick(element).build().perform();
-	}
-
 }
