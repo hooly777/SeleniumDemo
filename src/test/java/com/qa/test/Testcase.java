@@ -8,25 +8,12 @@ import org.testng.annotations.Test;
 
 import com.qa.Resource.ReadExcel;
 import com.qa.Utility.Webgenericutility;
+import com.qa.basetest.BaseTest;
+import com.qa.pages.SampleTest;
 
-public class Testcase {
+public class Testcase  extends  BaseTest{
 	
 
 
-
-
-
-@Test()
-public void saple() {
-	
-	
-//	WebElement searchField = driver.findElement(By.name("search"));
-//	sendKeyValue(driver, searchField, 15, "test");
-//	
-//	//click on logout:
-//	//WebElement logoutLink = driver.findElement(By.xpath("//a[contains(text(),'Logout')]"));
-//	//clickOn(driver, logoutLink, 10);
- 
-}
 
 }
