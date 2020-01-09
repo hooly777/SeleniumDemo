@@ -321,7 +321,6 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected
@@ -334,8 +333,7 @@ public class Webgenericutility extends BaseTest {
 
 		wait.until(ExpectedConditions.elementToBeSelected(waitExpectedException));
 		return waitExpectedException;
-=======
->>>>>>> fe50405d5b6dfd300376fa8a2fc09e87fc942083
+	}
 
 	/**
 	 * @author Mohini Sethumadhavan

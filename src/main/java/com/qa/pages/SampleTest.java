@@ -7,8 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.qa.Resource.ReadExcel;
+
 import com.qa.basetest.BaseTest;
+
+import Trash.ReadExcel;
+
 import org.apache.log4j.Logger;
 
 public class SampleTest extends BaseTest {	
@@ -98,7 +101,7 @@ public class SampleTest extends BaseTest {
 	public static ArrayList<String> dataReading(String userID) throws IOException
 	{
 		ReadExcel read=new ReadExcel();
-		ArrayList<String> arr=read.getData(userID,System.getProperty("user.dir")+"\\ExportExcel\\WriteData.xlsx");
+		ArrayList<String> arr=read.getData(userID,System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx");
 		System.out.println(arr);
 		return arr;			
 	}

@@ -1,4 +1,4 @@
-package com.qa.Resource;
+package Trash;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,7 +15,6 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.Test;
 
 public class ReadExcel {
 
@@ -125,11 +124,4 @@ public class ReadExcel {
 		return a;
 	}
 	
-	@Test
-	public  void Single() throws IOException
-	{
-		ReadExcel read=new ReadExcel();
-		ArrayList<String> arr=read.getData("TC_003",System.getProperty("user.dir")+"\\ExportExcel\\WriteData.xlsx");
-		System.out.println(arr);
-	}
 }

@@ -1,8 +1,6 @@
-package com.qa.Resource;
+package Trash;
 
 import org.testng.annotations.DataProvider;
-
-
 
 public class DataRead {
 	
@@ -10,7 +8,7 @@ public class DataRead {
 	public Object[][] ReadExcelXLS() throws Exception{
 		
 		String absolutepath=System.getProperty("user.dir");
-		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
+		String fileName=absolutepath+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx";
 		String sheetname="WriteExcelDemo";
 
 	ReadExcel excel = new ReadExcel();
@@ -24,7 +22,7 @@ public class DataRead {
     public Object[][] ReadExcelXLSX() throws Exception{
    	 
    	 String absolutepath=System.getProperty("user.dir");
-   		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
+   		String fileName=absolutepath+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx";
    		String sheetname="WriteExcelDemo";
 
    		ReadExcel excel = new ReadExcel();
@@ -37,7 +35,7 @@ public class DataRead {
     public Object[][] ReadRow() throws Exception{
    	 
    	 String absolutepath=System.getProperty("user.dir");
-   		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
+   		String fileName=absolutepath+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx";
    		String sheetname="WriteExcelDemo";
 
    		ReadExcel excel = new ReadExcel();
@@ -46,7 +44,5 @@ public class DataRead {
 	return testObjArray;
 
 	}	
-
-
 
 }

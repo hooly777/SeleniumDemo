@@ -1,4 +1,4 @@
-package com.qa.Resource;
+package Trash;
 
 import java.io.File;
 import java.io.FileInputStream;
