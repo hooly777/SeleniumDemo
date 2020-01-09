@@ -3,25 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.Testcase">
+      <class name="SilapurGirish51750336.AlliantcreditunionHomePageTest">
         <methods>
-<<<<<<< HEAD
-=======
-          <include name="Insurance"/>
-          <include name="test_Home_Page_Appear_wrong"/>
-          <include name="LoginwithParticularusecase"/>
->>>>>>> fe50405d5b6dfd300376fa8a2fc09e87fc942083
+          <include name="Validating_Alliant_BankSections"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
+          <include name="Validating_Alliant_HomePageSections"/>
           <include name="takeScreenShot"/>
+          <include name="ValidatingBankSections"/>
           <include name="tearDown"/>
-<<<<<<< HEAD
-          <include name="LoginDemoGuru"/>
-=======
-          <include name="test_Home_Page_Appear_Correct"/>
->>>>>>> fe50405d5b6dfd300376fa8a2fc09e87fc942083
+          <include name="ValidatinghomePageTitle"/>
         </methods>
-      </class> <!-- com.qa.test.Testcase -->
+      </class> <!-- SilapurGirish51750336.AlliantcreditunionHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

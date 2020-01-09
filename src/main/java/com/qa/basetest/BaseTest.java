@@ -46,11 +46,13 @@ public class BaseTest {
 	static String driverPath = absolutepath+"\\Drivers\\";
 	
 	static String filePath = absolutepath+"\\Failedscreenshots";
-	ExtentReports extent;
+	//ExtentReports extent;
 	//helps to generate the logs in test report.
 	ExtentTest test;
 	static ExtentReports report;
 	ITestResult result;
+	public static ExtentReports extent;
+	public static ExtentTest logger;
 
 	@BeforeClass
 	// This method is used to launch browser

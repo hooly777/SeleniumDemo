@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
-<<<<<<< HEAD
+
 import org.testng.annotations.Test;
 
 import com.qa.Resource.ReadExcel;
@@ -12,16 +12,10 @@ import com.qa.Utility.Webgenericutility;
 import com.qa.basetest.BaseTest;
 import com.qa.pages.SampleTest;
 
-public class Testcase  extends  BaseTest{
-	
-
-
-
-=======
 import com.qa.pages.SampleTest;
 import com.qa.basetest.BaseTest;
+public class Testcase  extends  BaseTest{
 
-public class Testcase extends BaseTest {
 	 
 	Logger log = Logger.getLogger("devpinoyLogger");
 
@@ -46,5 +40,5 @@ public class Testcase extends BaseTest {
 		log.info("Insurance page triggered after Login");
 	}
 	
->>>>>>> bf2f49c491bf9f118e431b80eadc117abca586f3
+
 }
