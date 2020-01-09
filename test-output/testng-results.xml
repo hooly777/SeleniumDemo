@@ -1,223 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24604" started-at="2020-01-09T11:02:03Z" finished-at="2020-01-09T11:02:28Z">
+  <suite name="Default suite" duration-ms="77161" started-at="2020-01-09T11:25:29Z" finished-at="2020-01-09T11:26:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24604" started-at="2020-01-09T11:02:03Z" finished-at="2020-01-09T11:02:28Z">
+    <test name="Default test" duration-ms="77161" started-at="2020-01-09T11:25:29Z" finished-at="2020-01-09T11:26:46Z">
       <class name="SilapurGirish51750336.AlliantcreditunionHomePageTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="startReport" is-config="true" duration-ms="297" started-at="2020-01-09T16:32:03Z" finished-at="2020-01-09T16:32:04Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@1e8ab90f]" name="startReport" is-config="true" duration-ms="406" started-at="2020-01-09T16:55:29Z" finished-at="2020-01-09T16:55:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="BrowserIntialisation" is-config="true" duration-ms="11846" started-at="2020-01-09T16:32:04Z" finished-at="2020-01-09T16:32:15Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@1e8ab90f]" name="BrowserIntialisation" is-config="true" duration-ms="13156" started-at="2020-01-09T16:55:30Z" finished-at="2020-01-09T16:55:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="ValidatinghomePageTitle()[pri:1, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="ValidatinghomePageTitle" duration-ms="304" started-at="2020-01-09T16:32:15Z" finished-at="2020-01-09T16:32:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatinghomePageTitle -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-09T16:32:16Z" finished-at="2020-01-09T16:32:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ValidatinghomePageTitle status=SUCCESS method=AlliantcreditunionHomePageTest.ValidatinghomePageTitle()[pri:1, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="Validating_Alliant_HomePageSections()[pri:2, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="Validating_Alliant_HomePageSections" duration-ms="5572" started-at="2020-01-09T16:32:16Z" finished-at="2020-01-09T16:32:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validating_Alliant_HomePageSections -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-09T16:32:21Z" finished-at="2020-01-09T16:32:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Validating_Alliant_HomePageSections status=SUCCESS method=AlliantcreditunionHomePageTest.Validating_Alliant_HomePageSections()[pri:2, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="Validating_Alliant_BankSections()[pri:3, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="Validating_Alliant_BankSections" duration-ms="4988" started-at="2020-01-09T16:32:21Z" finished-at="2020-01-09T16:32:26Z">
+        <test-method status="FAIL" signature="Validating_Alliant_BankSections()[pri:3, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@1e8ab90f]" name="Validating_Alliant_BankSections" duration-ms="61906" started-at="2020-01-09T16:55:43Z" finished-at="2020-01-09T16:56:45Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'High-Rate Savings')]"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-32OK8HI', ip: '172.17.213.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\user1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}
+Session ID: d19214e3dce3249c20960cc867e72f97
+*** Element info: {Using=xpath, value=//h2[contains(text(),'High-Rate Savings')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'High-Rate Savings')]"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-32OK8HI', ip: '172.17.213.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\user1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}
+Session ID: d19214e3dce3249c20960cc867e72f97
+*** Element info: {Using=xpath, value=//h2[contains(text(),'High-Rate Savings')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at SilapurGirish51750336.AlliantcreditunionHomePage.writeBankSectionstoExcel(AlliantcreditunionHomePage.java:126)
+	at SilapurGirish51750336.AlliantcreditunionHomePageTest.Validating_Alliant_BankSections(AlliantcreditunionHomePageTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validating_Alliant_BankSections -->
-        <test-method status="PASS" signature="ValidatingBankSections()[pri:4, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="ValidatingBankSections" duration-ms="363" started-at="2020-01-09T16:32:26Z" finished-at="2020-01-09T16:32:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatingBankSections -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-09T16:32:26Z" finished-at="2020-01-09T16:32:26Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@1e8ab90f]" name="takeScreenShot" is-config="true" duration-ms="456" started-at="2020-01-09T16:56:45Z" finished-at="2020-01-09T16:56:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validating_Alliant_BankSections status=SUCCESS method=AlliantcreditunionHomePageTest.Validating_Alliant_BankSections()[pri:3, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf] output={null}]]]>
+                <![CDATA[[TestResult name=Validating_Alliant_BankSections status=FAILURE method=AlliantcreditunionHomePageTest.Validating_Alliant_BankSections()[pri:3, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@1e8ab90f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-09T16:32:27Z" finished-at="2020-01-09T16:32:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ValidatingBankSections status=SUCCESS method=AlliantcreditunionHomePageTest.ValidatingBankSections()[pri:4, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@5622fdf]" name="tearDown" is-config="true" duration-ms="1190" started-at="2020-01-09T16:32:27Z" finished-at="2020-01-09T16:32:28Z">
-=======
-<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="5579" started-at="2020-01-09T09:57:35Z" finished-at="2020-01-09T09:57:40Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="5579" started-at="2020-01-09T09:57:35Z" finished-at="2020-01-09T09:57:40Z">
-      <class name="com.qa.test.Testcase">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.Testcase@271053e1]" name="startReport" is-config="true" duration-ms="216" started-at="2020-01-09T15:27:35Z" finished-at="2020-01-09T15:27:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="FAIL" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.Testcase@271053e1]" name="BrowserIntialisation" is-config="true" duration-ms="5295" started-at="2020-01-09T15:27:35Z" finished-at="2020-01-09T15:27:40Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Browser not found expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Browser not found expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertFalse(Assert.java:62)
-	at com.qa.basetest.BaseTest.BrowserIntialisation(BaseTest.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserIntialisation -->
-        <test-method status="SKIP" signature="LoginDemoGuru()[pri:0, instance:com.qa.test.Testcase@271053e1]" name="LoginDemoGuru" duration-ms="0" started-at="2020-01-09T15:27:40Z" finished-at="2020-01-09T15:27:40Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Browser not found expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Browser not found expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertFalse(Assert.java:62)
-	at com.qa.basetest.BaseTest.BrowserIntialisation(BaseTest.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginDemoGuru -->
-        <test-method status="SKIP" signature="InsurancePage()[pri:1, instance:com.qa.test.Testcase@271053e1]" name="InsurancePage" duration-ms="0" started-at="2020-01-09T15:27:40Z" finished-at="2020-01-09T15:27:40Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Browser not found expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Browser not found expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertFalse(Assert.java:62)
-	at com.qa.basetest.BaseTest.BrowserIntialisation(BaseTest.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InsurancePage -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.test.Testcase@271053e1]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-09T15:27:40Z" finished-at="2020-01-09T15:27:40Z">
->>>>>>> 13cb40153ae163a8660f06de30b19bc1ccb23093
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SilapurGirish51750336.AlliantcreditunionHomePageTest@1e8ab90f]" name="tearDown" is-config="true" duration-ms="1206" started-at="2020-01-09T16:56:45Z" finished-at="2020-01-09T16:56:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

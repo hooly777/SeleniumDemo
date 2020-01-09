@@ -321,10 +321,7 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> 13cb40153ae163a8660f06de30b19bc1ccb23093
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected

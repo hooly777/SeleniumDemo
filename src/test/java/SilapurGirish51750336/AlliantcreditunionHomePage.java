@@ -116,8 +116,8 @@ public class AlliantcreditunionHomePage extends BaseTest {
 		}
 	
 	public void writeBankSectionstoExcel() throws Exception{
-
-		BankMenu.click();
+			webTestUtil.clickOn(driver, BankMenu, 30);
+			//BankMenu.click();
 			// Bank different saving products 
 			String Mainmenu = driver.findElement(By.xpath("//*[@id='footer-main-nav']/div[1]/ul/li[1]/a")).getText();
 			System.out.println("Printing  main menu is "+ Mainmenu);		
