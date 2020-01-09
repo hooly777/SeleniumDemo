@@ -38,7 +38,7 @@ public class ExcellUtility {
 	 *  example [List<String> supplierNames = Arrays.asList("Girish","Shilpa","Cherry");]
 	 */
 	public void writeExcel(String fileName,String sheetName,List<String> Writedta) throws IOException{
-		String filePath = (System.getProperty("user.dir")+".\\src\\test\\java\\com\\qa\\ING\\Resources\\com.qa.ING.Excel");
+		String filePath = (System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell");
 		File file =    new File(filePath+"\\"+fileName);		
 		FileInputStream inputStream = new FileInputStream(file);
 		Workbook TestdataWorkbook = null;		
@@ -79,34 +79,24 @@ public class ExcellUtility {
 
 	}	
 	
+	/**
+	 * @author Silampur Girish 
+	 * Method to setExcelData 
+	 * description it write data in row  wise 
+	 * Date 09-01-2020
+	 * para fileName;sheetName;rowNum;colNum;data	
+	 */
 	
-	public String getExcelData(String sheetName , int rowNum , int colNum) throws InvalidFormatException, IOException{
-	      FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+".\\src\\test\\java\\com\\qa\\ING\\Resources\\com.qa.ING.Excel\\Data.xls");
-	      Workbook wb = WorkbookFactory.create(fis);
-	      Sheet sh = wb.getSheet(sheetName);    
-	      Row row = sh.getRow(rowNum);
-	      String data = row.getCell(colNum).getStringCellValue();
-	      return data;
-	}
+	public void setExcelData(String fileName,String sheetName,int rowNum,int colNum,String data) throws InvalidFormatException, IOException{
 
-	public int getRowCount(String sheetName) throws InvalidFormatException, IOException{    
-	      FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+".\\src\\test\\java\\com\\qa\\ING\\Resources\\com.qa.ING.Excel\\Data.xls");
-	      Workbook wb = WorkbookFactory.create(fis);
-	      Sheet sh = wb.getSheet(sheetName);
-	      int rowCount = sh.getLastRowNum()+1;
-	      return rowCount;
-	}
-
-	public void setExcelData(String sheetName,int rowNum,int colNum,String data) throws InvalidFormatException, IOException{
-
-		 FileInputStream inp = new FileInputStream(System.getProperty("user.dir")+".\\src\\test\\java\\com\\qa\\ING\\Resources\\com.qa.ING.Excel\\Data.xls");
+		 FileInputStream inp = new FileInputStream(System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell"+"\\"+fileName);
 		 Workbook wb = WorkbookFactory.create(inp); 
 		 Sheet sheet = wb.getSheet(sheetName); 
 		//int lastRow = sheet.getLastRowNum();
 		 Row row = sheet.createRow(rowNum);		 
 		row.createCell(colNum).setCellValue(data);			 
 		// Now this Write the output to a file 
-		FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir")+".\\src\\test\\java\\com\\qa\\ING\\Resources\\com.qa.ING.Excel\\Data.xls");
+		FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell"+"\\"+fileName);
 		wb.write(fos); 
 		fos.close();  
 	}
@@ -114,19 +104,59 @@ public class ExcellUtility {
 	
 	/**
 	 * @author Silampur Girish 
-	 * Method to writeExcel 
-	 * description it write the column wise data in the row 
+	 * Method to getExcelData 
+	 * description it get data 
 	 * Date 09-01-2020
-	 * para fileName;sheetName;Writedta
-	 *  example [List<String> supplierNames = Arrays.asList("Girish","Shilpa","Cherry");]
+	 * para fileName;sheetName;rowNum;colNum;data	 
 	 */
-	public int getcellCount(String sheetName,int rowNum) throws InvalidFormatException, IOException{
-	      FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+".\\src\\test\\java\\com\\qa\\ING\\Resources\\com.qa.ING.Excel\\Data.xls");
+	public String getExcelData(String fileName,String sheetName , int rowNum , int colNum) throws InvalidFormatException, IOException{
+	      FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell"+"\\"+fileName);
+	      Workbook wb = WorkbookFactory.create(fis);
+	      Sheet sh = wb.getSheet(sheetName);    
+	      Row row = sh.getRow(rowNum);
+	      String data = row.getCell(colNum).getStringCellValue();
+	      return data;
+	}
+	
+	/**
+	 * @author Silampur Girish 
+	 * Method to getRowCount 
+	 * description gets RowCount
+	 * Date 09-01-2020
+	 * para fileName;sheetName	 
+	 */
+
+	public int getRowCount(String fileName,String sheetName) throws InvalidFormatException, IOException{    
+	      FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell"+"\\"+fileName);
+	      Workbook wb = WorkbookFactory.create(fis);
+	      Sheet sh = wb.getSheet(sheetName);
+	      int rowCount = sh.getLastRowNum()+1;
+	      return rowCount;
+	}
+	
+	
+
+	/**
+	 * @author Silampur Girish 
+	 * Method to getcellCount 
+	 * description getcellCount
+	 * Date 09-01-2020
+	 * para fileName;sheetName;rowNum
+	*/
+	public int getcellCount(String fileName,String sheetName,int rowNum) throws InvalidFormatException, IOException{
+	      FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+".\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell"+"\\"+fileName);
 	      Workbook wb = WorkbookFactory.create(fis);
 	      Sheet sh = wb.getSheet(sheetName);    
 	      Row row = sh.getRow(rowNum);
 	     return row.getLastCellNum();     
 	}
+
+	
+	
+
+	
+	
+	
 	
 
 

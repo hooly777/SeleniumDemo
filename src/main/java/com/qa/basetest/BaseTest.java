@@ -7,7 +7,7 @@
  					Tear Down
  
  Creation Date : 07/01/2020
- @Version 2.1
+ @Version 2.2
  @author Sumana and Team
 */
 
@@ -24,6 +24,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -38,8 +39,6 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
-
 public class BaseTest {
 
 	public static WebDriver driver;
@@ -52,9 +51,6 @@ public class BaseTest {
 	ExtentTest test;
 	static ExtentReports report;
 	ITestResult result;
-
-	
-
 
 	@BeforeClass
 	// This method is used to launch browser
@@ -90,6 +86,7 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
+			Assert.assertFalse(true, "Browser Not Found");
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
@@ -136,8 +133,6 @@ public class BaseTest {
 		String errflpath = Dest.getAbsolutePath();
 		FileUtils.copyFile(scrFile, Dest);
 		return errflpath;
-
-
 	}			
 
 	// This method will generate extent report
