@@ -5,14 +5,24 @@
     <classes>
       <class name="SilapurGirish51750336.AlliantcreditunionHomePageTest">
         <methods>
+<<<<<<< HEAD
           <include name="Validating_Alliant_BankSections"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
           <include name="Validating_Alliant_HomePageSections"/>
+=======
+          <include name="startReport"/>
+          <include name="BrowserIntialisation"/>
+          <include name="InsurancePage"/>
+>>>>>>> 13cb40153ae163a8660f06de30b19bc1ccb23093
           <include name="takeScreenShot"/>
           <include name="ValidatingBankSections"/>
           <include name="tearDown"/>
+<<<<<<< HEAD
           <include name="ValidatinghomePageTitle"/>
+=======
+          <include name="LoginDemoGuru"/>
+>>>>>>> 13cb40153ae163a8660f06de30b19bc1ccb23093
         </methods>
       </class> <!-- SilapurGirish51750336.AlliantcreditunionHomePageTest -->
     </classes>
