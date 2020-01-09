@@ -238,25 +238,26 @@ public class Webgenericutility extends BaseTest {
 		/**
 	 * @author Mohini Sethumadhavan
 	 * Method to select any element for boolean value
-	 * @param WebElement 
-	 * @param elementSelect
+	 * @param boolean 
+	 * @param value
 	 */
-	public   WebElement isElementSelected(WebElement elementSelect)
+	public boolean isElementSelected(WebElement element)
 	{
 		boolean value;
-		value=elementSelect.isSelected();
-		if(value==true)
-		{
-			System.out.println("Already Selected");
-
+		value=element.isSelected();
+		try{
+			value=true;
+			System.out.println("is Selected");
+			
 		}
-		else
+		catch (Exception e)
 		{
-			elementSelect.click();
-			System.out.println("Selected");
+			System.out.println("not Selected");
+			System.out.println(e.getMessage());
 		}
-
-		return elementSelect;
+		
+		
+		return value;
 
 	}
 	/**
@@ -265,45 +266,48 @@ public class Webgenericutility extends BaseTest {
 	 * @param WebElement 
 	 * @param elementDisplay
 	 */
-	public WebElement isElementDisplayed(WebElement elementDisplay)
+	public boolean isElementDisplayed( WebElement element)
 	{
 		boolean value;
-		value=elementDisplay.isDisplayed();
-		if(value==true)
-		{
-			System.out.println("Already Selected");
-
+		value=element.isDisplayed();
+		try{
+			value=true;
+			System.out.println("is Displayed");
+			
 		}
-		else
+		catch (Exception e)
 		{
-			elementDisplay.click();
-			System.out.println("Selected");
+			System.out.println("not Displayed");
+			System.out.println(e.getMessage());
 		}
-		return elementDisplay;
+		
+		
+		return value;
 
 	}
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to enable any element for boolean value
-	 * @param WebElement 
-	 * @param elementEnable
+	 * @param boolean 
+	 * @param element
 	 */
-	public WebElement isElementEnabled(WebElement elementEnable)
+	public boolean isElementEnabled(WebElement element)
 	{
 		boolean value;
-		value=elementEnable.isEnabled();
-		if(value==true)
-		{
-			System.out.println("Already Enabled");
-
+		value=element.isEnabled();
+		try{
+			value=true;
+			System.out.println("is Enabled");
+			
 		}
-		else
+		catch (Exception e)
 		{
-			elementEnable.click();
-			System.out.println("Enabled");
+			System.out.println("not Enabled");
+			System.out.println(e.getMessage());
 		}
-		return elementEnable;
-
+		
+		
+		return value;
 	}
 	/**
 	 * @author Mohini Sethumadhavan
@@ -317,6 +321,7 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
+<<<<<<< HEAD
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected
@@ -329,21 +334,9 @@ public class Webgenericutility extends BaseTest {
 
 		wait.until(ExpectedConditions.elementToBeSelected(waitExpectedException));
 		return waitExpectedException;
+=======
+>>>>>>> fe50405d5b6dfd300376fa8a2fc09e87fc942083
 
-	}
-	/**
-	 * @author Mohini Sethumadhavan
-	 * Method to check an element is visible and enabled to click on it.
-	 * @param WebElement 
-	 * @param waitExpectedException
-	 */
-
-	public WebElement waitForElement(WebElement elementWait, int seconds) {
-
-		WebDriverWait wait = new WebDriverWait(driver, seconds);
-		wait.until(ExpectedConditions.elementToBeClickable(elementWait));
-		return elementWait;
-	}
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check an element to be invisible
@@ -374,7 +367,7 @@ public class Webgenericutility extends BaseTest {
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to switch back to original page 
-	 * @param WebElement  
+	 * @param   
 	 * @param 
 	 */
 
@@ -385,12 +378,12 @@ public class Webgenericutility extends BaseTest {
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to switch frame 
-	 * @param WebElement  
+	 * @param   
 	 * @param 
 	 */	
-	public WebElement switchToFrame(WebElement iframeElement) {
+	public void switchToFrame(WebElement iframeElement) {
 		driver.switchTo().frame(iframeElement);
-		return iframeElement;
+		
 	}
 
 	/**
