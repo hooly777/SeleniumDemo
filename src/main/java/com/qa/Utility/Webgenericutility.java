@@ -32,10 +32,15 @@ public class Webgenericutility extends BaseTest {
 	 * ExpectedConditions to avoid StaleElementReferenceException
 	 * @param element driver timeout 
 	 */
-	public static void clickOn(WebDriver driver, WebElement element, int timeout) {		
+	
+	public static void clickOn(WebElement element) {		
+			element.click();
+		} 
+	
+	/*public static void clickOn(WebElement element, int timeout) {		
 		try {
-			/*new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-				.until(ExpectedConditions.elementToBeClickable(element));*/
+			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(element));
 			waitExpectedConditions(element,timeout);
 			element.click();
 		} catch (Exception e) {
@@ -43,7 +48,7 @@ public class Webgenericutility extends BaseTest {
 			System.out.println(e.getMessage());
 
 		}
-	}
+	}*/
 
 	/**
 	 * @author Silampur Girish
@@ -52,7 +57,7 @@ public class Webgenericutility extends BaseTest {
 	 * ExpectedConditions to avoid StaleElementReferenceException
 	 * @param element driver timeout value	 
 	 */
-	public static void sendKeyValue(WebDriver driver, WebElement element, int timeout, String value) {
+	public static void sendKeyValue(WebElement element, int timeout, String value) {
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(element));
@@ -320,10 +325,6 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected
@@ -489,7 +490,7 @@ public class Webgenericutility extends BaseTest {
 	 */
 	
 	@SuppressWarnings("unused")
-	private void changeColor(String color, WebElement element) {
+	private static void changeColor(String color, WebElement element) {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		js.executeScript("arguments[0].style.backgroundColor = '" + color + "'", element);
 
@@ -504,8 +505,15 @@ public class Webgenericutility extends BaseTest {
 	 * @param 
 	 * @return
 	 */
-	public void dragAndDrop(WebElement from,WebElement to){
+	public static void dragAndDrop(WebElement from,WebElement to){
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
 	}
+	
+	public static void moveToElement(WebElement element){
+		Actions act = new Actions(driver);
+		act.moveToElement(element).build().perform();
+	}
+	
+	
 }

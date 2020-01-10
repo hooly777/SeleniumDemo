@@ -1,4 +1,4 @@
-package com.qa.pages;
+package Trash;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,8 +9,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.basetest.BaseTest;
-
-import Trash.ReadExcel;
 
 import org.apache.log4j.Logger;
 
