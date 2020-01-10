@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.LandingPageScript">
+      <class name="com.qa.test.Test_Cases">
         <methods>
-          <include name="LandingPageScroll"/>
+          <include name="ShoppingCart"/>
+          <include name="SignIn"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
           <include name="takeScreenShot"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.test.LandingPageScript -->
+      </class> <!-- com.qa.test.Test_Cases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

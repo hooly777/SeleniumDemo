@@ -1,40 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13367" started-at="2020-01-09T12:55:01Z" finished-at="2020-01-09T12:55:15Z">
+  <suite name="Default suite" duration-ms="63082" started-at="2020-01-10T13:36:19Z" finished-at="2020-01-10T13:37:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13367" started-at="2020-01-09T12:55:01Z" finished-at="2020-01-09T12:55:15Z">
-      <class name="com.qa.test.LandingPageScript">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.LandingPageScript@5e3a8624]" name="startReport" is-config="true" duration-ms="188" started-at="2020-01-09T18:25:01Z" finished-at="2020-01-09T18:25:02Z">
+    <test name="Default test" duration-ms="63082" started-at="2020-01-10T13:36:19Z" finished-at="2020-01-10T13:37:22Z">
+      <class name="com.qa.test.Test_Cases">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="startReport" is-config="true" duration-ms="228" started-at="2020-01-10T19:06:19Z" finished-at="2020-01-10T19:06:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.LandingPageScript@5e3a8624]" name="BrowserIntialisation" is-config="true" duration-ms="9850" started-at="2020-01-09T18:25:02Z" finished-at="2020-01-09T18:25:11Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="BrowserIntialisation" is-config="true" duration-ms="12857" started-at="2020-01-10T19:06:19Z" finished-at="2020-01-10T19:06:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="LandingPageScroll()[pri:1, instance:com.qa.test.LandingPageScript@5e3a8624]" name="LandingPageScroll" duration-ms="2100" started-at="2020-01-09T18:25:11Z" finished-at="2020-01-09T18:25:14Z">
+        <test-method status="PASS" signature="ElectronicBtn()[pri:1, instance:com.qa.test.Test_Cases@47c62251]" name="ElectronicBtn" duration-ms="1323" started-at="2020-01-10T19:06:32Z" finished-at="2020-01-10T19:06:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LandingPageScroll -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.LandingPageScript@5e3a8624]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-09T18:25:14Z" finished-at="2020-01-09T18:25:14Z">
+        </test-method> <!-- ElectronicBtn -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:06:34Z" finished-at="2020-01-10T19:06:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LandingPageScroll status=SUCCESS method=LandingPageScript.LandingPageScroll()[pri:1, instance:com.qa.test.LandingPageScript@5e3a8624] output={null}]]]>
+                <![CDATA[[TestResult name=ElectronicBtn status=SUCCESS method=Test_Cases.ElectronicBtn()[pri:1, instance:com.qa.test.Test_Cases@47c62251] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.LandingPageScript@5e3a8624]" name="tearDown" is-config="true" duration-ms="1200" started-at="2020-01-09T18:25:14Z" finished-at="2020-01-09T18:25:15Z">
+        <test-method status="PASS" signature="AddCellPhone()[pri:2, instance:com.qa.test.Test_Cases@47c62251]" name="AddCellPhone" duration-ms="2908" started-at="2020-01-10T19:06:34Z" finished-at="2020-01-10T19:06:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCellPhone -->
+        <test-method status="PASS" signature="Jewllery()[pri:3, instance:com.qa.test.Test_Cases@47c62251]" name="Jewllery" duration-ms="2462" started-at="2020-01-10T19:06:36Z" finished-at="2020-01-10T19:06:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Jewllery -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:06:36Z" finished-at="2020-01-10T19:06:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddCellPhone status=SUCCESS method=Test_Cases.AddCellPhone()[pri:2, instance:com.qa.test.Test_Cases@47c62251] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="FAIL" signature="ShoppingCart()[pri:4, instance:com.qa.test.Test_Cases@47c62251]" name="ShoppingCart" duration-ms="21894" started-at="2020-01-10T19:06:39Z" finished-at="2020-01-10T19:07:01Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[8]/div[1]/button"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LP-5CG5503JXB', ip: '192.168.43.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_222'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}
+Session ID: 08c2442e08c9edf23a9079c86be55106
+*** Element info: {Using=xpath, value=/html/body/div[8]/div[1]/button}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[8]/div[1]/button"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LP-5CG5503JXB', ip: '192.168.43.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_222'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}
+Session ID: 08c2442e08c9edf23a9079c86be55106
+*** Element info: {Using=xpath, value=/html/body/div[8]/div[1]/button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.qa.pages.ShoppingCartpage.ShoppingCart(ShoppingCartpage.java:63)
+	at com.qa.test.Test_Cases.ShoppingCart(Test_Cases.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShoppingCart -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:06:39Z" finished-at="2020-01-10T19:06:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Jewllery status=SUCCESS method=Test_Cases.Jewllery()[pri:3, instance:com.qa.test.Test_Cases@47c62251] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="takeScreenShot" is-config="true" duration-ms="520" started-at="2020-01-10T19:07:01Z" finished-at="2020-01-10T19:07:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShoppingCart status=FAILURE method=Test_Cases.ShoppingCart()[pri:4, instance:com.qa.test.Test_Cases@47c62251] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="FAIL" signature="SignIn()[pri:5, instance:com.qa.test.Test_Cases@47c62251]" name="SignIn" duration-ms="20047" started-at="2020-01-10T19:07:01Z" finished-at="2020-01-10T19:07:21Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"BillingNewAddress_FirstName"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LP-5CG5503JXB', ip: '192.168.43.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_222'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}
+Session ID: 08c2442e08c9edf23a9079c86be55106
+*** Element info: {Using=id, value=BillingNewAddress_FirstName}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"BillingNewAddress_FirstName"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LP-5CG5503JXB', ip: '192.168.43.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_222'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\User1\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}
+Session ID: 08c2442e08c9edf23a9079c86be55106
+*** Element info: {Using=id, value=BillingNewAddress_FirstName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.qa.pages.SignInpage.SignInPage(SignInpage.java:63)
+	at com.qa.test.Test_Cases.SignIn(Test_Cases.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="takeScreenShot" is-config="true" duration-ms="407" started-at="2020-01-10T19:07:21Z" finished-at="2020-01-10T19:07:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignIn status=FAILURE method=Test_Cases.SignIn()[pri:5, instance:com.qa.test.Test_Cases@47c62251] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.Test_Cases@47c62251]" name="tearDown" is-config="true" duration-ms="368" started-at="2020-01-10T19:07:22Z" finished-at="2020-01-10T19:07:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.LandingPageScript -->
+      </class> <!-- com.qa.test.Test_Cases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
