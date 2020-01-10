@@ -8,9 +8,12 @@ import com.qa.utilities.Webgenericutility;
 
 
 public class NopCommerce_ShoppingCart {
+	
+	WebDriver driver;
 
 	public NopCommerce_ShoppingCart(WebDriver driver)
 	{
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -20,18 +23,20 @@ public class NopCommerce_ShoppingCart {
 	@FindBy(xpath="//h2[@class='product-title']//a[contains(text(),'HTC One Mini Blue')]")
 	public static WebElement citemText3;
 	
+	
+	
 	@FindBy(xpath="//h2[@class='product-title']//a[contains(text(),'HTC One M8 Android L 5.0 Lollipop')]")
 	public static WebElement citemText4;
 	
 	@FindBy(xpath="//a[@class='product-name'][contains(text(),'Vintage Style Engagement Ring')]")
 	public static WebElement jitemText2;
 	
-	@FindBy(className ="cart-total-right")
+	@FindBy(xpath ="//tr[@class='order-subtotal']//td[@class='cart-total-right']")
 	public static WebElement subTotal;
 	
 
-	@FindBy(id ="itemquantity13138")
-	public static WebElement qty;
+	@FindBy(xpath ="//div[@class='table-wrapper']/table/tbody/tr[3]/td[6]/input")
+	public static WebElement updateCountTxt;
 	
 	@FindBy(name ="updatecart")
 	public static WebElement updateCartbutton;
@@ -66,15 +71,17 @@ public class NopCommerce_ShoppingCart {
 
 	public String getItem3Text()
 	{
-		return Webgenericutility.getText(jitemText2, 3000);
+		return subTotal.getText();
 	}
 	
 	public void updateJewelleryCount(String value)
 	{
-		Webgenericutility.sendKeyValue(qty, 1000, value);
+		updateCountTxt.clear();
+		updateCountTxt.sendKeys(value);
+		
 	}
 	
-	public void clickUpdteShoppingCart()
+	public void clickUpdateShoppingCart()
 	{
 		Webgenericutility.clickOn(updateCartbutton, 1000);
 		
@@ -86,12 +93,14 @@ public class NopCommerce_ShoppingCart {
 	}
 	public void closePopUp()
 	{
+		
 		Webgenericutility.clickOn(closeTermspopup, 1000);
 		
 	}
 	
 	public void acceptTerms()
-	{
+	{	
+		
 		Webgenericutility.clickOn(acceptCheckbox, 1000);
 		
 	}

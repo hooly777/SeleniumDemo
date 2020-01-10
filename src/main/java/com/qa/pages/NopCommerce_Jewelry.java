@@ -2,15 +2,23 @@ package com.qa.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Sleeper;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
 import com.qa.utilities.Webgenericutility;
 
 
 public class NopCommerce_Jewelry {
 	
+	public WebDriver driver;
 	public NopCommerce_Jewelry(WebDriver driver){
+		this.driver=driver;
 		//This initElements method will create all WebElements
 		PageFactory.initElements(driver, this);
 	}
@@ -37,9 +45,16 @@ public class NopCommerce_Jewelry {
 	private WebElement jitemText2;
 	
 	
-	public void JewelryHighestPrice()
+	public void JewelryHighestPrice() throws InterruptedException
 	{
-		Webgenericutility.selectDropdownByValue(sortDropdown_1, "Price: High to Low", 10);
+		Thread.sleep(3000);
+		//Webgenericutility.selectDropdownByValue(sortDropdown_1, "Price: High to Low", 10);
+		
+
+		Select s=new Select(sortDropdown_1);
+		s.selectByVisibleText("Price: High to Low");
+		Thread.sleep(3000);
+
 	}
 	
 	public void JewelryAddToCart()
@@ -47,13 +62,11 @@ public class NopCommerce_Jewelry {
 		Webgenericutility.clickOn(jaddTocart, 10);
 	}
 	
-	public void JewelryCartContent()
+	public void VerifyJewelryCartContent(String msg)
 	{
-		String jcart = Webgenericutility.getAttributeValue(cartContent, "The product has been added to your", 10);
-		if(jcart.equalsIgnoreCase("The product has been added to your")){
-			System.out.println("Cart Content Availabe");
-		}
-		else { System.out.println("Cart Content Not Availabe"); }
+		SoftAssert sf=new SoftAssert();
+		
+		sf.assertEquals(cartContent.getText(), msg);
 	}
 	
 	public void JewelryCartContentClose()
@@ -63,7 +76,10 @@ public class NopCommerce_Jewelry {
 	
 	public void JewelryMouseHoverShoppingCart()
 	{
-		Webgenericutility.moveToElement(addtoCartlabel);
+		Actions a= new Actions(driver);
+		a.moveToElement(addtoCartlabel);
+		a.build().perform();
+	
 		goToCartButton.click();
 	}
 	

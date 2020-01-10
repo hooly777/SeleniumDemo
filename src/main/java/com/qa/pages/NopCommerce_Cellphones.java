@@ -1,10 +1,13 @@
 package com.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.utilities.Webgenericutility;
 
@@ -30,15 +33,15 @@ public class NopCommerce_Cellphones {
 	@FindBy(xpath="//h2[@class='product-title']//a[contains(text(),'HTC One M8 Android L 5.0 Lollipop')]")
 	private WebElement citemText2;
 	
-	@FindBy(xpath="//div[@class='block block-category-navigation']//li[6]")
+	@FindBy(xpath="//li[@class='inactive']//a[contains(text(),'Jewelry')]")
 	private WebElement jewelry;
 	
 
-
+public WebDriver driver;
 
 public NopCommerce_Cellphones(WebDriver driver){
 
-
+this.driver=driver;
 
 	//This initElements method will create all WebElements
 
@@ -47,37 +50,42 @@ public NopCommerce_Cellphones(WebDriver driver){
 }
 
 	Webgenericutility web_util = new Webgenericutility();
-	
 
-public void sort_dropdown_L2H(){
+public void sort_dropdown_L2H() throws InterruptedException{
+	
+	//new WebDriverWait(driver, 3000).Until(ExpectedConditions.ElementIsVisible((By.Id("ctl00_ContentPlaceHolder1_drp85"))));
+
 	
 	Select s=new Select(sortDropdown);
-	s.selectByVisibleText("Price: Low to High");
+	s.selectByIndex(3);
+	Thread.sleep(3000);
 
 	//Webgenericutility.selectDropdownByText(sortDropdown, "Price: Low to High", 10);
 	
 		
 }
 
-public void addToCart1(){
+public void addToCart1() throws InterruptedException{
 	
-	web_util.waitUntilElemLocated(caddcart_1);
+	//web_util.waitUntilElemLocated(caddcart_1);
 	Webgenericutility.clickOn(caddcart_1, 1000);
+	Thread.sleep(3000);
 		
 }
 
-public void addToCart2(){
+public void addToCart2() throws InterruptedException{
 	
 
-	web_util.waitUntilElemLocated(caddcart_2);
+	//web_util.waitUntilElemLocated(caddcart_2);
 	Webgenericutility.clickOn(caddcart_2,3000);
+	Thread.sleep(3000);
 		
 }
 
 public void jewellry_click(){
 
 
-	web_util.waitUntilElemLocated(jewelry);
+	//web_util.waitUntilElemLocated(jewelry);
 	Webgenericutility.clickOn(jewelry, 3000);
 	
 }

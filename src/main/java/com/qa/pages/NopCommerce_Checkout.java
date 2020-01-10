@@ -13,7 +13,7 @@ public class NopCommerce_Checkout {
 	public static WebElement billingAddressclick;
 	
 
-	@FindBy(id="BillingNewAddress_FirstName")
+	@FindBy(name="BillingNewAddress.FirstName")
 	public static WebElement firstName;
 	
 	@FindBy(id="BillingNewAddress_LastName")
@@ -37,12 +37,12 @@ public class NopCommerce_Checkout {
 
 	@FindBy(id="BillingNewAddress_PhoneNumber")
 	public static WebElement phoneNumber;
-	
 	@FindBy(xpath="//div[@id='billing-buttons-container']//input[@class='button-1 new-address-next-step-button']")
-	public static WebElement continueButton1;
+	public static WebElement billingAdressBtn;
 	
-	@FindBy(xpath="//input[@class='button-1 shipping-method-next-step-button']")
+	@FindBy(css="div.master-wrapper-page:nth-child(6) div.master-wrapper-content div.master-column-wrapper div.center-1 div.page.checkout-page div.page-body.checkout-data ol.opc li.tab-section.allow.active:nth-child(3) div.step.a-item form:nth-child(1) div.buttons:nth-child(2) > input.button-1.shipping-method-next-step-button")
 	public static WebElement continueButton2;
+	
 	
 
 	@FindBy(xpath="//input[@class='button-1 payment-method-next-step-button']")
@@ -73,63 +73,63 @@ public void billingAddressclick(){
 
 public void enterFirstname(String fname){
 	
-	Webgenericutility.sendKeyValue(firstName, 0, fname);
+	firstName.sendKeys(fname);
+	//Webgenericutility.sendKeyValue(firstName, 0, fname);
 	
 }
 
 public void enterLastname(String lname){
 	
-	Webgenericutility.sendKeyValue(lastName, 0, lname);
+	lastName.sendKeys(lname);
 	
 }
 
 public void enterEmailID(String emailid){
 	
-	Webgenericutility.sendKeyValue(email, 0, emailid);
+	email.sendKeys(emailid);
 }
 public void enterCountry(String country1){
 	
-	Webgenericutility.sendKeyValue(country, 0, country1);
+	country.sendKeys(country1);
 }
 
 public void enterCity(String city1){
-	
-	Webgenericutility.sendKeyValue(city, 0, city1);
+	city.sendKeys(city1);
 }
 public void enterAddress1(String address){
 	
-	Webgenericutility.sendKeyValue(address1, 0, address);
+	address1.sendKeys(address);
 }
 
 public void enterZipCode(String zippostal){
-	
-	Webgenericutility.sendKeyValue(zipPostCode, 0, zippostal);
+	zipPostCode.sendKeys(zippostal);
 }
 
 public void enterPhoneNumber(String phonenumber){
 	
-	Webgenericutility.sendKeyValue(zipPostCode, 0, phonenumber);
+	phoneNumber.sendKeys(phonenumber);
 }
 
 public void billingAddresscontinueclick(){
-	
-	Webgenericutility.clickOn(continueButton1, 10);
+	billingAdressBtn.click();
+	//Webgenericutility.clickOn(continueButton1, 10);
 }
 
 public void shippingContinueClick(){
 	
-	Webgenericutility.clickOn(continueButton2, 10);
+	continueButton2.click();
+	System.out.println("Shipping method continue clicked");
 }
 public void paymentContinueClick(){
 	
-	Webgenericutility.clickOn(continueButton3, 10);
+	continueButton3.click();
 }
 public void paymentinformationContinueClick(){
 	
-	Webgenericutility.clickOn(continueButton4, 10);
+	continueButton4.click();
 }
 public void confirmButtonClick(){
-	
-	Webgenericutility.clickOn(continueButton5, 10);
+	continueButton5.click();
+	//Webgenericutility.clickOn(continueButton5, 10);
 }
 }
