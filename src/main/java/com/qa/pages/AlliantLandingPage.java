@@ -43,7 +43,7 @@ public class AlliantLandingPage extends BaseTest {
 	WebElement InvestLink;
 	public WebElement InvestElement(){
 		return InvestLink;
-	}
+	}  
 	
 	@FindBy(xpath="//nav[@id='footer-main-nav']/div[1]/ul/li[4]")
 	WebElement ProtectLink;
