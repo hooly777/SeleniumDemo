@@ -1,4 +1,4 @@
-package SilapurGirish51750336;
+package com.qa.test;
 
 
 import org.openqa.selenium.WebDriver;
@@ -12,8 +12,7 @@ import org.testng.annotations.Test;
 import com.qa.Utility.ExcellUtility;
 import com.qa.Utility.Webgenericutility;
 import com.qa.basetest.BaseTest;
-
-import SilapurGirish51750336.*;
+import com.qa.pages.AlliantcreditunionHomePage;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class AlliantcreditunionHomePageTest extends BaseTest {
