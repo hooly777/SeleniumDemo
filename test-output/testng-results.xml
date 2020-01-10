@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47981" started-at="2020-01-10T13:37:15Z" finished-at="2020-01-10T13:38:03Z">
+  <suite name="Default suite" duration-ms="60105" started-at="2020-01-10T14:26:06Z" finished-at="2020-01-10T14:27:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47981" started-at="2020-01-10T13:37:15Z" finished-at="2020-01-10T13:38:03Z">
+    <test name="Default test" duration-ms="60105" started-at="2020-01-10T14:26:06Z" finished-at="2020-01-10T14:27:06Z">
       <class name="com.qa.test.nopCommerce_Test">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="startReport" is-config="true" duration-ms="166" started-at="2020-01-10T19:07:15Z" finished-at="2020-01-10T19:07:15Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="startReport" is-config="true" duration-ms="203" started-at="2020-01-10T19:56:06Z" finished-at="2020-01-10T19:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="BrowserIntialisation" is-config="true" duration-ms="7794" started-at="2020-01-10T19:07:15Z" finished-at="2020-01-10T19:07:23Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="BrowserIntialisation" is-config="true" duration-ms="8037" started-at="2020-01-10T19:56:06Z" finished-at="2020-01-10T19:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="CellPhoneAddTocart()[pri:1, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="CellPhoneAddTocart" duration-ms="10951" started-at="2020-01-10T19:07:23Z" finished-at="2020-01-10T19:07:34Z">
+        <test-method status="PASS" signature="CellPhoneAddTocart()[pri:1, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="CellPhoneAddTocart" duration-ms="10889" started-at="2020-01-10T19:56:14Z" finished-at="2020-01-10T19:56:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CellPhoneAddTocart -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="4" started-at="2020-01-10T19:07:34Z" finished-at="2020-01-10T19:07:34Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="7" started-at="2020-01-10T19:56:25Z" finished-at="2020-01-10T19:56:25Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="JewelryAddToCart()[pri:2, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="JewelryAddToCart" duration-ms="11812" started-at="2020-01-10T19:07:34Z" finished-at="2020-01-10T19:07:45Z">
+        <test-method status="PASS" signature="JewelryAddToCart()[pri:2, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="JewelryAddToCart" duration-ms="11540" started-at="2020-01-10T19:56:25Z" finished-at="2020-01-10T19:56:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JewelryAddToCart -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T19:07:45Z" finished-at="2020-01-10T19:07:45Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T19:56:36Z" finished-at="2020-01-10T19:56:36Z">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="JewelryItemUpdate()[pri:3, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="JewelryItemUpdate" duration-ms="13564" started-at="2020-01-10T19:07:45Z" finished-at="2020-01-10T19:07:59Z">
+        <test-method status="PASS" signature="JewelryItemUpdate()[pri:3, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="JewelryItemUpdate" duration-ms="13476" started-at="2020-01-10T19:56:36Z" finished-at="2020-01-10T19:56:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JewelryItemUpdate -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:07:59Z" finished-at="2020-01-10T19:07:59Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:56:50Z" finished-at="2020-01-10T19:56:50Z">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="WelcomeSignIn()[pri:4, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="WelcomeSignIn" duration-ms="2542" started-at="2020-01-10T19:07:59Z" finished-at="2020-01-10T19:08:01Z">
+        <test-method status="PASS" signature="WelcomeSignIn()[pri:4, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="WelcomeSignIn" duration-ms="2517" started-at="2020-01-10T19:56:50Z" finished-at="2020-01-10T19:56:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeSignIn -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T19:08:01Z" finished-at="2020-01-10T19:08:01Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:56:52Z" finished-at="2020-01-10T19:56:52Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="tearDown" is-config="true" duration-ms="1104" started-at="2020-01-10T19:08:01Z" finished-at="2020-01-10T19:08:03Z">
+        <test-method status="PASS" signature="CommerceNeccesaryDetails()[pri:5, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="CommerceNeccesaryDetails" duration-ms="12360" started-at="2020-01-10T19:56:52Z" finished-at="2020-01-10T19:57:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommerceNeccesaryDetails -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:57:05Z" finished-at="2020-01-10T19:57:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CommerceNeccesaryDetails status=SUCCESS method=nopCommerce_Test.CommerceNeccesaryDetails()[pri:5, instance:com.qa.test.nopCommerce_Test@7085bdee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.nopCommerce_Test@7085bdee]" name="tearDown" is-config="true" duration-ms="1021" started-at="2020-01-10T19:57:05Z" finished-at="2020-01-10T19:57:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

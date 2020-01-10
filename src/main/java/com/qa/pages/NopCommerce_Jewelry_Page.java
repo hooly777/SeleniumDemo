@@ -1,3 +1,8 @@
+/*
+ *This class is created to add Highest jwelery in cart and place the order
+ */
+
+
 package com.qa.pages;
 
 import org.openqa.selenium.WebElement;

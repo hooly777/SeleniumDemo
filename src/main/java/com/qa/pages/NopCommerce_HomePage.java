@@ -1,3 +1,8 @@
+/*
+ *This class is created to browse to the site : http://demo.nopcommerce.com/
+ */
+
+
 package com.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

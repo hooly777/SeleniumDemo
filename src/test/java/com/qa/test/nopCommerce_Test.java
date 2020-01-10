@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.qa.basetest.BaseTest;
 import com.qa.pages.NopCommerce_CartPage;
 import com.qa.pages.NopCommerce_CellPhone_LowestPrice;
+import com.qa.pages.NopCommerce_Checkout;
 import com.qa.pages.NopCommerce_HomePage;
 import com.qa.pages.NopCommerce_Jewelry_Page;
 import com.qa.pages.NopCommerce_WelcomeSignIn;
@@ -22,6 +23,7 @@ public class nopCommerce_Test  extends  BaseTest{
 	public NopCommerce_CartPage jewelryItem;
 	public NopCommerce_CartPage  item1Verify;
 	public NopCommerce_WelcomeSignIn signin;
+	public NopCommerce_Checkout neccessary_deatils;
 	Logger log = Logger.getLogger("validating cellphone page");
 
 
@@ -71,6 +73,18 @@ public class nopCommerce_Test  extends  BaseTest{
 		signin.checkOutAsGuestButton();
 		
 	}
+	
+	@Test(priority=5)
+	// validate checkout page by filling necessary information: billing, shipping address etc
+	
+	public void CommerceNeccesaryDetails() throws InterruptedException {
+		neccessary_deatils=new NopCommerce_Checkout();
+		neccessary_deatils.BillingDetails();
+		neccessary_deatils.verifyingOrderPage();
+
+		
+	}
+	
 	
 	
 	

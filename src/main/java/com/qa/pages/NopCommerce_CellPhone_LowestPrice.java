@@ -1,3 +1,7 @@
+/*
+ *This class is created to add lowest two cell-phones in cart and place the order
+ */
+
 package com.qa.pages;
 
 import org.openqa.selenium.WebElement;

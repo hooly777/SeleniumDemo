@@ -1,4 +1,7 @@
-package com.qa.pages;
+/*
+ *This class is created to Modify the jewelry item count to 3 and Click on update shopping cart button.
+ *Click on checkout button and verify the terms and service popup and close the popup.
+ */package com.qa.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
