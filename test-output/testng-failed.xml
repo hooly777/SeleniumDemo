@@ -5,11 +5,19 @@
     <classes>
       <class name="com.qa.test.NopCommerceElectronicsTest">
         <methods>
+          <include name="AddingCellPhoneToCart"/>
+          <include name="check_TermsAndService"/>
+          <include name="nopCommerce_VerifyShoppinfCart"/>
           <include name="startReport"/>
-          <include name="BrowserIntialisation"/>
-          <include name="takeScreenShot"/>
+          <include name="ValidateCellphonePage"/>
           <include name="tearDown"/>
           <include name="detailsCreation"/>
+          <include name="AddingJewelryToCart"/>
+          <include name="nopCommerce_ClickOnShoppingCart"/>
+          <include name="nopCommerce_UpdateJewelryQuantity"/>
+          <include name="BrowserIntialisation"/>
+          <include name="takeScreenShot"/>
+          <include name="nopCommerce_verifyTermsAndServicePopup"/>
         </methods>
       </class> <!-- com.qa.test.NopCommerceElectronicsTest -->
     </classes>

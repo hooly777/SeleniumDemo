@@ -18,14 +18,6 @@ public class NopCommerce_Jewelry_Page extends BaseTest {
 	@FindBy(id ="products-orderby")
 	WebElement sortby;
 
-	//lowest cell phones price
-	@FindBy(xpath="(//span[@class='price actual-price'])[position()=1]")
-	WebElement jewelrylowpric1;
-
-	//lowest cell phones names
-	@FindBy(xpath="(//h2[@class='product-title'])[position()=1]//a")
-	WebElement jewelrylowname1;
-
 	//Adding lowest price cell-phones to cart
 	@FindBy(xpath="(//div[@class='item-grid'][1]//div[@class='buttons'][1]//input[@value='Add to cart'])[position()=1]")
 	WebElement jewelryaddtocart;

@@ -13,20 +13,6 @@ public class NopCommerce_CellPhone_Page extends BaseTest {
 	@FindBy(id ="products-orderby")
 	WebElement sortby;
 
-	//lowest cell phones price
-	@FindBy(xpath="((//span[@class='price actual-price'])[position()=1]")
-	WebElement cellphonelowpric1;
-
-	@FindBy(xpath="((//span[@class='price actual-price'])[position()=2]")
-	WebElement cellphonelowpric2;
-
-	//lowest cell phones names
-	@FindBy(xpath="(//h2[@class='product-title'])[position()=1]//a")
-	WebElement cellphonelowname1;
-
-	@FindBy(xpath="(//h2[@class='product-title'])[position()=2]//a")
-	WebElement cellphonelowname2;
-
 	//Adding lowest price cell-phones to cart
 	@FindBy(xpath="(//div[@class='item-grid'][1]//div[@class='buttons'][1]//input[@value='Add to cart'])[position()=1]")
 	WebElement cellphoneaddtocart1;
