@@ -14,6 +14,7 @@ import com.qa.pages.NopCommerce_CartPage;
 import com.qa.pages.NopCommerce_CellPhones_Page;
 import com.qa.pages.nopCommercePage;
 import com.qa.pages.NopCommerce_Jewelry_Page;
+import com.qa.pages.SignIn_Page;
 import com.qa.pages.LoginPage;
 import com.qa.basetest.BaseTest;
 
@@ -26,6 +27,7 @@ public class NopCommerce_CellPhones_Test  extends  BaseTest{
 	Logger log = Logger.getLogger("devpinoyLogger");
 	public NopCommerce_Jewelry_Page jewellerypage;
 	public NopCommerce_CartPage cart;
+	public SignIn_Page Signin;
 
 
 
@@ -65,8 +67,19 @@ public class NopCommerce_CellPhones_Test  extends  BaseTest{
 		Thread.sleep(2000);
 		cart.updateJewelryCart();
 		cart.verifySubTotal();
+		cart.verifyTermsAndServicePopup();
+		cart.clickCheckOutButton();
+		cart.verifySignInPage();
 	}
-
+	
+	@Test(priority=4)
+	
+	public void Signin() throws Exception{
+		
+		SignIn_Page sign=new SignIn_Page();
+		sign.clickCheckOutasGuest();
+		
+	}
 
 
 }

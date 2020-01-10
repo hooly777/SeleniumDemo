@@ -6,11 +6,9 @@
       <class name="com.qa.test.NopCommerce_CellPhones_Test">
         <methods>
           <include name="verifyUpdatecart"/>
-          <include name="verifyCellphoneAddtoCart"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
           <include name="takeScreenShot"/>
-          <include name="verifyAddtoCartJewellery"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.test.NopCommerce_CellPhones_Test -->

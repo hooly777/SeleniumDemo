@@ -16,34 +16,30 @@ import Trash.ReadExcel;
 
 import org.apache.log4j.Logger;
 
-public class nopCommercePage extends BaseTest {	
+public class SignIn_Page extends BaseTest {	
 
 	Logger log = Logger.getLogger("devpinoyLogger");
 
-	@FindBy(xpath="//ul[@class='top-menu notmobile']//a[text()='Electronics ']")
+	@FindBy(xpath="//input[@class='button-1 checkout-as-guest-button']")
 
-	WebElement electronics;
-
-
-	@FindBy(xpath="//ul[@class='top-menu notmobile']//a[contains(text(),'Cell phones')]")
-
-	WebElement cellphone;
+	WebElement SignIn;
 
 
-	public nopCommercePage(){
+
+
+	public SignIn_Page(){
 
 		//This initElements method will create all WebElements
 		PageFactory.initElements(driver, this);
 
 	}
 
-	//this method clicks on the electronics submenu
-	public void clickCellphone(){
+	//clicks on the Checkoutasguest button and verify that it is navigating to check out page
+	public void clickCheckOutasGuest() throws Exception{
 
-		//electronics.click();
-		Webgenericutility.mouseHover(electronics);
-		cellphone.click();
-		String exptedTitle = "nopCommerce demo store. Cell phones";
+		SignIn.click();
+		Thread.sleep(1000);
+		String exptedTitle = "nopCommerce demo store. Checkout";
 		String actualTilte = driver.getTitle();
 		System.out.println("current page title: " +actualTilte);
 		Assert.assertEquals(actualTilte, exptedTitle);
