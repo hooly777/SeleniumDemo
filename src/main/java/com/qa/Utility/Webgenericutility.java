@@ -24,7 +24,7 @@ import com.qa.basetest.BaseTest;
  * @version 1.o
  */
 public class Webgenericutility extends BaseTest {
-	static WebDriver driver;
+	//static WebDriver driver;
 	
 	/**
 	 * @author Silampur Girish
@@ -505,4 +505,14 @@ public class Webgenericutility extends BaseTest {
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
 	}
+	
+	public static void selectByVissibletext(WebElement element,String text){
+		Select select =new Select(element);
+		select.selectByVisibleText(text);
+	}
+	public static void mouseOver(WebElement element){
+		Actions action = new Actions(driver);
+		action.moveToElement(element).perform();
+	}
+	
 }
