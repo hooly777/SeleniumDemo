@@ -17,12 +17,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -37,13 +40,11 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-<<<<<<< HEAD
-=======
 import Trash.DataRead;
 import Trash.ReadExcel;
 
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
+
 public class BaseTest {
 
 	public static WebDriver driver;
@@ -93,16 +94,14 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-<<<<<<< HEAD
 			//Assert.assertFalse("Browser Not Found", true);
 			Assert.assertFalse(true, "Browser Not Found");
-=======
 
 			
 
-			Assert.assertFalse(true, "Browser Not Found");
+			//Assert.assertFalse(true, "Browser Not Found");
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
+
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
@@ -186,6 +185,24 @@ public class BaseTest {
 	return testObjArray;
 
 	}	
+	
+	public static void waitForLoad(WebDriver driver) {
+
+		ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
+
+		public Boolean apply(WebDriver driver) {
+
+		return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+
+		}
+
+		};
+
+		WebDriverWait wait = new WebDriverWait(driver, 200);
+
+		wait.until(pageLoadCondition);
+
+		}
 
 
 

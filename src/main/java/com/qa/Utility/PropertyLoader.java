@@ -21,7 +21,7 @@ public class PropertyLoader {
 		
 		try 
 		{
-			src=new FileReader(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\Resource\\commonVariables.properties");
+			src=new FileReader(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\Utility\\PropertyLoader.java");
 			p=new Properties();
 			p.load(src);
 		}
