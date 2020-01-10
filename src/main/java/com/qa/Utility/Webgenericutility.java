@@ -24,7 +24,7 @@ import com.qa.basetest.BaseTest;
  * @version 1.o
  */
 public class Webgenericutility extends BaseTest {
-	static WebDriver driver;
+	//static WebDriver driver;
 	
 	/**
 	 * @author Silampur Girish
@@ -321,7 +321,6 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected
@@ -334,8 +333,7 @@ public class Webgenericutility extends BaseTest {
 
 		wait.until(ExpectedConditions.elementToBeSelected(waitExpectedException));
 		return waitExpectedException;
-=======
->>>>>>> fe50405d5b6dfd300376fa8a2fc09e87fc942083
+	}
 
 	/**
 	 * @author Mohini Sethumadhavan
@@ -506,5 +504,15 @@ public class Webgenericutility extends BaseTest {
 	public void dragAndDrop(WebElement from,WebElement to){
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
+	}
+	public static void moveToElement(WebElement e)
+	{
+		Actions a=new Actions(driver);
+		a.moveToElement(e).build().perform();
+	}
+	public static void selectByVisibleText(WebElement e,String data)
+	{
+		Select option=new Select(e);
+		option.selectByVisibleText(data);
 	}
 }
