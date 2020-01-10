@@ -99,11 +99,12 @@ public class BaseTest {
 
 	@AfterClass
 	// This method is used to close the browsers
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
 
 		report.endTest(test);
 		report.flush();
-		driver.quit();
+		//Thread.sleep(9000);
+		//driver.quit();
 	}
 
 	// It will execute after every test execution 
