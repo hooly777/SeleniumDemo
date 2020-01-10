@@ -18,7 +18,7 @@ public class LoginPage extends BaseTest {
 
 	Logger log = Logger.getLogger("devpinoyLogger");
 	
-	@FindBy(name="uid")
+	@FindBy(xpath="uid")
 
 	WebElement user99GuruName;
 
