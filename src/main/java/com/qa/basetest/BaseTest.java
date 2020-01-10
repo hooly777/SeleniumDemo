@@ -7,7 +7,7 @@
  					Tear Down
  
  Creation Date : 07/01/2020
- @Version 2.2
+ @Version 2.1
  @author Sumana and Team
 */
 
@@ -16,48 +16,42 @@ package com.qa.basetest;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import com.qa.Utility.ExcelUtility;
-import com.qa.Utility.PropertyLoader;
+import com.qa.utilities.PropertyLoader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-<<<<<<< HEAD
-=======
-import Trash.DataRead;
-import Trash.ReadExcel;
 
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
 public class BaseTest {
 
-	public static WebDriver driver;
+	public WebDriver driver;
 	static String absolutepath = System.getProperty("user.dir");
 	static String driverPath = absolutepath+"\\Drivers\\";
 	
 	static String filePath = absolutepath+"\\Failedscreenshots";
-	//ExtentReports extent;
+	ExtentReports extent;
 	//helps to generate the logs in test report.
 	ExtentTest test;
 	static ExtentReports report;
 	ITestResult result;
-	public static ExtentReports extent;
-	public static ExtentTest logger;
+
+	
+
 
 	@BeforeClass
 	// This method is used to launch browser
@@ -76,7 +70,7 @@ public class BaseTest {
 			case "firefox":
 				System.out.println("Launching Firefox browser..");
 				System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
-				driver = new FirefoxDriver();
+			//	driver = new FirefoxDriver();
 				break;
 			case "InternetExplorer":
 				System.out.println("Launching InternetExplorer browser..");
@@ -87,22 +81,13 @@ public class BaseTest {
 				System.out.println("browser : " + browsertype
 						+ " is invalid, Launching Firefox as browser of choice..");
 				System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
-				driver = new FirefoxDriver();
+			//	driver = new FirefoxDriver();
 			}
 		}
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-<<<<<<< HEAD
-			//Assert.assertFalse("Browser Not Found", true);
-			Assert.assertFalse(true, "Browser Not Found");
-=======
-
-			
-
-			Assert.assertFalse(true, "Browser Not Found");
-
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
+			Assert.assertFalse(true, "Browser does not exist");
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
@@ -112,7 +97,7 @@ public class BaseTest {
 	}
 
 
-	@AfterClass
+	@AfterTest
 	// This method is used to close the browsers
 	public void tearDown() {
 
@@ -149,6 +134,8 @@ public class BaseTest {
 		String errflpath = Dest.getAbsolutePath();
 		FileUtils.copyFile(scrFile, Dest);
 		return errflpath;
+
+
 	}			
 
 	// This method will generate extent report
@@ -158,34 +145,6 @@ public class BaseTest {
 		test = report.startTest("Extent Report");
 		report.addSystemInfo("OS", "Windows10");
 	}
-
-	@DataProvider(name = "LoginDataXLS")
-	public Object[][] ReadExcelXLS() throws Exception{
-		
-		String absolutepath=System.getProperty("user.dir");
-		String fileName=absolutepath+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx";
-		String sheetname="WriteExcelDemo";
-
-	ExcelUtility excel = new ExcelUtility();
-	Object[][] testObjArray = excel.getExcelData(fileName,sheetname);
-	System.out.println(testObjArray);
-	return testObjArray;
-
-	}
-	
-	@DataProvider(name = "LoginDataXLSX")
-    public Object[][] ReadExcelXLSX() throws Exception{
-   	 
-   	 String absolutepath=System.getProperty("user.dir");
-   		String fileName=absolutepath+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx";
-   		String sheetname="WriteExcelDemo";
-
-   		ExcelUtility excel = new ExcelUtility();
-	Object[][] testObjArray = excel.getExcelData(fileName,sheetname);
-	System.out.println(testObjArray);
-	return testObjArray;
-
-	}	
 
 
 

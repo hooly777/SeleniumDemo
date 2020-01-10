@@ -3,10 +3,12 @@ package com.qa.Utility;
 import java.io.FileReader;
 import java.util.Properties;
 
+
+
 /**
- * @author Govardhan & Team
- * @version 1.0
- * @date 06-01-2020
+ * @author Mallikarjun
+ * @Property loader java class used to read data from commonVariable.properties file
+ * 
  * 
  *
  */
@@ -21,7 +23,7 @@ public class PropertyLoader {
 		
 		try 
 		{
-			src=new FileReader(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\Resource\\commonVariables.properties");
+			src=new FileReader(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\resources\\commonVariables.properties");
 			p=new Properties();
 			p.load(src);
 		}
@@ -33,7 +35,7 @@ public class PropertyLoader {
 	
 	
 	/**
-	 * @author Govardhan & Team
+	 * @author Mallikarjun
 	 * Method to get Base URL property from properties file
 	 */
 	/**Reading base url from property file and returning to base class**/
@@ -44,7 +46,7 @@ public class PropertyLoader {
 	}
 	
 	/**
-	 * @author Govardhan & Team
+	 * @author Mallikarjun
 	 * Method to get Browser Type property from properties file
 	 */
 	/**Reading Browser type from property file and returning to base class**/
