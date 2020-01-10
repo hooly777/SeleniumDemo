@@ -1,55 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
+    <line>
+      <![CDATA[NopCommerce home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[NopCommerce cellphone page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Lowest cell phone is added to cart]]>
+    </line>
+    <line>
+      <![CDATA[Second Lowest cell phone is added to cart]]>
+    </line>
+    <line>
+      <![CDATA[Jwellery link is clicked]]>
+    </line>
+    <line>
+      <![CDATA[NopCommerce cellphone page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Hihest price jwellery is added to cart]]>
+    </line>
+    <line>
+      <![CDATA[The product has been added to your shopping cart  message is displayed after clicking on ADD TO CART button]]>
+    </line>
+    <line>
+      <![CDATA[Go to cart button has been clicked]]>
+    </line>
+    <line>
+      <![CDATA[NopCommerce cart page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Terms and service pop up is displayed]]>
+    </line>
+    <line>
+      <![CDATA[NopCommerce SignIn page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Checkout as guest button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Order successful message is displayed]]>
+    </line>
   </reporter-output>
-  <suite name="TestDemoSuite" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
+  <suite name="Default suite" duration-ms="53765" started-at="2020-01-10T13:45:20Z" finished-at="2020-01-10T13:46:14Z">
     <groups>
     </groups>
-    <test name="Test001" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
-      <class name="com.qa.test.TestCase001">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="startReport" is-config="true" duration-ms="349" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:21Z">
+    <test name="Default test" duration-ms="53765" started-at="2020-01-10T13:45:20Z" finished-at="2020-01-10T13:46:14Z">
+      <class name="com.qa.test.NopCommerceTestCases">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="startReport" is-config="true" duration-ms="223" started-at="2020-01-10T13:45:20Z" finished-at="2020-01-10T13:45:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="BrowserIntialisation" is-config="true" duration-ms="20836" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:42Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="BrowserIntialisation" is-config="true" duration-ms="18122" started-at="2020-01-10T13:45:21Z" finished-at="2020-01-10T13:45:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="LoginDemoGuru" duration-ms="5691" started-at="2020-01-09T17:54:42Z" finished-at="2020-01-09T17:54:48Z">
+        <test-method status="PASS" signature="NopCommerceSelectMobileValidation()[pri:1, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="NopCommerceSelectMobileValidation" duration-ms="9161" started-at="2020-01-10T13:45:39Z" finished-at="2020-01-10T13:45:48Z">
           <reporter-output>
+            <line>
+              <![CDATA[NopCommerce home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[NopCommerce cellphone page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Lowest cell phone is added to cart]]>
+            </line>
+            <line>
+              <![CDATA[Second Lowest cell phone is added to cart]]>
+            </line>
+            <line>
+              <![CDATA[Jwellery link is clicked]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- LoginDemoGuru -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="3" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:48Z">
+        </test-method> <!-- NopCommerceSelectMobileValidation -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T13:45:48Z" finished-at="2020-01-10T13:45:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginDemoGuru status=SUCCESS method=TestCase001.LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
+                <![CDATA[[TestResult name=NopCommerceSelectMobileValidation status=SUCCESS method=NopCommerceTestCases.NopCommerceSelectMobileValidation()[pri:1, instance:com.qa.test.NopCommerceTestCases@e25b2fe] output=NopCommerce home page is displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1]" name="InsurancePage" duration-ms="5586" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:53Z">
+        <test-method status="PASS" signature="NopCommerceSelectJweleryValidation()[pri:2, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="NopCommerceSelectJweleryValidation" duration-ms="5881" started-at="2020-01-10T13:45:48Z" finished-at="2020-01-10T13:45:54Z">
           <reporter-output>
+            <line>
+              <![CDATA[NopCommerce cellphone page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Hihest price jwellery is added to cart]]>
+            </line>
+            <line>
+              <![CDATA[The product has been added to your shopping cart  message is displayed after clicking on ADD TO CART button]]>
+            </line>
+            <line>
+              <![CDATA[Go to cart button has been clicked]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- InsurancePage -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:53Z">
+        </test-method> <!-- NopCommerceSelectJweleryValidation -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T13:45:54Z" finished-at="2020-01-10T13:45:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InsurancePage status=SUCCESS method=TestCase001.InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
+                <![CDATA[[TestResult name=NopCommerceSelectJweleryValidation status=SUCCESS method=NopCommerceTestCases.NopCommerceSelectJweleryValidation()[pri:2, instance:com.qa.test.NopCommerceTestCases@e25b2fe] output=NopCommerce cellphone page is displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="tearDown" is-config="true" duration-ms="2910" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:56Z">
+        <test-method status="PASS" signature="NopCommerceCartValidation()[pri:3, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="NopCommerceCartValidation" duration-ms="36" started-at="2020-01-10T13:45:54Z" finished-at="2020-01-10T13:45:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[NopCommerce cart page is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NopCommerceCartValidation -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T13:45:54Z" finished-at="2020-01-10T13:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NopCommerceCartValidation status=SUCCESS method=NopCommerceTestCases.NopCommerceCartValidation()[pri:3, instance:com.qa.test.NopCommerceTestCases@e25b2fe] output=NopCommerce cart page is displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="NopCommerceUpdateAndCheckoutvalidation()[pri:4, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="NopCommerceUpdateAndCheckoutvalidation" duration-ms="4112" started-at="2020-01-10T13:45:54Z" finished-at="2020-01-10T13:45:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Terms and service pop up is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NopCommerceUpdateAndCheckoutvalidation -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T13:45:58Z" finished-at="2020-01-10T13:45:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NopCommerceUpdateAndCheckoutvalidation status=SUCCESS method=NopCommerceTestCases.NopCommerceUpdateAndCheckoutvalidation()[pri:4, instance:com.qa.test.NopCommerceTestCases@e25b2fe] output=Terms and service pop up is displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="NopCommerceSignInPageValidation()[pri:5, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="NopCommerceSignInPageValidation" duration-ms="1440" started-at="2020-01-10T13:45:58Z" finished-at="2020-01-10T13:45:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[NopCommerce SignIn page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Checkout as guest button is clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NopCommerceSignInPageValidation -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T13:45:59Z" finished-at="2020-01-10T13:45:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NopCommerceSignInPageValidation status=SUCCESS method=NopCommerceTestCases.NopCommerceSignInPageValidation()[pri:5, instance:com.qa.test.NopCommerceTestCases@e25b2fe] output=NopCommerce SignIn page is displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="NopCommerceEnterDeatils()[pri:6, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="NopCommerceEnterDeatils" duration-ms="9201" started-at="2020-01-10T13:45:59Z" finished-at="2020-01-10T13:46:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NopCommerceEnterDeatils -->
+        <test-method status="PASS" signature="NopCommerceVerifySuccesspage()[pri:7, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="NopCommerceVerifySuccesspage" duration-ms="3887" started-at="2020-01-10T13:46:09Z" finished-at="2020-01-10T13:46:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Order successful message is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NopCommerceVerifySuccesspage -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T13:46:09Z" finished-at="2020-01-10T13:46:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NopCommerceEnterDeatils status=SUCCESS method=NopCommerceTestCases.NopCommerceEnterDeatils()[pri:6, instance:com.qa.test.NopCommerceTestCases@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T13:46:12Z" finished-at="2020-01-10T13:46:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NopCommerceVerifySuccesspage status=SUCCESS method=NopCommerceTestCases.NopCommerceVerifySuccesspage()[pri:7, instance:com.qa.test.NopCommerceTestCases@e25b2fe] output=Order successful message is displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.NopCommerceTestCases@e25b2fe]" name="tearDown" is-config="true" duration-ms="1682" started-at="2020-01-10T13:46:12Z" finished-at="2020-01-10T13:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.TestCase001 -->
-    </test> <!-- Test001 -->
-  </suite> <!-- TestDemoSuite -->
+      </class> <!-- com.qa.test.NopCommerceTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
