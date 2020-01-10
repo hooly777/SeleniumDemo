@@ -5,32 +5,16 @@ import java.util.ArrayList;
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
-<<<<<<< HEAD:src/test/java/com/qa/test/TestCase001.java
-=======
-
-
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d:src/test/java/com/qa/test/Testcase.java
 import com.qa.Utility.Webgenericutility;
 import com.qa.basetest.BaseTest;
 import com.qa.pages.LoginPage;
 import com.qa.pages.LoginPage;
 import com.qa.basetest.BaseTest;
 
-<<<<<<< HEAD:src/test/java/com/qa/test/TestCase001.java
-public class TestCase001  extends  BaseTest{
-=======
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d:src/test/java/com/qa/test/Testcase.java
-	
+public class TestCase001  extends  BaseTest{
 	 public LoginPage objLogin;
 	 Logger log = Logger.getLogger("devpinoyLogger");	 	
-<<<<<<< HEAD:src/test/java/com/qa/test/TestCase001.java
-=======
-
-	 
-	
-
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d:src/test/java/com/qa/test/Testcase.java
 
 	@Test
 	public void LoginDemoGuru() throws IOException
