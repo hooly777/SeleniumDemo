@@ -21,7 +21,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -37,13 +37,12 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-<<<<<<< HEAD
-=======
+
 import Trash.DataRead;
 import Trash.ReadExcel;
 
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
+
 public class BaseTest {
 
 	public static WebDriver driver;
@@ -76,7 +75,7 @@ public class BaseTest {
 			case "firefox":
 				System.out.println("Launching Firefox browser..");
 				System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
-				driver = new FirefoxDriver();
+				//driver = new FirefoxDriver();
 				break;
 			case "InternetExplorer":
 				System.out.println("Launching InternetExplorer browser..");
@@ -87,22 +86,22 @@ public class BaseTest {
 				System.out.println("browser : " + browsertype
 						+ " is invalid, Launching Firefox as browser of choice..");
 				System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
-				driver = new FirefoxDriver();
+				//driver = new FirefoxDriver();
 			}
 		}
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-<<<<<<< HEAD
+
 			//Assert.assertFalse("Browser Not Found", true);
 			Assert.assertFalse(true, "Browser Not Found");
-=======
+
 
 			
 
 			Assert.assertFalse(true, "Browser Not Found");
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
+
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
