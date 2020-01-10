@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestDemoSuite">
-  <test name="Test001">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="com.qa.test.TestCase001"/>
+           
+      <class name="com.qa.basetest.BaseTest"/>
+      <class name="com.qa.pages.HomePage"/>
+      <class name="com.qa.pages.ElectronicsPage"/>
+      <class name="com.qa.pages.JewleryPage"/>
+      <class name="com.qa.pages.CartPage"/>
+      <class name="com.qa.pages.OrderPage"/>
+      <class name="com.qa.pages.CheckoutPage"/>
+      
     </classes>
-  </test> <!-- Test001 -->
-</suite> <!-- TestDemoSuite -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

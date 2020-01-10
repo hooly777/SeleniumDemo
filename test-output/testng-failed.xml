@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestDemoSuite]">
-  <test name="Test001(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.test.Testcase">
+      <class name="com.qa.pages.CartPage">
         <methods>
-          <include name="startReport"/>
+          <include name="cartValidationTest"/>
           <include name="BrowserIntialisation"/>
-          <include name="InsurancePage"/>
-          <include name="takeScreenShot"/>
+          <include name="startReport"/>
           <include name="tearDown"/>
-          <include name="LoginDemoGuru"/>
         </methods>
-      </class> <!-- com.qa.test.Testcase -->
+      </class> <!-- com.qa.pages.CartPage -->
+      <class name="com.qa.pages.CheckoutPage">
+        <methods>
+          <include name="CheckoutOrderDetails"/>
+          <include name="BrowserIntialisation"/>
+          <include name="startReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.pages.CheckoutPage -->
+      <class name="com.qa.pages.OrderPage">
+        <methods>
+          <include name="PlaceOrderAsGuest"/>
+          <include name="BrowserIntialisation"/>
+          <include name="startReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.pages.OrderPage -->
     </classes>
-  </test> <!-- Test001(failed) -->
-</suite> <!-- Failed suite [TestDemoSuite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
