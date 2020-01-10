@@ -1,55 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="6" ignored="0" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TestDemoSuite" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
+  <suite name="Default suite" duration-ms="443" started-at="2020-01-10T14:00:07Z" finished-at="2020-01-10T14:00:07Z">
     <groups>
     </groups>
-    <test name="Test001" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
-      <class name="com.qa.test.TestCase001">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="startReport" is-config="true" duration-ms="349" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:21Z">
+    <test name="Default test" duration-ms="443" started-at="2020-01-10T14:00:07Z" finished-at="2020-01-10T14:00:07Z">
+      <class name="com.qa.test.NopcommerceTest">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.NopcommerceTest@42d80b78]" name="startReport" is-config="true" duration-ms="295" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="BrowserIntialisation" is-config="true" duration-ms="20836" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:42Z">
+        <test-method status="FAIL" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.NopcommerceTest@42d80b78]" name="BrowserIntialisation" is-config="true" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+	Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+	Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted
+
+	at com.qa.basetest.BaseTest.BrowserIntialisation(BaseTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="LoginDemoGuru" duration-ms="5691" started-at="2020-01-09T17:54:42Z" finished-at="2020-01-09T17:54:48Z">
+        <test-method status="FAIL" signature="MouseHoverElectronics(org.openqa.selenium.WebElement, org.openqa.selenium.WebElement)[pri:1, instance:com.qa.test.NopcommerceTest@42d80b78]" name="MouseHoverElectronics" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [MouseHoverElectronics] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [MouseHoverElectronics] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginDemoGuru -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="3" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDemoGuru status=SUCCESS method=TestCase001.LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- MouseHoverElectronics -->
+        <test-method status="FAIL" signature="AddTwoCheapestMobilesToCart(org.openqa.selenium.WebElement, org.openqa.selenium.WebElement, org.openqa.selenium.WebElement)[pri:2, instance:com.qa.test.NopcommerceTest@42d80b78]" name="AddTwoCheapestMobilesToCart" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [AddTwoCheapestMobilesToCart] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [AddTwoCheapestMobilesToCart] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1]" name="InsurancePage" duration-ms="5586" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:53Z">
+        </test-method> <!-- AddTwoCheapestMobilesToCart -->
+        <test-method status="FAIL" signature="JeweleryListPage(org.openqa.selenium.WebElement, org.openqa.selenium.WebElement, org.openqa.selenium.WebElement, org.openqa.selenium.WebElement)[pri:3, instance:com.qa.test.NopcommerceTest@42d80b78]" name="JeweleryListPage" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [JeweleryListPage] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [JeweleryListPage] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InsurancePage -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=InsurancePage status=SUCCESS method=TestCase001.InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- JeweleryListPage -->
+        <test-method status="FAIL" signature="MousehoverShoppingCart(org.openqa.selenium.WebElement, org.openqa.selenium.WebElement)[pri:4, instance:com.qa.test.NopcommerceTest@42d80b78]" name="MousehoverShoppingCart" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [MousehoverShoppingCart] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [MousehoverShoppingCart] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="tearDown" is-config="true" duration-ms="2910" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:56Z">
+        </test-method> <!-- MousehoverShoppingCart -->
+        <test-method status="FAIL" signature="updatevalue(org.openqa.selenium.WebElement, org.openqa.selenium.WebElement)[pri:5, instance:com.qa.test.NopcommerceTest@42d80b78]" name="updatevalue" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [updatevalue] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [updatevalue] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatevalue -->
+        <test-method status="FAIL" signature="handlingalert(org.openqa.selenium.WebElement, org.openqa.selenium.WebElement, org.openqa.selenium.WebElement)[pri:6, instance:com.qa.test.NopcommerceTest@42d80b78]" name="handlingalert" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [handlingalert] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [handlingalert] with [interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement, interface org.openqa.selenium.WebElement].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handlingalert -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.test.NopcommerceTest@42d80b78]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-10T19:30:07Z" finished-at="2020-01-10T19:30:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.TestCase001 -->
-    </test> <!-- Test001 -->
-  </suite> <!-- TestDemoSuite -->
+      </class> <!-- com.qa.test.NopcommerceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
