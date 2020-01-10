@@ -320,10 +320,7 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected
@@ -508,4 +505,15 @@ public class Webgenericutility extends BaseTest {
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
 	}
-}
+	
+	public static void mouseHover(WebElement element){
+	Actions actions = new Actions(driver);
+	actions.moveToElement(element).build().perform();
+	}
+	public static void selectByVisibleText(WebElement element,String VisibleText)
+	{
+		Select select=new Select(element);
+		select.selectByVisibleText( VisibleText);
+	}
+
+	}

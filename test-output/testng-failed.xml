@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestDemoSuite]">
-  <test name="Test001(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.Testcase">
+      <class name="com.qa.test.Nopcommercetest">
         <methods>
+          <include name="Test006"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
-          <include name="InsurancePage"/>
           <include name="takeScreenShot"/>
           <include name="tearDown"/>
-          <include name="LoginDemoGuru"/>
         </methods>
-      </class> <!-- com.qa.test.Testcase -->
+      </class> <!-- com.qa.test.Nopcommercetest -->
     </classes>
-  </test> <!-- Test001(failed) -->
-</suite> <!-- Failed suite [TestDemoSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
