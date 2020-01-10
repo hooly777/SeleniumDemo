@@ -2,54 +2,54 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="TestDemoSuite" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
+  <suite name="Default suite" duration-ms="21424" started-at="2020-01-10T10:00:22Z" finished-at="2020-01-10T10:00:43Z">
     <groups>
     </groups>
-    <test name="Test001" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
+    <test name="Default test" duration-ms="21424" started-at="2020-01-10T10:00:22Z" finished-at="2020-01-10T10:00:43Z">
       <class name="com.qa.test.TestCase001">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="startReport" is-config="true" duration-ms="349" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:21Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.TestCase001@42dafa95]" name="startReport" is-config="true" duration-ms="235" started-at="2020-01-10T15:30:22Z" finished-at="2020-01-10T15:30:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="BrowserIntialisation" is-config="true" duration-ms="20836" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:42Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.TestCase001@42dafa95]" name="BrowserIntialisation" is-config="true" duration-ms="13029" started-at="2020-01-10T15:30:22Z" finished-at="2020-01-10T15:30:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="LoginDemoGuru" duration-ms="5691" started-at="2020-01-09T17:54:42Z" finished-at="2020-01-09T17:54:48Z">
+        <test-method status="PASS" signature="LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@42dafa95]" name="LoginDemoGuru" duration-ms="1921" started-at="2020-01-10T15:30:35Z" finished-at="2020-01-10T15:30:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDemoGuru -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="3" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:48Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@42dafa95]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T15:30:37Z" finished-at="2020-01-10T15:30:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginDemoGuru status=SUCCESS method=TestCase001.LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
+                <![CDATA[[TestResult name=LoginDemoGuru status=SUCCESS method=TestCase001.LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@42dafa95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1]" name="InsurancePage" duration-ms="5586" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:53Z">
+        <test-method status="PASS" signature="InsurancePage()[pri:1, instance:com.qa.test.TestCase001@42dafa95]" name="InsurancePage" duration-ms="4820" started-at="2020-01-10T15:30:37Z" finished-at="2020-01-10T15:30:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InsurancePage -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:53Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@42dafa95]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T15:30:42Z" finished-at="2020-01-10T15:30:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InsurancePage status=SUCCESS method=TestCase001.InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
+                <![CDATA[[TestResult name=InsurancePage status=SUCCESS method=TestCase001.InsurancePage()[pri:1, instance:com.qa.test.TestCase001@42dafa95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="tearDown" is-config="true" duration-ms="2910" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:56Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.TestCase001@42dafa95]" name="tearDown" is-config="true" duration-ms="1413" started-at="2020-01-10T15:30:42Z" finished-at="2020-01-10T15:30:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.test.TestCase001 -->
-    </test> <!-- Test001 -->
-  </suite> <!-- TestDemoSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

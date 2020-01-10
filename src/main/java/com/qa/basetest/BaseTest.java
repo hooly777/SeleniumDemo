@@ -37,13 +37,12 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-<<<<<<< HEAD
-=======
+
 import Trash.DataRead;
 import Trash.ReadExcel;
 
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
+
 public class BaseTest {
 
 	public static WebDriver driver;
@@ -93,16 +92,16 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-<<<<<<< HEAD
+
 			//Assert.assertFalse("Browser Not Found", true);
 			Assert.assertFalse(true, "Browser Not Found");
-=======
+
 
 			
 
 			Assert.assertFalse(true, "Browser Not Found");
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
+
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
