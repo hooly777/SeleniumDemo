@@ -5,11 +5,11 @@
     <classes>
       <class name="com.qa.test.NopCommerceElectronicsTest">
         <methods>
-          <include name="checkOutPage"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
           <include name="takeScreenShot"/>
           <include name="tearDown"/>
+          <include name="detailsCreation"/>
         </methods>
       </class> <!-- com.qa.test.NopCommerceElectronicsTest -->
     </classes>

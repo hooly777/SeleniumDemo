@@ -46,6 +46,7 @@ public class NopCommerce_CellPhone_Page extends BaseTest {
 
 		// Adding cell phone
 		cellphoneaddtocart1.click();
+		Thread.sleep(2000);
 		cellphoneaddtocart2.click();
 		Thread.sleep(2000);
 

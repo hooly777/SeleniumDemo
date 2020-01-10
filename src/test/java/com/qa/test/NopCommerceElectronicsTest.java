@@ -1,8 +1,6 @@
 package com.qa.test;
 
 import java.io.IOException;
-import org.apache.log4j.Logger;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.qa.basetest.BaseTest;
 import com.qa.pages.NopCommerceElectronics_Page;
@@ -10,6 +8,7 @@ import com.qa.pages.NopCommerce_CellPhone_Page;
 import com.qa.pages.NopCommerce_Jewelry_Page;
 import com.qa.pages.NopCommerce_CartPage;
 import com.qa.pages.NopCommerce_CheckOut_Page;
+import com.qa.pages.NopCommerce_OrderSuccessful_Page;
 
 public class NopCommerceElectronicsTest  extends  BaseTest{
 
@@ -17,6 +16,7 @@ public class NopCommerceElectronicsTest  extends  BaseTest{
 	public NopCommerce_CellPhone_Page CellPhone_AddToCarts;
 	public NopCommerce_Jewelry_Page Jewelry_AddToCarts;
 	public NopCommerce_CheckOut_Page CheckOutPage;
+	public NopCommerce_OrderSuccessful_Page OrderMessage;
 	NopCommerce_CartPage CartPage;
 
 	// Validating Cell Phone Page
@@ -49,9 +49,6 @@ public class NopCommerceElectronicsTest  extends  BaseTest{
 		CartPage = new NopCommerce_CartPage();
 		CartPage.clickOnShoppingCart();
 		Thread.sleep(2000);
-		CartPage.verifyShoppingCart();
-		CartPage.updateJewelryCart();
-		CartPage.verifyTermsAndServicePopup();
 	}
 
 	//Verifying Shopping Cart page
@@ -87,5 +84,15 @@ public class NopCommerceElectronicsTest  extends  BaseTest{
 		CartPage.clickCheckOutButton();
 		CheckOutPage.verifySignInPage();
 		CheckOutPage.checkOutAsGuestButton();
+	}
+	
+	// Verifying Order Successful Message
+	@Test(priority = 8)
+	public void detailsCreation() throws InterruptedException{
+		CheckOutPage = new NopCommerce_CheckOut_Page();
+		OrderMessage = new NopCommerce_OrderSuccessful_Page();
+		Thread.sleep(2000);
+		CheckOutPage.fillingDetails();
+		OrderMessage.verifyingOrderPage();
 	}
 }
