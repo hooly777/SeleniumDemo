@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="130794" started-at="2020-01-10T13:03:30Z" finished-at="2020-01-10T13:05:40Z">
+  <suite name="Default suite" duration-ms="64495" started-at="2020-01-10T14:08:00Z" finished-at="2020-01-10T14:09:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="130794" started-at="2020-01-10T13:03:30Z" finished-at="2020-01-10T13:05:40Z">
+    <test name="Default test" duration-ms="64495" started-at="2020-01-10T14:08:00Z" finished-at="2020-01-10T14:09:05Z">
       <class name="com.qa.test.NopCommerce_CellPhones_Test">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="startReport" is-config="true" duration-ms="524" started-at="2020-01-10T18:33:30Z" finished-at="2020-01-10T18:33:30Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="startReport" is-config="true" duration-ms="140" started-at="2020-01-10T19:38:00Z" finished-at="2020-01-10T19:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="BrowserIntialisation" is-config="true" duration-ms="8752" started-at="2020-01-10T18:33:30Z" finished-at="2020-01-10T18:33:39Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="BrowserIntialisation" is-config="true" duration-ms="8712" started-at="2020-01-10T19:38:01Z" finished-at="2020-01-10T19:38:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="verifyCellphoneAddtoCart()[pri:1, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="verifyCellphoneAddtoCart" duration-ms="6100" started-at="2020-01-10T18:33:39Z" finished-at="2020-01-10T18:33:45Z">
+        <test-method status="PASS" signature="verifyCellphoneAddtoCart()[pri:1, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="verifyCellphoneAddtoCart" duration-ms="8449" started-at="2020-01-10T19:38:09Z" finished-at="2020-01-10T19:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCellphoneAddtoCart -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="4" started-at="2020-01-10T18:33:45Z" finished-at="2020-01-10T18:33:45Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:38:18Z" finished-at="2020-01-10T19:38:18Z">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="verifyAddtoCartJewellery()[pri:2, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="verifyAddtoCartJewellery" duration-ms="11098" started-at="2020-01-10T18:33:45Z" finished-at="2020-01-10T18:33:56Z">
+        <test-method status="PASS" signature="verifyAddtoCartJewellery()[pri:2, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="verifyAddtoCartJewellery" duration-ms="16072" started-at="2020-01-10T19:38:18Z" finished-at="2020-01-10T19:38:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddtoCartJewellery -->
-        <test-method status="PASS" signature="verifyUpdatecart()[pri:3, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="verifyUpdatecart" duration-ms="100214" started-at="2020-01-10T18:33:56Z" finished-at="2020-01-10T18:35:36Z">
+        <test-method status="PASS" signature="verifyUpdatecart()[pri:3, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="verifyUpdatecart" duration-ms="13863" started-at="2020-01-10T19:38:34Z" finished-at="2020-01-10T19:38:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUpdatecart -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T18:33:56Z" finished-at="2020-01-10T18:33:56Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:38:34Z" finished-at="2020-01-10T19:38:34Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T18:35:36Z" finished-at="2020-01-10T18:35:36Z">
+        <test-method status="PASS" signature="Signin()[pri:4, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="Signin" duration-ms="3762" started-at="2020-01-10T19:38:48Z" finished-at="2020-01-10T19:38:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signin -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:38:48Z" finished-at="2020-01-10T19:38:48Z">
           <params>
             <param index="0">
               <value>
@@ -60,11 +64,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="Signin()[pri:4, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="Signin" duration-ms="2848" started-at="2020-01-10T18:35:36Z" finished-at="2020-01-10T18:35:39Z">
+        <test-method status="PASS" signature="Ordersuccess()[pri:5, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="Ordersuccess" duration-ms="12325" started-at="2020-01-10T19:38:51Z" finished-at="2020-01-10T19:39:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Signin -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T18:35:39Z" finished-at="2020-01-10T18:35:39Z">
+        </test-method> <!-- Ordersuccess -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:38:51Z" finished-at="2020-01-10T19:38:51Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +79,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="tearDown" is-config="true" duration-ms="1182" started-at="2020-01-10T18:35:39Z" finished-at="2020-01-10T18:35:40Z">
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:39:04Z" finished-at="2020-01-10T19:39:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Ordersuccess status=SUCCESS method=NopCommerce_CellPhones_Test.Ordersuccess()[pri:5, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.NopCommerce_CellPhones_Test@5f2108b5]" name="tearDown" is-config="true" duration-ms="1112" started-at="2020-01-10T19:39:04Z" finished-at="2020-01-10T19:39:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

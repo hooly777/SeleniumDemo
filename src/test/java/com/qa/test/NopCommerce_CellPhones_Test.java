@@ -12,6 +12,7 @@ import com.qa.basetest.BaseTest;
 import com.qa.pages.LoginPage;
 import com.qa.pages.NopCommerce_CartPage;
 import com.qa.pages.NopCommerce_CellPhones_Page;
+import com.qa.pages.NopCommerce_CheckOut_Page;
 import com.qa.pages.nopCommercePage;
 import com.qa.pages.NopCommerce_Jewelry_Page;
 import com.qa.pages.SignIn_Page;
@@ -28,6 +29,7 @@ public class NopCommerce_CellPhones_Test  extends  BaseTest{
 	public NopCommerce_Jewelry_Page jewellerypage;
 	public NopCommerce_CartPage cart;
 	public SignIn_Page Signin;
+	public NopCommerce_CheckOut_Page checkoutpage;
 
 
 
@@ -81,5 +83,17 @@ public class NopCommerce_CellPhones_Test  extends  BaseTest{
 		
 	}
 
+	
+	
+@Test(priority=5)
+	
+	public void Ordersuccess() throws Exception{
+	
+	checkoutpage=new NopCommerce_CheckOut_Page();
+	checkoutpage.fillingDetails();
+	checkoutpage.verifyingOrderPage();
+		
+		
+	}
 
 }
