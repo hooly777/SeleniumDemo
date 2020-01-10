@@ -7,24 +7,23 @@ import org.testng.annotations.Test;
 
 import org.testng.annotations.Test;
 
-import com.qa.Resource.ReadExcel;
+
 import com.qa.Utility.Webgenericutility;
 import com.qa.basetest.BaseTest;
 import com.qa.pages.SampleTest;
 
 import com.qa.pages.SampleTest;
 import com.qa.basetest.BaseTest;
-public class Testcase  extends  BaseTest{
 
-<<<<<<< HEAD
+
+
 public class Testcase extends BaseTest{
 	
 	 public SampleTest objLogin;
-	 Logger log = Logger.getLogger("devpinoyLogger");	 	
-=======
+	 Logger log = Logger.getLogger("devpinoyLogger");	 
 	 
-	Logger log = Logger.getLogger("devpinoyLogger");
->>>>>>> 8aa8720e6ee37ef8f94ffb1c79d1e48b8c5cc512
+	
+
 
 	@Test
 	public void LoginDemoGuru() throws IOException
@@ -49,5 +48,4 @@ public class Testcase extends BaseTest{
 		log.info("Insurance page triggered after Login");
 	}
 	
-
 }
