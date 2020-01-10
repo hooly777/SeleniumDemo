@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -70,7 +71,7 @@ public class Webgenericutility extends BaseTest {
 	 * @param element
 	 * @param text
 	 */
-	public static void selectDropdownByText(WebElement element, String text,int timeout)
+	public  void selectDropdownByText(WebElement element, String text,int timeout)
 	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
@@ -320,10 +321,7 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected
@@ -507,5 +505,21 @@ public class Webgenericutility extends BaseTest {
 	public void dragAndDrop(WebElement from,WebElement to){
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
+	}
+	
+	public static void selectByVissibletext(WebElement element,String text){
+		
+		Select select =new Select(element);
+		select.selectByVisibleText(text);
+		
+		
+	}
+	
+	public static void mouseHover(WebElement from){
+		
+		Actions action = new Actions(driver);
+	    action.moveToElement(from).perform();
+				
+		
 	}
 }
