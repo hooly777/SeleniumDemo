@@ -16,6 +16,7 @@ package com.qa.basetest;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -27,21 +28,16 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import com.qa.Utility.ExcelUtility;
+
+import com.qa.Resource.DataRead;
+import com.qa.Resource.ReadExcel;
 import com.qa.Utility.PropertyLoader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-
-import Trash.DataRead;
-import Trash.ReadExcel;
-
-
 
 public class BaseTest {
 
@@ -50,13 +46,11 @@ public class BaseTest {
 	static String driverPath = absolutepath+"\\Drivers\\";
 	
 	static String filePath = absolutepath+"\\Failedscreenshots";
-	//ExtentReports extent;
+	ExtentReports extent;
 	//helps to generate the logs in test report.
 	ExtentTest test;
 	static ExtentReports report;
 	ITestResult result;
-	public static ExtentReports extent;
-	public static ExtentTest logger;
 
 	@BeforeClass
 	// This method is used to launch browser
@@ -92,16 +86,7 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-
-			//Assert.assertFalse("Browser Not Found", true);
 			Assert.assertFalse(true, "Browser Not Found");
-
-
-			
-
-			Assert.assertFalse(true, "Browser Not Found");
-
-
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
@@ -111,14 +96,14 @@ public class BaseTest {
 	}
 
 
-	@AfterClass
+/*	@AfterClass
 	// This method is used to close the browsers
 	public void tearDown() {
 
 		report.endTest(test);
 		report.flush();
 		driver.quit();
-	}
+	}*/
 
 	// It will execute after every test execution 
 	@AfterMethod
@@ -162,10 +147,10 @@ public class BaseTest {
 	public Object[][] ReadExcelXLS() throws Exception{
 		
 		String absolutepath=System.getProperty("user.dir");
-		String fileName=absolutepath+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx";
+		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
 		String sheetname="WriteExcelDemo";
 
-	ExcelUtility excel = new ExcelUtility();
+	ReadExcel excel = new ReadExcel();
 	Object[][] testObjArray = excel.getExcelData(fileName,sheetname);
 	System.out.println(testObjArray);
 	return testObjArray;
@@ -176,10 +161,10 @@ public class BaseTest {
     public Object[][] ReadExcelXLSX() throws Exception{
    	 
    	 String absolutepath=System.getProperty("user.dir");
-   		String fileName=absolutepath+"\\src\\main\\java\\com\\qa\\Resource\\AppdataExcell\\AppData.xlsx";
+   		String fileName=absolutepath+"\\ExportExcel\\WriteData.xlsx";
    		String sheetname="WriteExcelDemo";
 
-   		ExcelUtility excel = new ExcelUtility();
+   		ReadExcel excel = new ReadExcel();
 	Object[][] testObjArray = excel.getExcelData(fileName,sheetname);
 	System.out.println(testObjArray);
 	return testObjArray;

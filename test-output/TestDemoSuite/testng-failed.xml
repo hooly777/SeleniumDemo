@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestDemoSuite]">
   <test name="Test001(failed)">
     <classes>
-      <class name="com.qa.test.Testcase">
+      <class name="com.qa.pages.SampleTest">
         <methods>
+          <include name="Insurance"/>
+          <include name="LoginwithParticularusecase"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
-          <include name="InsurancePage"/>
           <include name="takeScreenShot"/>
           <include name="tearDown"/>
-          <include name="LoginDemoGuru"/>
         </methods>
-      </class> <!-- com.qa.test.Testcase -->
+      </class> <!-- com.qa.pages.SampleTest -->
     </classes>
   </test> <!-- Test001(failed) -->
 </suite> <!-- Failed suite [TestDemoSuite] -->

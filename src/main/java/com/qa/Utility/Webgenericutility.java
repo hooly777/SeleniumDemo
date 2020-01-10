@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -23,7 +24,7 @@ import com.qa.basetest.BaseTest;
  * @version 1.o
  */
 public class Webgenericutility extends BaseTest {
-	//static WebDriver driver;
+	static WebDriver driver;
 	
 	/**
 	 * @author Silampur Girish
