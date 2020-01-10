@@ -101,7 +101,7 @@ public class BaseTest {
 
 		report.endTest(test);
 		report.flush();
-		driver.quit();
+	//	driver.quit();
 	}
 
 	// It will execute after every test execution 

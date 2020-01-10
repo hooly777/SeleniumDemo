@@ -452,7 +452,7 @@ System.out.println(x+"and"+y);
 	 * @param 
 	 * @return
 	 */
-	public static void listOfElements(String xpath) {
+	public static List<String> listOfElements(String xpath) {
 		List<WebElement> list = driver.findElements(By.xpath(xpath));
 
 		List<String> arrayOptions = new ArrayList<String>();
@@ -467,7 +467,7 @@ System.out.println(x+"and"+y);
 			String text = arrayOptions.get(i);
 			System.out.println(text);
 		}
-
+return arrayOptions;
 	}
 	/**
 	 * @author Bhavana CM 
@@ -507,4 +507,23 @@ System.out.println(x+"and"+y);
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
 	}
+	/* Sharoonroja
+	 * 
+	 */
+	public static void mouseHover( WebElement element){
+		Actions action = new Actions (driver);
+		action.moveToElement(element).build().perform();
+	}
+	/* Sharoonroja
+	 * 
+	 */
+	public static void selectByVisibleText( WebElement element,String VisibleText){
+		Select select = new Select(element);
+		select.selectByVisibleText(VisibleText);
+	}
+	public static void selectByValue( WebElement element,String Value){
+		Select select = new Select(element);
+		select.selectByValue(Value);
+	}
+	
 }

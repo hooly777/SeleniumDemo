@@ -1,55 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20882" started-at="2020-01-09T12:32:19Z" finished-at="2020-01-09T12:32:40Z">
+  <suite name="Default suite" duration-ms="55773" started-at="2020-01-10T14:11:36Z" finished-at="2020-01-10T14:12:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20882" started-at="2020-01-09T12:32:19Z" finished-at="2020-01-09T12:32:40Z">
-      <class name="HomePageAlliantTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:HomePageAlliantTest@3e6fa38a]" name="startReport" is-config="true" duration-ms="215" started-at="2020-01-09T18:02:19Z" finished-at="2020-01-09T18:02:20Z">
+    <test name="Default test" duration-ms="55773" started-at="2020-01-10T14:11:36Z" finished-at="2020-01-10T14:12:32Z">
+      <class name="com.qa.test.NopCommerce.NopCommerceTest">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="startReport" is-config="true" duration-ms="349" started-at="2020-01-10T19:41:36Z" finished-at="2020-01-10T19:41:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:HomePageAlliantTest@3e6fa38a]" name="BrowserIntialisation" is-config="true" duration-ms="15102" started-at="2020-01-09T18:02:20Z" finished-at="2020-01-09T18:02:35Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="BrowserIntialisation" is-config="true" duration-ms="16224" started-at="2020-01-10T19:41:36Z" finished-at="2020-01-10T19:41:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="sampletest()[pri:0, instance:HomePageAlliantTest@3e6fa38a]" name="sampletest" duration-ms="2392" started-at="2020-01-09T18:02:35Z" finished-at="2020-01-09T18:02:37Z">
+        <test-method status="PASS" signature="TC001()[pri:1, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC001" duration-ms="1854" started-at="2020-01-10T19:41:53Z" finished-at="2020-01-10T19:41:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sampletest -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:HomePageAlliantTest@3e6fa38a]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-09T18:02:37Z" finished-at="2020-01-09T18:02:37Z">
+        </test-method> <!-- TC001 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="4" started-at="2020-01-10T19:41:54Z" finished-at="2020-01-10T19:41:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sampletest status=SUCCESS method=HomePageAlliantTest.sampletest()[pri:0, instance:HomePageAlliantTest@3e6fa38a] output={null}]]]>
+                <![CDATA[[TestResult name=TC001 status=SUCCESS method=NopCommerceTest.TC001()[pri:1, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="writeDataIntoExcel()[pri:1, instance:HomePageAlliantTest@3e6fa38a]" name="writeDataIntoExcel" duration-ms="1007" started-at="2020-01-09T18:02:37Z" finished-at="2020-01-09T18:02:38Z">
+        <test-method status="PASS" signature="TC002()[pri:2, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC002" duration-ms="10936" started-at="2020-01-10T19:41:54Z" finished-at="2020-01-10T19:42:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- writeDataIntoExcel -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:HomePageAlliantTest@3e6fa38a]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-09T18:02:38Z" finished-at="2020-01-09T18:02:38Z">
+        </test-method> <!-- TC002 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="4" started-at="2020-01-10T19:42:05Z" finished-at="2020-01-10T19:42:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=writeDataIntoExcel status=SUCCESS method=HomePageAlliantTest.writeDataIntoExcel()[pri:1, instance:HomePageAlliantTest@3e6fa38a] output={null}]]]>
+                <![CDATA[[TestResult name=TC002 status=SUCCESS method=NopCommerceTest.TC002()[pri:2, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:HomePageAlliantTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="2138" started-at="2020-01-09T18:02:38Z" finished-at="2020-01-09T18:02:40Z">
+        <test-method status="PASS" signature="TC003()[pri:3, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC003" duration-ms="1809" started-at="2020-01-10T19:42:05Z" finished-at="2020-01-10T19:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:07Z" finished-at="2020-01-10T19:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003 status=SUCCESS method=NopCommerceTest.TC003()[pri:3, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="TC004()[pri:4, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC004" duration-ms="526" started-at="2020-01-10T19:42:07Z" finished-at="2020-01-10T19:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:08Z" finished-at="2020-01-10T19:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC004 status=SUCCESS method=NopCommerceTest.TC004()[pri:4, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="TC005()[pri:5, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC005" duration-ms="7986" started-at="2020-01-10T19:42:08Z" finished-at="2020-01-10T19:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:16Z" finished-at="2020-01-10T19:42:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC005 status=SUCCESS method=NopCommerceTest.TC005()[pri:5, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="TC006()[pri:6, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC006" duration-ms="328" started-at="2020-01-10T19:42:16Z" finished-at="2020-01-10T19:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:16Z" finished-at="2020-01-10T19:42:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC006 status=SUCCESS method=NopCommerceTest.TC006()[pri:6, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="TC007()[pri:7, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC007" duration-ms="1313" started-at="2020-01-10T19:42:16Z" finished-at="2020-01-10T19:42:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007 -->
+        <test-method status="PASS" signature="TC008()[pri:8, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC008" duration-ms="502" started-at="2020-01-10T19:42:17Z" finished-at="2020-01-10T19:42:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:17Z" finished-at="2020-01-10T19:42:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC007 status=SUCCESS method=NopCommerceTest.TC007()[pri:7, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:18Z" finished-at="2020-01-10T19:42:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC008 status=SUCCESS method=NopCommerceTest.TC008()[pri:8, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="TC009()[pri:9, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC009" duration-ms="3384" started-at="2020-01-10T19:42:18Z" finished-at="2020-01-10T19:42:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009 -->
+        <test-method status="PASS" signature="TC010()[pri:10, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="TC010" duration-ms="9618" started-at="2020-01-10T19:42:21Z" finished-at="2020-01-10T19:42:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010 -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:21Z" finished-at="2020-01-10T19:42:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC009 status=SUCCESS method=NopCommerceTest.TC009()[pri:9, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:42:31Z" finished-at="2020-01-10T19:42:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC010 status=SUCCESS method=NopCommerceTest.TC010()[pri:10, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.NopCommerce.NopCommerceTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="857" started-at="2020-01-10T19:42:31Z" finished-at="2020-01-10T19:42:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- HomePageAlliantTest -->
+      </class> <!-- com.qa.test.NopCommerce.NopCommerceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
