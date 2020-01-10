@@ -442,4 +442,12 @@ public class Webgenericutility {
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
 	}
-}
+	
+	public void moveToElement(WebElement element) {
+		
+		Actions act = new Actions(driver);
+		act.moveToElement(element).build().perform();
+	}
+		
+	}
+
