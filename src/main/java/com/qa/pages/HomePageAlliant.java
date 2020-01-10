@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.Resource.WriteExcel;
+
 import com.qa.Utility.ExcellUtility;
 import com.qa.Utility.Webgenericutility;
 import com.qa.basetest.BaseTest;
