@@ -24,7 +24,8 @@ import com.qa.basetest.BaseTest;
  */
 public class Webgenericutility extends BaseTest {
 	//static WebDriver driver;
-	
+	public static Select select;
+
 	/**
 	 * @author Silampur Girish
 	 * Method to clickOn element 
@@ -55,7 +56,7 @@ public class Webgenericutility extends BaseTest {
 	public static void sendKeyValue(WebDriver driver, WebElement element, int timeout, String value) {
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-				.until(ExpectedConditions.elementToBeClickable(element));
+			.until(ExpectedConditions.elementToBeClickable(element));
 			element.clear();
 			element.sendKeys(value);
 		} catch (Exception e) {
@@ -81,8 +82,8 @@ public class Webgenericutility extends BaseTest {
 			System.out.println("some exception got occurred while selecting  the dropdown  by text : " + element);
 			System.out.println(e.getMessage());
 		}
-		
-			
+
+
 	}
 
 	/**
@@ -103,7 +104,7 @@ public class Webgenericutility extends BaseTest {
 			System.out.println("some exception got occurred while selecting  the dropdown by value : " + element);
 			System.out.println(e.getMessage());
 		}
-		
+
 	}
 	/**
 	 * @author Silampur Girish
@@ -118,13 +119,13 @@ public class Webgenericutility extends BaseTest {
 			.until(ExpectedConditions.elementToBeClickable(element));
 			Select select = new Select(element);
 			select.selectByIndex(num);
-			
+
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("some exception got occurred while selecting  the dropdown by index : " + element);
 			System.out.println(e.getMessage());
 		}
-		
+
 	}
 	/**
 	 * @author Silampur Girish
@@ -165,7 +166,7 @@ public class Webgenericutility extends BaseTest {
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();
 	}
-	
+
 	/**
 	 * @author Silampur Girish
 	 * Method to get text of the element
@@ -176,7 +177,7 @@ public class Webgenericutility extends BaseTest {
 	{
 		try {
 			new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
-				.until(ExpectedConditions.elementToBeClickable(element));			
+			.until(ExpectedConditions.elementToBeClickable(element));			
 		} catch (Exception e) {
 			System.out.println("some exception got occurred while geting the text of webelement : " + element);
 			System.out.println(e.getMessage());
@@ -232,9 +233,9 @@ public class Webgenericutility extends BaseTest {
 	{
 		return driver.getTitle();
 	}
-	
+
 	//
-		/**
+	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to select any element for boolean value
 	 * @param boolean 
@@ -247,15 +248,15 @@ public class Webgenericutility extends BaseTest {
 		try{
 			value=true;
 			System.out.println("is Selected");
-			
+
 		}
 		catch (Exception e)
 		{
 			System.out.println("not Selected");
 			System.out.println(e.getMessage());
 		}
-		
-		
+
+
 		return value;
 
 	}
@@ -272,15 +273,15 @@ public class Webgenericutility extends BaseTest {
 		try{
 			value=true;
 			System.out.println("is Displayed");
-			
+
 		}
 		catch (Exception e)
 		{
 			System.out.println("not Displayed");
 			System.out.println(e.getMessage());
 		}
-		
-		
+
+
 		return value;
 
 	}
@@ -297,15 +298,15 @@ public class Webgenericutility extends BaseTest {
 		try{
 			value=true;
 			System.out.println("is Enabled");
-			
+
 		}
 		catch (Exception e)
 		{
 			System.out.println("not Enabled");
 			System.out.println(e.getMessage());
 		}
-		
-		
+
+
 		return value;
 	}
 	/**
@@ -372,7 +373,7 @@ public class Webgenericutility extends BaseTest {
 
 	public void switchToParentWindow() {
 		driver.switchTo().defaultContent();
-		
+
 	}
 	/**
 	 * @author Mohini Sethumadhavan
@@ -382,7 +383,7 @@ public class Webgenericutility extends BaseTest {
 	 */	
 	public void switchToFrame(WebElement iframeElement) {
 		driver.switchTo().frame(iframeElement);
-		
+
 	}
 
 	/**
@@ -393,15 +394,15 @@ public class Webgenericutility extends BaseTest {
 	public static void waitForLoad(long seconds) 
 	{
 		ExpectedCondition<Boolean> pageLoadCondition = new
-	               ExpectedCondition<Boolean>() {
-	                   public Boolean apply(WebDriver driver) {
-	                       return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
-	                   }
-	               };
-	               WebDriverWait wait = new WebDriverWait(driver, seconds);
-	               wait.until(pageLoadCondition);
-	    }
-	
+				ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+			}
+		};
+		WebDriverWait wait = new WebDriverWait(driver, seconds);
+		wait.until(pageLoadCondition);
+	}
+
 	/**
 	 * @author Silampur Girish 
 	 * Method is Element Exists
@@ -411,11 +412,11 @@ public class Webgenericutility extends BaseTest {
 	{
 		boolean present;
 		try {
-		   element.isDisplayed();
-		   present = true;
+			element.isDisplayed();
+			present = true;
 		} catch (NoSuchElementException e) {
-		   present = false;
-		   //log.info("",e);
+			present = false;
+			//log.info("",e);
 		}
 		return present;
 	}
@@ -485,7 +486,7 @@ public class Webgenericutility extends BaseTest {
 	 * @param 
 	 * @return
 	 */
-	
+
 	@SuppressWarnings("unused")
 	private void changeColor(String color, WebElement element) {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
@@ -505,5 +506,24 @@ public class Webgenericutility extends BaseTest {
 	public void dragAndDrop(WebElement from,WebElement to){
 		Actions act = new Actions(driver);
 		act.dragAndDrop(from, to).build().perform();
+	}
+	public static void mouseHoverOnElement(WebElement element){
+		Actions action=new Actions(driver);
+		action.moveToElement(element).build().perform();
+	}
+	public static void selectFromDropdownByIndex(WebElement ele, int index) {
+		// TODO Auto-generated method stub
+		select = new Select(ele);
+		select.selectByIndex(index);
+	}
+
+	public static void selectFromDropdownByValue(WebElement ele, String value) {
+		select = new Select(ele);
+		select.selectByValue(value);
+	}
+
+	public static void selectFromDropdownByVisibleText(WebElement ele, String text) {
+		select = new Select(ele);
+		select.selectByVisibleText(text);
 	}
 }

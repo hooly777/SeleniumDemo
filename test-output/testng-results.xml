@@ -1,55 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="TestDemoSuite" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
+  <suite name="Default suite" duration-ms="45051" started-at="2020-01-10T14:04:52Z" finished-at="2020-01-10T14:05:37Z">
     <groups>
     </groups>
-    <test name="Test001" duration-ms="35420" started-at="2020-01-09T12:24:21Z" finished-at="2020-01-09T12:24:56Z">
-      <class name="com.qa.test.TestCase001">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="startReport" is-config="true" duration-ms="349" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:21Z">
+    <test name="Default test" duration-ms="45051" started-at="2020-01-10T14:04:52Z" finished-at="2020-01-10T14:05:37Z">
+      <class name="com.qa.test.TC0001">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="startReport" is-config="true" duration-ms="265" started-at="2020-01-10T19:34:52Z" finished-at="2020-01-10T19:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="BrowserIntialisation" is-config="true" duration-ms="20836" started-at="2020-01-09T17:54:21Z" finished-at="2020-01-09T17:54:42Z">
+        <test-method status="PASS" signature="BrowserIntialisation()[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="BrowserIntialisation" is-config="true" duration-ms="10514" started-at="2020-01-10T19:34:52Z" finished-at="2020-01-10T19:35:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntialisation -->
-        <test-method status="PASS" signature="LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="LoginDemoGuru" duration-ms="5691" started-at="2020-01-09T17:54:42Z" finished-at="2020-01-09T17:54:48Z">
+        <test-method status="PASS" signature="mouseHoverElectronics()[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="mouseHoverElectronics" duration-ms="2645" started-at="2020-01-10T19:35:03Z" finished-at="2020-01-10T19:35:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginDemoGuru -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="3" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:48Z">
+        </test-method> <!-- mouseHoverElectronics -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="takeScreenShot" is-config="true" duration-ms="3" started-at="2020-01-10T19:35:06Z" finished-at="2020-01-10T19:35:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginDemoGuru status=SUCCESS method=TestCase001.LoginDemoGuru()[pri:0, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
+                <![CDATA[[TestResult name=mouseHoverElectronics status=SUCCESS method=TC0001.mouseHoverElectronics()[pri:0, instance:com.qa.test.TC0001@1bce4f0a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1]" name="InsurancePage" duration-ms="5586" started-at="2020-01-09T17:54:48Z" finished-at="2020-01-09T17:54:53Z">
+        <test-method status="PASS" signature="addCellPhones()[pri:1, instance:com.qa.test.TC0001@1bce4f0a]" name="addCellPhones" duration-ms="12396" started-at="2020-01-10T19:35:06Z" finished-at="2020-01-10T19:35:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InsurancePage -->
-        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:53Z">
+        </test-method> <!-- addCellPhones -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:35:18Z" finished-at="2020-01-10T19:35:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InsurancePage status=SUCCESS method=TestCase001.InsurancePage()[pri:1, instance:com.qa.test.TestCase001@271053e1] output={null}]]]>
+                <![CDATA[[TestResult name=addCellPhones status=SUCCESS method=TC0001.addCellPhones()[pri:1, instance:com.qa.test.TC0001@1bce4f0a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.TestCase001@271053e1]" name="tearDown" is-config="true" duration-ms="2910" started-at="2020-01-09T17:54:53Z" finished-at="2020-01-09T17:54:56Z">
+        <test-method status="PASS" signature="addJewelryToCart()[pri:1, instance:com.qa.test.TC0001@1bce4f0a]" name="addJewelryToCart" duration-ms="5229" started-at="2020-01-10T19:35:18Z" finished-at="2020-01-10T19:35:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addJewelryToCart -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:35:23Z" finished-at="2020-01-10T19:35:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addJewelryToCart status=SUCCESS method=TC0001.addJewelryToCart()[pri:1, instance:com.qa.test.TC0001@1bce4f0a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="verifyCart()[pri:2, instance:com.qa.test.TC0001@1bce4f0a]" name="verifyCart" duration-ms="4636" started-at="2020-01-10T19:35:23Z" finished-at="2020-01-10T19:35:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCart -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2020-01-10T19:35:28Z" finished-at="2020-01-10T19:35:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCart status=SUCCESS method=TC0001.verifyCart()[pri:2, instance:com.qa.test.TC0001@1bce4f0a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="OrderSuccess()[pri:3, instance:com.qa.test.TC0001@1bce4f0a]" name="OrderSuccess" duration-ms="8779" started-at="2020-01-10T19:35:28Z" finished-at="2020-01-10T19:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderSuccess -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="tearDown" is-config="true" duration-ms="533" started-at="2020-01-10T19:35:37Z" finished-at="2020-01-10T19:35:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.TestCase001 -->
-    </test> <!-- Test001 -->
-  </suite> <!-- TestDemoSuite -->
+        <test-method status="PASS" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.qa.test.TC0001@1bce4f0a]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2020-01-10T19:35:37Z" finished-at="2020-01-10T19:35:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OrderSuccess status=SUCCESS method=TC0001.OrderSuccess()[pri:3, instance:com.qa.test.TC0001@1bce4f0a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+      </class> <!-- com.qa.test.TC0001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
