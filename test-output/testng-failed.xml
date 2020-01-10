@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestDemoSuite]">
-  <test name="Test001(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.Testcase">
+      <class name="com.qa.test.NoCommMainTest">
         <methods>
+          <include name="ValidateElectronicSectionPage"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
-          <include name="InsurancePage"/>
+          <include name="ValidateAddToCartPage"/>
+          <include name="ValidateCellPhoneAddToCartPage"/>
           <include name="takeScreenShot"/>
           <include name="tearDown"/>
-          <include name="LoginDemoGuru"/>
+          <include name="ValidateJewelryAddToCartPage"/>
         </methods>
-      </class> <!-- com.qa.test.Testcase -->
+      </class> <!-- com.qa.test.NoCommMainTest -->
     </classes>
-  </test> <!-- Test001(failed) -->
-</suite> <!-- Failed suite [TestDemoSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
