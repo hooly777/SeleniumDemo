@@ -3,18 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.pages.SampleTest">
+      <class name="com.qa.test.TestClass">
         <methods>
-          <include name="Insurance"/>
-          <include name="test_Home_Page_Appear_wrong"/>
-          <include name="LoginwithParticularusecase"/>
+          <include name="ValidateCellphonePage"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
           <include name="takeScreenShot"/>
-          <include name="tearDown"/>
-          <include name="test_Home_Page_Appear_Correct"/>
         </methods>
-      </class> <!-- com.qa.pages.SampleTest -->
+      </class> <!-- com.qa.test.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

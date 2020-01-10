@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>Demoproject</groupId>
-  <artifactId>Demoproject</artifactId>
+  <groupId>Selenium_Demo</groupId>
+  <artifactId>Selenium_Demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Demoproject</name>
+  <name>Selenium_Demo</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -34,11 +34,7 @@
     <version>7.0.0</version>
     <scope>test</scope>
 </dependency>
-<dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>3.1.0</version>
-</dependency>
+
 <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
@@ -47,7 +43,7 @@
 <dependency>
     <groupId>com.relevantcodes</groupId>
     <artifactId>extentreports</artifactId>
-    <version>2.41.2</version>
+    <version>2.40.2</version>
 </dependency>
 <dependency>
     <groupId>org.apache.poi</groupId>

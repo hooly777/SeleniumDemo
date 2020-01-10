@@ -24,6 +24,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -91,6 +92,8 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
+			Assert.fail();
+			
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
@@ -100,7 +103,7 @@ public class BaseTest {
 	}
 
 
-	@AfterClass
+/*	@AfterClass
 	// This method is used to close the browsers
 	public void tearDown() {
 
@@ -108,6 +111,7 @@ public class BaseTest {
 		report.flush();
 		driver.quit();
 	}
+	*/
 
 	// It will execute after every test execution 
 	@AfterMethod
