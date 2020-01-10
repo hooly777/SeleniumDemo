@@ -18,12 +18,15 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -180,6 +183,22 @@ public class BaseTest {
 	return testObjArray;
 
 	}	
+	public static void waitForLoad(WebDriver driver) {
+
+		ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
+
+			public Boolean apply(WebDriver driver) {
+
+				return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+
+			}
+		};
+
+		WebDriverWait wait = new WebDriverWait(driver, 200);
+
+		wait.until(pageLoadCondition);
+
+	}
 
 
 
