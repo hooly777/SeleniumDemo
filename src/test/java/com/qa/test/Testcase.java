@@ -1,50 +1,44 @@
 package com.qa.test;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import org.apache.log4j.Logger;
+
+import javax.swing.Spring;
+
+import org.apache.commons.compress.archivers.dump.InvalidFormatException;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-<<<<<<< HEAD
-import org.testng.annotations.Test;
 
-import com.qa.Resource.ReadExcel;
-import com.qa.Utility.Webgenericutility;
+import com.qa.Utility.ExcellUtility;
 import com.qa.basetest.BaseTest;
-import com.qa.pages.SampleTest;
-
-public class Testcase  extends  BaseTest{
-	
-
-
-
-=======
-import com.qa.pages.SampleTest;
-import com.qa.basetest.BaseTest;
+import com.qa.pages.Allianthomepage;
 
 public class Testcase extends BaseTest {
 	 
-	Logger log = Logger.getLogger("devpinoyLogger");
 
-	@Test
-	public void LoginDemoGuru() throws IOException
-	{
-		ArrayList<String> data=SampleTest.dataReading("user3");	
-		SampleTest objLogin;
-		objLogin = new SampleTest();
-		objLogin.loginToGuru99(data.get(1), data.get(2));
-		log.info("Login page opened by using excel inputs");
-		driver.switchTo().alert().accept();
-		log.debug("Accepting the popup message");
-	}
-
-	@Test(priority=1)
-	public void InsurancePage(){
-
-		SampleTest objLogin2;
-		objLogin2 = new SampleTest();
-		objLogin2.clickLink();
-		log.info("Insurance page triggered after Login");
-	}
 	
->>>>>>> bf2f49c491bf9f118e431b80eadc117abca586f3
-}
+	@Test(priority=1)
+	public void Homepagenavigation() throws InvalidFormatException, IOException{		
+	
+	Allianthomepage AHP=new Allianthomepage(driver);
+	ExcellUtility Excelinput=new ExcellUtility();
+	AHP.scrolldown();	
+	String value1=AHP.bankelement().getText();
+	String value2=AHP.BorrowElement().getText();
+	String value3=AHP.InvestElement().getText();
+	String value4=AHP.ProtectElement().getText();
+	System.out.println(AHP.bankelement().getText());
+	System.out.println(AHP.BorrowElement());
+	Excelinput.setExcelData("RaviAppdata.xlsx", "Sheet1",0,0,value1);
+	Excelinput.setExcelData("RaviAppdata.xlsx", "Sheet1",1,0,value2);
+	Excelinput.setExcelData("RaviAppdata.xlsx", "Sheet1",2,0,value3);
+	Excelinput.setExcelData("RaviAppdata.xlsx", "Sheet1",3,0,value4);
+	
+	List<WebElement> Elements=AHP.
+	
+	int noofrows=AHP.getlistfirstcol().size();
+	System.out.println(noofrows);
+	
+	}
+		
+	}

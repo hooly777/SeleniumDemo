@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.Testcase">
+      <class name="com.qa.test.NopcommerceNanvigation">
         <methods>
+          <include name="Addingjewellarytocart"/>
+          <include name="Updateshoppingcart"/>
           <include name="startReport"/>
           <include name="BrowserIntialisation"/>
-          <include name="InsurancePage"/>
           <include name="takeScreenShot"/>
-          <include name="tearDown"/>
-          <include name="LoginDemoGuru"/>
         </methods>
-      </class> <!-- com.qa.test.Testcase -->
+      </class> <!-- com.qa.test.NopcommerceNanvigation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

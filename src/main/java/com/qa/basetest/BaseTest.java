@@ -96,14 +96,14 @@ public class BaseTest {
 	}
 
 
-	@AfterClass
+/*	@AfterClass
 	// This method is used to close the browsers
 	public void tearDown() {
 
 		report.endTest(test);
 		report.flush();
 		driver.quit();
-	}
+	}*/
 
 	// It will execute after every test execution 
 	@AfterMethod
