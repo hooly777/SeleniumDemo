@@ -8,25 +8,23 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import org.apache.commons.compress.archivers.dump.InvalidFormatException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.apache.poi.ss.util.CellAddress;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
-
 import Trash.ReadExcel;
 import Trash.WriteExcel;
-
 import java.util.ArrayList;
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.util.NumberToTextConverter;
 
 /**
  * @author Silampur Girish 
@@ -209,7 +207,7 @@ public class ExcelUtility {
 	
 	
 	
-	public String[][] getExcelData(String fileName, String sheetName) throws EncryptedDocumentException, IOException {
+	public String[][] getExcelData(String fileName, String sheetName) throws EncryptedDocumentException, IOException, InvalidFormatException {
 		XSSFSheet ExcelWSheet;
 		XSSFWorkbook ExcelWBook;
 		String[][] arrayExcelData = null;
@@ -297,7 +295,7 @@ public class ExcelUtility {
 						Iterator<Cell> cv = r.cellIterator();
 						while (cv.hasNext()) {
 							Cell c = cv.next();
-							if (c.getCellType() == CellType.STRING) {
+							if (c.getCellTypeEnum()== CellType.STRING) {
 
 								a.add(c.getStringCellValue());
 							} else {

@@ -3,7 +3,7 @@
 <suite name="TestDemoSuite">
   <test name="Test001">
     <classes>
-      <class name="com.qa.test.TestCase001"/>
+      <class name="com.qa.test.NopCommerce_Test"/>
     </classes>
   </test> <!-- Test001 -->
 </suite> <!-- TestDemoSuite -->

@@ -32,7 +32,7 @@ public class Webgenericutility extends BaseTest {
 	 * ExpectedConditions to avoid StaleElementReferenceException
 	 * @param element driver timeout 
 	 */
-	public static void clickOn(WebDriver driver, WebElement element, int timeout) {		
+	public static void clickOn( WebElement element, int timeout) {		
 		try {
 			/*new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(element));*/
@@ -320,10 +320,7 @@ public class Webgenericutility extends BaseTest {
 		return null;
 
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
 	/**
 	 * @author Mohini Sethumadhavan
 	 * Method to check if the given element is selected

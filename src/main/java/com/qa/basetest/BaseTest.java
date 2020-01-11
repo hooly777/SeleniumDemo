@@ -16,13 +16,13 @@ package com.qa.basetest;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -36,14 +36,9 @@ import com.qa.Utility.PropertyLoader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-<<<<<<< HEAD
-=======
 import Trash.DataRead;
 import Trash.ReadExcel;
 
-
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
 public class BaseTest {
 
 	public static WebDriver driver;
@@ -93,16 +88,15 @@ public class BaseTest {
 
 		catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
-<<<<<<< HEAD
+
 			//Assert.assertFalse("Browser Not Found", true);
 			Assert.assertFalse(true, "Browser Not Found");
-=======
+
 
 			
 
 			Assert.assertFalse(true, "Browser Not Found");
 
->>>>>>> 44e821011e52f2b574db8a525c1ee2fda9c6482d
 		}
 		driver.manage().window().maximize();
 		driver.get(baseurl);
@@ -147,7 +141,7 @@ public class BaseTest {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		File Dest = new File(filePath +"/"+result.getName()+"_"+System.currentTimeMillis() + ".png");
 		String errflpath = Dest.getAbsolutePath();
-		FileUtils.copyFile(scrFile, Dest);
+		FileHandler.copy(scrFile, Dest);
 		return errflpath;
 	}			
 
