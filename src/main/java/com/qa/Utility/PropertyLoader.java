@@ -23,7 +23,7 @@ public class PropertyLoader {
 		
 		try 
 		{
-			src=new FileReader(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\resources\\commonVariables.properties");
+			src=new FileReader(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\Resource\\commonVariables.properties");
 			p=new Properties();
 			p.load(src);
 		}
